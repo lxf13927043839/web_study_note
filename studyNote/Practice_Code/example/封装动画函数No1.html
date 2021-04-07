@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebAPI练习</title>
+	<script type="text/javascript" src="index.js"></script>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		#box {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: relative;
+		}
+		#box1 {
+		width: 200px;
+		height: 200px;
+		background-color: pink;
+		position: relative;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="开始移动400" id="btn">
+	<input type="button" value="开始移动800" id="btn1">
+	<div id="box"></div>
+	<div id="box1"></div>
+	<script type="text/javascript">
+		var btn = document.getElementById('btn');
+		var box = document.getElementById('box');
+		var box1 = document.getElementById('box1');
+		var btn1 = document.getElementById('btn1');
+		btn1.onclick = function () {
+			animateMoving(box, 100);
+			animateMoving(box1,800);
+		}
+		btn.onclick = function () {
+			animateMoving(box, -50);
+			animateMoving(box1,400);
+		}
+		function animateMoving(element, distance) {
+			var speed = 10;
+			var result;
+			if (element.timeFlag) {
+				clearInterval(element.timeFlag);
+				element.timeFlag = null;
+			}
+			if (element.offsetLeft > distance) {
+				// 有可能一开始从右到左移动，这样speed本来就是负的，不加绝对值就成正的了
+			 	// speed = -speed;
+			 	speed = -Math.abs(speed);
+			} 
+			// 让多次点击不会重复创建新的定时器
+			element.timeFlag = setInterval(function () {
+				 /*if (speed > 0) {
+				 	result = element.offsetLeft + speed >= distance;
+				 } else {
+				 	result = element.offsetLeft + speed <= distance;
+				 }
+				if (result) {*/
+				if (Math.abs(element.offsetLeft - distance) < Math.abs(speed)) {
+					element.style.left = distance + 'px';
+					clearInterval(element.timeFlag);
+					return;
+				}
+				element.style.left = element.offsetLeft + speed + 'px';
+				// console.log('left ='+ element.style.left);
+			},30);// 30毫秒，后续看具体要求再看
+		}
+	</script>
+</body>
+</html>
