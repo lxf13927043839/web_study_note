@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebAPI练习</title>
+	<script type="text/javascript" src="index.js"></script>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		.box {
+			width: 600px;
+			height: 300px;
+			margin: 100px auto;
+			background-color: pink;
+			position: relative;
+		}
+
+		.box .showPic {
+			width: 500px;
+			height: 200px;
+			background-color: red;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			position: relative;
+			overflow: hidden;
+		}
+		.box .showPic ul {
+			width: 3000px;
+			position: absolute;
+		}
+		.box .showPic ul li {
+			float: left;
+		}
+		.box ol {
+			position: absolute;
+			/*background-color: skyblue;*/
+			right: 0;
+			bottom: 15px;
+		}
+		.box ol li {
+			float: left;
+			width: 20px;
+			height: 20px;
+			margin: 3px;
+			background-color: #fff;
+			line-height: 20px;
+			text-align: center;
+			cursor: pointer;
+			border: 1px solid #000;
+		}
+		.box .arrow {
+			width: 500px;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			position: absolute;
+			display: none;
+		}
+		.arrow-l {
+			float: left;
+		}
+		.arrow-r {
+			float: right;
+		}
+		.arrow span {
+			color: lightgray;
+			background-color: rgba(0,0,0,.4);
+			display: block;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			font-size: 25px;
+			cursor: pointer;
+		}
+		.box ol li.current {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="showPic">
+			<ul id="ulPic">
+				<li><img src="images/wf1.jpg" width="500" height="200"></li>
+				<li><img src="images/wf2.jpg" width="500" height="200"></li>
+				<li><img src="images/wf3.jpg" width="500" height="200"></li>
+				<li><img src="images/wf4.jpg" width="500" height="200"></li>
+				<li><img src="images/wf5.jpg" width="500" height="200"></li>
+			</ul>
+			<ol></ol>
+			<div class="arrow">
+				<span class="arrow-l"><</span>
+				<span class="arrow-r">></span>
+			</div>
+		</div>
+		<!-- <div class="arrow">
+			<span class="arrow-l"><</span>
+			<span class="arrow-r">></span>
+		</div> 这样子布局的话，等等经过显示框，要去点击箭头的时候，会闪烁，因为箭头显示挡住鼠标在图片上了-->
+	</div>		
+	<script type="text/javascript" src="animate.js"></script>
+	<script type="text/javascript">
+		var box = document.getElementById('box');
+		var showPic = box.children[0];
+		var arrow = showPic.lastElementChild;
+		var arrow_r = arrow.children[1];
+
+		var ulPic = document.getElementById('ulPic');
+		var imgTotalNum = ulPic.children.length;
+		var olPicNum = ulPic.nextElementSibling;
+
+		// 1、第一步动态生成图片序号
+		for (var i = 0; i < imgTotalNum; i++) {
+			var li = document.createElement('li');
+			li.innerText = i + 1;
+			olPicNum.appendChild(li);
+			if (i === 0) {
+				li.className = 'current';
+			}
+			// 添加索引方便后续的计算,属性值都是字符串需要进行转换
+			li.setAttribute('index',i);
+		}
+		// 如果没有图片的话，这样会出错的,把它放到创建的时候。
+		// olPicNum.children[0].className = 'current';
+
+		// 2、点击序号切换以及高亮当前序号，冒泡机制做的
+		var screenWidth = showPic.clientWidth;
+		olPicNum.onclick = function (e) {
+			e = e || window.event;
+			var target = e.target || e.srcElement;
+			 
+			// console.log(target);
+			for (var i = 0; i<this.children.length; i++) {
+				this.children[i].className = '';
+				if (this.children[i] === target) {
+					// console.log(i);
+					var index = parseInt(this.children[i].getAttribute('index'));
+					animateMoving(ulPic,-(index*screenWidth));// 这里的500 要改成变量
+					this.children[i].className = 'current';
+					indexArrow = i;
+				}
+			}
+		}
+
+		// 3、鼠标经过图片时显示箭头
+		/*
+		使用mouseover会触发事件冒泡，底层的img会先触发事件
+		mouseenter 底层的元素就不会触发
+		事件冒泡可能会触发某些问题
+		*/
+		showPic.onmouseenter = function (e) {
+			arrow.style.display = 'block';
+			clearInterval(timeAutoPlayFlag);
+		}
+		showPic.onmouseleave = function (e) {
+			arrow.style.display = 'none';
+			timeAutoPlayFlag = setInterval(function () {
+				arrow_r.click();
+			},2000);
+		}
+ 
+		//4、点击箭头切换图片效果,当前这个做法比较繁琐，而且没有处理好第1张图切换到第5张图。
+		var indexArrow = 0;// 这个索引要跟鼠标去点击图片序号做一个同步
+		// 把添加克隆的第一张图片
+		var clonePic = ulPic.children[0].cloneNode(true);
+		ulPic.appendChild(clonePic);
+		arrow.onclick = function (e) {
+			e = e || window.event;
+			var target = e.target || e.srcElement;
+			// var indexArrow = 0; // 程序一开始就是第一张图 不能使用局部变量，每次执行函数都是从 0 开始
+			// console.log(target);
+			/*for (var i = 0; i < olPicNum.children.length; i++) {
+				if (olPicNum.children[i].className !== '') {
+					current = i;// 先找到当前的位置
+					olPicNum.children[i].className = '';
+				} 
+			}
+			if (target.innerText === '<') {
+				if ((current - 1) < 0) {
+					current = olPicNum.children.length - 1;
+				} else {
+					current--;
+				}
+			} else {
+				if ((current + 1) >= olPicNum.children.length) {
+					current = 0;
+				} else {
+					current++;
+				}
+			}
+			olPicNum.children[current].className = 'current';
+			animateMoving(ulPic,-(current*500));*/
+			if (target.innerText === '>') {
+				if (indexArrow === imgTotalNum) {// 其实这里是判断是否是到了第六张
+					indexArrow = 0;
+					ulPic.style.left = '0px';
+				}
+				indexArrow++;
+				// 如果不是最后一张图
+				if (indexArrow < olPicNum.children.length) {
+					// indexArrow++;
+					olPicNum.children[indexArrow].click();// 这里会产生冒泡，我用的是冒泡事件，没有给它们单独设置点击事件
+				} else {
+					// 此时要显示第六章克隆图，没有办法通过点击序号去切换了
+					// indexArrow++;
+					animateMoving(ulPic,-indexArrow*screenWidth);
+					for (var i = 0; i < olPicNum.children.length; i++) {
+						olPicNum.children[i].className = '';
+					}
+					olPicNum.children[0].className = 'current';
+
+					/*
+					注：
+					1、这两句话不会等到动画移动完成，定时器的执行30ms后才执行，这里两句话早已经执行，此时就会导致，动画其实从 0 移动 -2500px。因为原本的offsetLeft被改为 0 了。
+					2、目前还无法怎么知道动画完成的时间。
+					indexArrow = 0;
+					ulPic.style.left = '0px';
+					*/
+
+				}
+			} else {
+				/*if (indexArrow > 0) {
+					indexArrow--;
+					olPicNum.children[indexArrow].click();
+				} else {
+					var switchClone = olPicNum.children.length*screenWidth;
+					ulPic.style.left = -switchClone + 'px';
+					olPicNum.children[olPicNum.children.length-1].click();
+				}*/
+				if (indexArrow === 0) {
+					var switchClone = imgTotalNum * screenWidth;
+					ulPic.style.left = -switchClone + 'px';
+					indexArrow = imgTotalNum;
+				}
+				indexArrow--;
+				olPicNum.children[indexArrow].click();
+			}
+		}
+		// 没有高度的话，相当于这个元素隐藏了
+		// animateMoving(ulPic,-2000);
+
+		// 让图片自动播放
+		var timeAutoPlayFlag = setInterval(function() {
+			arrow_r.click();
+		},2000)		
+	</script>
+</body>
+</html>

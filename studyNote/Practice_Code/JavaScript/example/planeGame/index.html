@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Plane</title>
+	<style type="text/css">
+		#container {
+			width: 320px;
+			height: 568px;
+			background: url(images/bg.png) no-repeat;
+			position: relative;
+			cursor: move;
+		}
+		.mePlane {
+			width: 34px;
+			height: 24px;
+			background: url(images/me.png);
+			position:absolute;
+			bottom: 0;
+		}
+		#container .bullet {
+			width: 6px;
+			height: 14px;
+			background: url(images/bullet.png);
+			position: absolute;
+		}
+		#container .foe {
+			width: 34px;
+			height: 24px;
+			background: url(images/foe.png);
+			position: absolute;
+		}
+		#container .tip {
+			width: 300px;
+			height: 50px;
+			background-color: pink;
+			line-height: 50px;
+			font-weight: 900;
+			font-size: 20px;
+			text-align: center;
+			text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+			color: #fff;
+			background-color: rgba(0,0,190,.5);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			display: none;
+			z-index: 100;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="mePlane"></div>
+		<!-- <div class="bullet"></div>
+		<div class="foe"></div> -->
+		<div class="tip" id="tip_id">Game over,后续完善功能</div>
+	</div>
+	<script type="text/javascript">
+		var container = document.getElementById('container');
+		var mePlane = container.children[0];
+		var isPlaneMove = false;
+
+		// 1、鼠标跟着飞机移动
+		container.onmousemove = function (e) {
+			var pageXY = getPage(e);
+			var x = pageXY.pageX - container.offsetLeft;
+			var y = pageXY.pageY - container.offsetTop;
+			x = x - mePlane.clientWidth / 2;
+			y = y - mePlane.clientHeight / 2;
+			if (x > container.offsetWidth - mePlane.clientWidth) {
+				x = container.offsetWidth - mePlane.clientWidth;
+			}
+			x = x < 0 ? 0 : x;
+			y = y < 0 ? 0 : y;
+			y = y > container.offsetHeight - mePlane.clientHeight ? container.offsetHeight - mePlane.clientHeight : y;
+			mePlane.style.left = x + 'px';
+			mePlane.style.top = y +'px';
+			isPlaneMove = true;
+		}
+		// 2、创建子弹、敌机
+		var timeCreateBullet = setInterval(createBullet,1000);
+		var timeCreateFoe = setInterval(createFoe, 1000);
+		// 3、子弹跟飞机要同时移动，否则比较难准确判断他们之间是否有碰撞
+		var timeMove = setInterval(function () {
+			buttletMove();
+			foeMove();
+			// 碰撞检测
+			for (var i = 0; i < bulletInfoArray.length; i++) {
+				var bulletInfo = bulletInfoArray[i].split('|');
+				var bulletEle = document.getElementById(bulletInfo[0]);
+				var bulletX = parseInt(bulletInfo[1]);
+				var bulletY = parseInt(bulletInfo[2]);
+
+				for (var j = 0; j < foeInfoArray.length; j++) {	
+					var foeInfo = foeInfoArray[j].split('|');
+					var foeEle = document.getElementById(foeInfo[0]);
+					var foeX = parseInt(foeInfo[1]);
+					var foeY = parseInt(foeInfo[2]);
+					if (bulletX >= foeX && bulletX <= foeX + foeEle.offsetWidth) {
+						// x 不在这个范围内就不用继续下面的事情
+						if (bulletY <= foeY + foeEle.offsetHeight) {
+							bulletEle.parentNode.removeChild(bulletEle);
+							foeEle.parentNode.removeChild(foeEle);
+
+							foeInfoArray.splice(j, 1);
+							j--;
+							bulletInfoArray.splice(i, 1);
+							i--;
+							// 一个子弹只能打掉一架敌机，找到唯一被打掉的敌机，就判断下一个子弹
+							// console.log(bulletX,bulletY);
+							// console.log(foeX,foeY);
+							break;
+						}
+					}
+
+					// 判断跟我方飞机是否碰撞,用画图的方式比较好分析出来,适当调整他们碰撞的距离
+					var meX = mePlane.offsetLeft;
+					var meY = mePlane.offsetTop;
+					if (meX + mePlane.offsetWidth - 10 > foeX && meX < foeX + foeEle.offsetWidth - 10) {
+						// 有两种撞击情况，一是我方从上面撞敌机、二是我方从下面撞敌机
+						// 除以 2，只是为了让他们靠得更近一些，才判断碰撞
+						if (meY <= foeY + foeEle.offsetHeight / 3 && meY >= foeY - mePlane.offsetHeight / 3 ) {
+							clearInterval(timeMove);
+							timeMove = null;
+							clearInterval(timeCreateBullet);
+							timeCreateBullet = null;
+							clearInterval(timeCreateFoe);
+							timeCreateFoe = null;
+							container.onmousemove = null;
+							var tip_id = document.getElementById('tip_id');
+							tip_id.style.display = 'block';
+						}
+
+					}
+
+				}
+			}
+		}, 10);
+
+		var bulletInfoArray = [];
+		var bulletNum = 0; // 记录子弹数量
+		function createBullet() {
+			if (isPlaneMove) {
+				var bullet = document.createElement('div');
+				bullet.className = 'bullet';
+				container.appendChild(bullet);
+				bulletNum++;
+				if (bulletNum > 1000) {
+					bulletNum = 0;
+				}
+				bullet.id = 'bullet' + bulletNum;
+				bullet.style.left = mePlane.offsetLeft + (mePlane.offsetWidth / 2 - bullet.offsetWidth / 2) + 'px';
+				// bullet.style.left = '100px';
+				// offsetTop 跟 offsetHeight 要分清楚他们的区别，合理使用
+				bullet.style.top =  mePlane.offsetTop - bullet.offsetHeight + 'px';
+				var bulletInfo = bullet.id + '|' + bullet.offsetLeft + '|' + bullet.offsetTop;
+				bulletInfoArray.push(bulletInfo);
+				// console.log(bulletInfoArray.length);
+			}  
+		}
+		// 移动子弹
+		function buttletMove() {
+			var bulletInfo = [];
+			var speed = -1;
+			// for (var i = 0, len = bulletInfoArray.length; i < len; i++) { 
+			// 这里的数组长度会动态变化，可能要删除一些子弹。 
+			for (var i = 0; i < bulletInfoArray.length; i++) {	
+				var bulletInfo = bulletInfoArray[i].split('|');
+				// 上面拼接为字符串，这里要转换为数字
+				bulletInfo[2] = parseInt(bulletInfo[2]) + speed;
+
+				var bulletEle = document.getElementById(bulletInfo[0]);
+				if (bulletInfo[2] < 0) {
+					container.removeChild(bulletEle);
+					bulletInfoArray.splice(i, 1);
+					i--;
+					continue;
+				}
+				bulletEle.style.top = bulletInfo[2] + 'px';
+
+				bulletInfoArray[i] = bulletInfo.join('|');
+			}
+		} 
+
+	
+		var foeInfoArray = [];
+		var foeNum = 0;
+		function createFoe() {
+			if (isPlaneMove) {
+				var foe = document.createElement('div');
+				foe.className = 'foe';
+				foeNum++;
+				if (foeNum > 1000) {
+					foeNum = 0;
+				}
+				container.appendChild(foe);
+				foe.id = 'foe' + foeNum;
+				var random = getRandom(0, container.clientWidth - foe.clientWidth);
+				// var random = 100;
+				foe.style.left = random + 'px';
+				var foeInfo = foe.id + '|' + foe.offsetLeft + '|' + foe.offsetTop;
+				// 这里push成 foe
+				foeInfoArray.push(foeInfo);
+			}
+		} 
+
+		// 移动飞机 --- 先轮询创建的飞机元素 --- 先把字符串信息分割出来 --- 把top值加上去 --- 判断是否超出边界（是的话，就删除元素相关信息，继续） --- 设置top，移动飞机 --- 更新飞机的数据 
+		function foeMove() {
+			var foeSpeed = 1;
+			for (var i = 0; i < foeInfoArray.length; i++) {
+				var foeInfo = foeInfoArray[i].split('|');
+				var foeEle = document.getElementById(foeInfo[0]);
+				foeInfo[2] = parseInt(foeInfo[2]) + foeSpeed;
+				if (foeInfo[2] > container.offsetHeight - foeEle.offsetHeight) {
+					container.removeChild(foeEle);
+					foeInfoArray.splice(i, 1);
+					i--;
+					continue;
+				}
+
+				foeEle.style.top = foeInfo[2] + 'px';
+				foeInfoArray[i] = foeInfo.join('|'); 
+			}
+		}
+
+
+		function getRandom(min, max) {
+			return Math.floor(Math.random()*(max - min + 1) + min);
+		}
+
+		function getPage(e) {
+			e = e || window.event;
+			var scrollLeft = document.body.srcollLeft || document.documentElement.scrollLeft;
+			var scrollTop = document.body.scrollTop || document.documentElement.srcollTop;
+			var pageX = e.client + scrollTop || e.pageX;
+			var pageY = e.client + scrollLeft || e.pageY;
+			return {
+				pageX: pageX,
+				pageY: pageY
+			}
+		}
+	</script>
+</body>
+</html>

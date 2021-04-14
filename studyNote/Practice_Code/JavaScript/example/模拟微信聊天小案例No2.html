@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>weChat</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		#box {
+			width: 450px;
+			height: 600px;
+			background-color: #eee;
+			box-shadow: 0px 0px 16px #999;
+			position: relative;
+			left: 50%;
+			top: 50%;
+			/*top不起作用，晚上在解决*/
+			/*transform: translate(-50%,-50%);*/
+		}
+		.top {
+			background-color: #000;
+			height: 40px;
+			color: #fff;
+			font-size: 20px;
+			line-height: 40px;
+			padding: 0 10px;
+			cursor: move;
+		}
+		.top .userName {
+			height: 40px;
+			float: left;
+		}
+		.top .date {
+			height: 40px;
+			float: right;
+		}
+		.middle {
+			padding: 0 10px;
+			height: 500px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.bottom {
+			width: 100%;
+			background-color: #999;
+			height: 60px;
+			position: absolute;
+			bottom: 0;
+		}
+
+		.bottom input[type=button] {
+			width: 62px;
+			height: 38px;
+			background-color: #ccc;
+			line-height: 38px;
+			text-align: center;
+			font-weight: 900;
+			border-radius: 6px;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translate(0,-50%);
+			outline: none;
+		}
+		.bottom input[type=text] {
+			width: 300px;
+			height: 40px;
+			line-height: 40px;
+			position: absolute;
+			top: 50%;
+			transform: translate(0,-50%);
+			left: 65px;
+			outline: none;
+			border-radius: 5px;
+		}
+		.bottom .pic {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			overflow: hidden;
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			transform: translate(0, -50%);
+			cursor: pointer;
+		}
+		
+		.fl {
+			float: left;
+		}
+		.fr {
+			float: right;
+		}
+		#showChat {
+			user-select: none;
+			position: relative;
+		}
+
+		#showChat li {
+			overflow: hidden;
+			margin: 10px 0;
+		}
+		#showChat li img {
+			width: 50px;
+			height: 50px;
+			border-radius: 5px;
+			/*float: right;*/
+		}
+		#showChat li span {
+			padding: 0 5px;
+			margin: 5px;
+			height: 40px;
+			background-color: #fff;
+			line-height: 40px;
+			/*float: right;*/
+			box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+			border-radius: 5px;
+			background-color: lightgreen;
+		}
+		#slider_wrapper {
+			width: 15px;
+			height: 100%;
+			background-color: #999;
+			position: absolute;
+			right: 0;
+			display: none;
+		}
+		#slider {
+			width: 100%;
+			height: 50px;
+			background-color: #ccc;
+			position: absolute;
+			border-radius: 8px;
+			cursor: move;
+		}
+
+		#tip {
+			width: 150px;
+			height: 30px;
+			background-color: pink;
+			line-height: 30px;
+			text-align: center;
+			border-radius: 10px;
+			text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+			box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			bottom: 10px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- container -->
+	<div id="box">
+		<!-- header -->
+		<div class="top">
+			<div class="userName">小明</div>
+			<div class="date">11:20</div>
+		</div>
+		<!-- content -->
+		<div class="middle">
+			<div id="slider_wrapper">
+				<div id="slider"></div>
+			</div>
+			<ul id="showChat">
+				
+			</ul>
+			<div id="tip">请输入文本内容!!!</div>
+		</div>
+		<!-- footer -->
+		<div class="bottom">
+			<div class="pic"><img src="images/1-small.jpg" width="60" height="60"></div>
+			<input type="text" placeholder="说点什么吧..." name="" id="content">
+			<input type="button" value="发送" id="btn">
+		</div>
+	</div>
+	<script type="text/javascript">
+		var box = document.getElementById('box');
+		var date = box.children[0].children[1];
+		var pic = box.children[2].children[0];
+		var content = document.getElementById('content');
+		var btn = document.getElementById('btn');
+		var showChat = document.getElementById('showChat');
+
+		// 1、显示实时事件的功能
+		function getTimeString() {
+			var date = new Date();
+			var hour = date.getHours();
+			var minute = date.getMinutes();
+			hour = hour < 10 ? '0' + hour : hour;
+			minute = minute < 10 ? '0' + minute : minute;
+			return hour + ':'+ minute;
+		}
+		setInnerText(date, getTimeString());
+		setInterval(function () {
+			setInnerText(date, getTimeString());
+		}, 1000*60)
+
+		// 2、点击切换图片
+		var switchFlag = true;
+		// img图片的名字可以用数组存储
+		var imgArray = ['images/2-small.jpg','images/1-small.jpg'];
+		pic.onclick = function () {
+			var img = pic.children[0];
+			if (switchFlag) {
+				// img.src = 'images/2-small.jpg';
+				img.src = imgArray[0];
+			} else {
+				// img.src = 'images/1-small.jpg';
+				img.src = imgArray[1];
+			}
+			switchFlag = !switchFlag;
+		}
+		// 3、获取输入框内容并显示
+		var innerHTMLContentArray = [];
+		btn.onclick = function () {
+			var chatContent = content.value;
+			// 可以在这里先判断用户是否有输入文字，没有的话给个提示，然后直接返回
+			if (chatContent === '') {
+				var tip = document.getElementById('tip');
+				tip.style.display = 'block';
+				setTimeout(function () {
+					tip.style.display = 'none';
+				},3000);
+				return; 
+			} 
+
+			// （1）这里我采用的是createElement的方式,去添加内容
+			/*var li = document.createElement('li');
+			var img = document.createElement('img');
+			var span = document.createElement('span');
+			showChat.appendChild(li);
+			li.appendChild(img);
+			li.appendChild(span);
+			setInnerText(span, chatContent);
+			if (switchFlag) {
+				img.src = imgArray[1];
+				img.className = 'fl';
+				span.className = 'fl';
+			} else {
+				img.src = imgArray[0];
+				img.className = 'fr';
+				span.className = 'fr';
+			}*/
+			// (2)采用innerHTML的方式 <li><img src=""><span></span></li>,这种的效率会稍微高一点,但是这里只处理一个，看不出区别，要处理上千个才有会明显区别
+			if (switchFlag) {
+				var src = imgArray[1];
+				var imgClassName = 'fl';
+				var spanClassName = 'fl';
+			} else {
+				src = imgArray[0];
+				imgClassName = 'fr';
+				spanClassName = 'fr';
+			}
+			var str = '<li><img src=\"' + src + '\"'+ 'class=' +'\"'+ imgClassName + '\"'+ '><span class=\"'+ spanClassName +'\">' + chatContent+'</span></li>';
+			innerHTMLContentArray.push(str);
+			showChat.innerHTML = innerHTMLContentArray.join('');
+
+			// content.value = '';
+
+			// 判断内容是否超出了,因为内容是动态变化的，放在发送点击，处理函数那里，不能放在全局中
+			if (showChat.offsetHeight > showChat.parentNode.clientHeight) {
+				slider_wrapper.style.display = 'block';
+				// 计算滑块的长度，如果在内容判断函数之前是计算不出长度的，因为slider_wrapper被隐藏，获取不到数据
+				sliderHeight = (showChat.parentNode.clientHeight / showChat.offsetHeight) * slider_wrapper.clientHeight;
+				slider.style.height = sliderHeight + 'px';
+
+				// 把滑块移动到最后
+				var sliderTop = slider_wrapper.clientHeight - sliderHeight; 
+				slider.style.top = sliderTop + 'px';
+
+				showChat.style.top = -(showChat.offsetHeight - showChat.parentNode.clientHeight ) + 'px';
+			}
+
+		}
+		// 4、滚动条的制作
+		var sliderHeight;
+		var slider = document.getElementById('slider');
+		var slider_wrapper = document.getElementById('slider_wrapper');
+		slider.onmousedown = function (e) {
+			e = e || window.event;
+			var y = e.pageY - box.offsetTop - slider.offsetTop;
+
+			slider_wrapper.onmousemove = function (e) {
+				e = e || window.event;
+				 sliderTop = e.pageY - y - box.offsetTop;
+				if (sliderTop < 0) {
+					sliderTop = 0;
+				} 
+				if (sliderTop > (slider_wrapper.clientHeight - sliderHeight)) {
+					sliderTop = slider_wrapper.clientHeight - sliderHeight; 
+				}
+				slider.style.top = sliderTop + 'px';
+
+				// 计算移动的距离对应的比例
+				if (showChat.offsetHeight > showChat.parentNode.clientHeight) {
+					var sliderMax = slider_wrapper.clientHeight - sliderHeight;
+					var contentMove = (slider.offsetTop / sliderMax) * (showChat.offsetHeight - showChat.parentNode.clientHeight);
+					// console.log(sliderMax)
+					// console.log(contentMove);
+					showChat.style.top = -contentMove + 'px';
+				}
+				
+			}
+		}
+		slider.onmouseup = function () {
+			slider_wrapper.onmousemove = null;
+		}
+		// 5、拉取黑色部分拖动,top不能作为变量的名称
+		var topBox = box.children[0];
+		topBox.onmousedown = function (e) {
+			e = e || window.event;
+			var x = e.pageX - box.offsetLeft;
+			var y = e.pageY - box.offsetTop;
+			document.onmousemove = function (e) {
+				e = e || window.event;
+				var leftX = e.pageX - x;
+				var leftY = e.pageY - y;
+				box.style.top = leftY + 'px';
+				box.style.left = leftX + 'px';
+			}
+		}
+		topBox.onmouseup = function () {
+			document.onmousemove = null;
+		}	
+
+		function setInnerText(element, text) {
+			if (typeof element.innerText === 'string') {
+				element.innerText = text;
+			} else {
+				element.textContent = text;
+			}
+		}
+		
+	</script>
+</body>
+</html>

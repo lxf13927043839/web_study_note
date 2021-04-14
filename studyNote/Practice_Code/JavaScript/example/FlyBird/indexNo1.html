@@ -1,0 +1,156 @@
+<!--
+第一版
+存在的问题 
+  1、四个柱子重新显示的时候，间距会出现不一致的问题，会差了一个柱子的宽度
+  2、设置定时器之后没有清除掉
+  3、碰撞判断还不是很精细
+  4、冗余的变量太多了，代码结构不清晰 
+基本的功能已经实现
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FlyBird</title>
+	<style type="text/css">
+		#container {
+			width: 800px;
+			height: 600px;
+			background: url(images/sky.png) repeat;
+			position: relative;
+			overflow: hidden;
+		}
+		.bird {
+			width: 34px;
+			height: 24px;
+			background: url(images/birds.png) no-repeat -8px -11px;
+			top: 100px;
+			left: 100px;
+			position: absolute;
+		}
+		#container .columnTop {
+			width: 52px;
+			height: 100px;
+			background: url(images/pipeTop.png) no-repeat left bottom;
+			position: absolute;
+		}
+
+		#container .columnBottom {
+			width: 52px;
+			height: 100px;
+			background: url(images/pipeBottom.png) no-repeat left top;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="bird"></div>
+	</div>
+	<script type="text/javascript">
+		var container = document.getElementById('container');
+		var birdElement = container.children[0];
+		var flySpeed = 5;
+		var timeFlag = null;
+		var bgX = 0;
+		var birdObj = {
+			speedY: 0,
+			x: birdElement.offsetLeft,
+			y: birdElement.offsetTop
+		};
+		var gameState = true;
+		timeFlag = setInterval(function () {
+			if (gameState) {
+				// 让背景图不断向做移动
+				bgX -= flySpeed;
+				if (bgX <= -container.clientWidth) {
+					bgX = 0;
+				}
+				container.style.backgroundPositionX = bgX + 'px';  
+
+				// 速度逐渐加快
+				birdObj.speedY++;
+				birdObj.y = birdObj.y + birdObj.speedY;
+				// console.log(birdObj.y);
+
+				/*
+					功能：bird触碰到底边时停止所有
+				*/
+				// if (birdObj.y >= container.clientHeight - birdObj.speedY) { 这里写错了，导致会超出600 后拉回，应该一步步打印数据，确认问题点
+				if (birdObj.y >= container.clientHeight - birdElement.offsetHeight) {
+					/*clearInterval(timeFlag);
+					timeFlag = null;
+					birdElement.style.top = container.clientHeight - birdElement.offsetHeight + 'px';
+					 return;*/
+					 birdObj.y = container.clientHeight - birdElement.offsetHeight;
+				}
+				if (birdObj.y <= 0) {
+					 birdObj.y = 0;
+				}
+				birdElement.style.top = birdObj.y + 'px';
+
+			}
+			
+		},30);
+		document.onclick = function () {
+			birdObj.speedY = -10;
+		}
+
+		// 开始创建柱子 上边的柱子高度控制在200 ~ 300 之间，中间的间距是 100
+		var columnHeight = {
+			min: 200,
+			max: 300
+		};
+		var columnStartPositionArray = [400, 600, 800, 1000];
+		var columnSpeed = -2; 
+		var space = 200;
+		for (var i = 0, len = columnStartPositionArray.length; i < len; i++) {
+			createColunm(columnStartPositionArray[i]);
+		}
+		
+		function createColunm(position) {
+			var divTop = document.createElement('div');
+			divTop.className = 'columnTop';
+			divTop.style.height = getRandom(columnHeight.min, columnHeight.max) + 'px';
+			divTop.style.left = position + 'px';
+			container.appendChild(divTop);
+
+			var divBottom = document.createElement('div');
+			divBottom.className = 'columnBottom';
+			divBottom.style.height = container.clientHeight - divTop.offsetHeight - space + 'px';
+			divBottom.style.top =  divTop.offsetHeight + space + 'px';
+			divBottom.style.left = position + 'px';
+			container.appendChild(divBottom);
+			// 把高度和top值搞混了
+
+			// 定时器是开辟了多线程吗？？？
+			setInterval(function () {
+				if(gameState) {
+					divTop.style.left = (divTop.offsetLeft + columnSpeed + 'px');
+					divBottom.style.left = (divBottom.offsetLeft + columnSpeed + 'px');
+					if (divTop.offsetLeft <= -divTop.clientWidth) {
+						divTop.style.left = container.clientWidth + 'px';
+						divBottom.style.left = container.clientWidth + 'px';
+					}
+
+					// 是否与柱子发生触碰
+					if (birdElement.offsetLeft + birdElement.clientWidth >= divTop.offsetLeft &&
+						birdElement.offsetLeft <= divTop.offsetLeft + divTop.clientWidth) {
+						if (birdElement.offsetTop < divTop.offsetHeight || birdElement.offsetTop + birdElement.offsetHeight > divTop.offsetHeight + space) {
+							gameState = false;
+						}
+					}
+				}
+			},30);
+		}
+
+		function getRandom(n, m) {
+			return Math.floor(Math.random()*(m - n + 1) + n);
+		}
+
+
+	</script>
+</body>
+</html>

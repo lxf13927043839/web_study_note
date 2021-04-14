@@ -1,0 +1,418 @@
+<!-- 小黄人第二版：主要修改html结构不合理的问题，修改对应书写样式
+	 1、眼镜框部分
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>小黄人第二版</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		/*大容器*/
+		.container {
+			width: 400px;
+			height: 600px;
+			border: 1px solid #000;
+			margin: 100px auto;
+			position: relative;
+		}
+		/*主题部分*/
+		.body {
+			width: 250px;
+			height: 400px;
+			border: 5px solid #000;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			border-radius: 125px;
+			background-color: yellow;
+			overflow: hidden;
+		}
+		/*头发部分，分为左边、与右边*/
+		.hair_l,
+		.hair_r {
+			width: 130px;
+			height: 100px;
+			border-top: 8px solid #000;
+			border-radius: 50%;
+			position: absolute;
+			animation: 4s moving_hair;
+			animation-iteration-count: infinite;
+		}
+		.hair_l {
+			top: 90px;
+			left: 100px;
+			transform: rotate(45deg);
+		}
+		.hair_r {
+			top: 70px;
+			left: 90px;
+			transform: rotate(45deg);
+		}
+		@keyframes moving_hair {
+			0% {
+				transform: rotate(45deg);
+			}
+			25% {
+				transform: rotate(55deg);
+			}
+			50% {
+				transform: rotate(45deg);
+			}
+			75% {
+				transform: rotate(30deg);
+			}
+			100% {
+				transform: rotate(45deg);
+			}
+		}
+		/*手臂部分，分为左右手臂*/
+		.hand_l,
+		.hand_r {
+			width: 100px;
+			height: 100px;
+			border: 5px solid #000;
+			border-radius: 30px;
+			background-color: yellow;
+			position: absolute;
+			z-index: -1;
+		}
+		.hand_l {
+			top: 250px;
+			left: 50px;
+			transform: rotate(30deg);
+		}
+		.hand_r {
+			top: 250px;
+			right: 50px;
+			transform: rotate(-30deg);
+		}
+		.hand_l::before,
+		.hand_r::before {
+			content: "";
+			width: 50px;
+			height: 10px;
+			background-color: #000;
+			border-radius: 5px;
+			position: absolute;
+		}
+		.hand_l::before {
+			transform: rotate(90deg);
+			top: 50px;
+			left: -2px;
+		}
+		.hand_r::before {
+			transform: rotate(-90deg);
+			right: -2px;
+			top: 50px;
+		}
+		/*脚部分，分为左脚、右脚部分*/
+		.foot_l,
+		.foot_r {
+			width: 40px;
+			height: 60px;
+			background-color: #000;
+			position: absolute;
+			z-index: -1;
+		}
+		.foot_l {
+			bottom: 45px;
+			left: 150px;
+		}
+		.foot_r {
+			bottom: 45px;
+			right: 150px;
+		}
+		.foot_l::before, 
+		.foot_r::before {
+			content: "";
+			width: 80px;
+			height: 40px;
+			background-color: #000;
+			position: absolute;
+			bottom: 0;
+		}
+		.foot_l::before {
+			border-radius: 20px 0 0 20px;
+			right: 0;
+		} 
+		.foot_r::before {
+			border-radius: 0 20px 20px 0;
+			left: 0;
+		}
+		/*眼镜部分
+		1、确认好整个眼睛的位置
+		2、在书写两个眼镜，和眼镜框
+		*/
+		.glass {
+			/*background-color: rgba(0,0,0,0.7);*/
+			position: absolute;/*块级元素转换为行内块元素*/
+			top: 60px;
+			left: 25px;/*250-90-5x2-90-5x2=50/2=25px*/
+			/*transform: translate(-50%);因为是继承了父元素的宽度，并不是说两个眼镜框先撑开盒子，只能手动调试*/
+			/*margin-left: -62px;也不能使用这个,他的宽度会变为 125-（-62）=187px看继承计算就知道*/
+		}
+		.glass_l,
+		.glass_r {
+			width: 90px;
+			height: 90px;
+			border: 5px solid #000;
+			border-radius: 50%;
+			background-color: #fff;
+			float: left;/*两个眼镜框在一行*/
+			position: relative;/*这里不能使用绝对定位，否则会使得浮动失效*/
+		}
+        .glass_l::after,
+        .glass_r::after {
+        	content: "";
+        	width: 40px;
+        	height: 20px;
+        	background-color: #000;
+        	position: absolute;
+        	z-index: -1;/*让突出部分隐藏在眼镜下面*/
+        }
+        .glass_l::after {
+        	transform: rotate(15deg);
+        	top: 33px;
+        	left: -35px;
+        }
+        .glass_r::after {
+        	transform: rotate(-15deg);
+        	top: 33px;
+        	right: -35px;
+        }
+        /*眼睛，使用定位记住子绝父相，因为在html结构上，眼睛是在眼镜框里边，所以眼镜框要在加定位*/
+        .eye_l,
+        .eye_r {
+        	width: 50px;
+        	height: 50px;
+        	background-color: #000;
+        	border-radius: 50%;
+        	position: absolute;
+        	left: 50%;
+        	top: 50%;
+        	transform: translate(-50%,-50%);
+        }
+        /*眼睛移动效果的制做有两个做法
+        1、通过先移动整个眼睛，然后将左眼睛进行顺时针旋转30度，右眼睛逆时针旋转30度
+        2、去除黑眼珠所有的旋转，只保留移动，然后再给白眼珠下移的动作就可以*/
+        .eye_l {
+        	animation: moving_l 4s ease 2s;
+        	animation-iteration-count: infinite;
+        }
+        .eye_r {
+			animation: moving_r 4s ease 2s;
+			animation-iteration-count: infinite;
+        }
+        @keyframes moving_l {
+			0% {
+				transform: translate(-50%,-50%);
+			}
+			25% {
+				transform: translate(-70%,-50%) rotate(30deg);
+			}
+			50% {
+				transform: translate(-50%,-50%);/*相当于rotate(0deg)，没有明写出来，恢复原图*/	
+			}
+			75% {
+				transform: translate(-30%,-50%) rotate(30deg);
+			}
+			100% {
+			    transform: translate(-50%,-50%);
+			}    	
+        }
+        @keyframes moving_r {
+			0% {
+				transform: translate(-50%,-50%);
+			}
+			25% {
+				transform: translate(-70%,-50%) rotate(-30deg);
+			}
+			50% {
+				transform: translate(-50%,-50%);	
+			}
+			75% {
+				transform: translate(-30%,-50%) rotate(-30deg);
+			}
+			100% {
+			    transform: translate(-50%,-50%);
+			}    	
+        }
+        
+         .eye_l::after,
+         .eye_r::after {
+         	content: "";
+         	width: 20px;
+         	height: 20px;
+         	border-radius: 50%;
+         	background-color: #fff;
+         	position: absolute; 
+         	top: 50%;
+         	transform: translate(0,-50%);
+         	/*animation: moving_bottom 4s ease 2s;
+        	animation-iteration-count: infinite;*/
+         }
+          /*@keyframes moving_bottom {
+			0% {
+				transform: translate(0,-50%);
+			}
+			25% {
+				transform: translate(0,-30%) ;
+			}
+			50% {
+				transform: translate(0,-50%);	
+			}
+			75% {
+				transform: translate(0,-30%);
+			}
+			100% {
+			    transform: translate(0,-50%);
+			}    	
+        }*/
+         .eye_l::after {
+         	right: 5px;
+         }
+         .eye_r::after {
+         	left: 5px;
+         }
+         /*裤子制作*/
+         .trousers {
+         	width: 250px;
+         	height: 100px;
+         	/*超出部分直接overflow:hidden;隐藏*/
+         	background-color: blue;
+         	border-top: 5px solid #000;
+         	position: absolute;
+         	top: 300px;
+         }
+         .trousers_top {
+         	width: 150px;
+         	height: 40px;
+         	border: 5px solid #000;
+         	border-bottom: none;
+         	background-color: blue;
+         	position: absolute;
+         	top: -45px;
+         	left: 50%;
+         	transform: translate(-50%);
+         }
+
+         /*.trousers::after {
+         	content: "";
+         	width: 150px;
+         	height: 40px;
+         	border: 5px solid #000;
+         	border-bottom: none;
+         	position: absolute;
+         	background-color: blue;
+         	top: -45px;
+         	left: 50%;
+         	transform: translate(-50%);
+         }*/
+         /*裤子背带制作*/
+         .trousers_belt_l,
+         .trousers_belt_r {
+         	height: 20px;
+         	width: 100px;
+         	background-color: blue;
+         	border: 5px solid #000;
+         	position: absolute;
+         	top: -60px;
+         }
+         .trousers_belt_l {
+         	transform: rotate(30deg);
+         	left: -30px;
+         }
+         .trousers_belt_r {
+         	transform: rotate(-30deg);
+         	right: -30px;
+         }
+         .trousers_belt_l::before,
+         .trousers_belt_r::before {
+         	content: "";
+         	width: 10px;
+         	height: 10px;
+         	background-color: #000;
+         	border-radius: 50%;
+         	position: absolute;    
+         	top: 50%; 
+         	transform: translate(0,-50%); 	
+         }
+         .trousers_belt_l::before {
+         	right: 5px;
+         }
+         .trousers_belt_r::before {
+         	left: 5px;
+         }
+         /*嘴巴制作*/
+         .mouth {
+         	width: 80px;
+         	height: 30px;
+         	border-top: 5px solid #000;
+         	position: absolute;
+         	left: 50%;
+         	transform: translate(-50%);
+         	top: 200px;
+         	overflow: hidden;
+         }
+         .mouth::before {
+         	content: "";
+         	width: 80px;
+         	height: 40px;
+         	background-color: #fff;
+         	border: 5px solid #000;
+         	position: absolute;
+         	transform: rotate(-30deg);
+         	border-radius: 0 0 0 40px;
+         	top: -35px;
+         	left: 1px;
+         }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="hair">
+			<div class="hair_l"></div>
+			<div class="hair_r"></div>
+		</div>
+		<!-- 身体主体部分 -->
+		<div class="body">
+			<!-- 眼镜与眼睛部分 -->
+			<div class="glass">
+				<div class="glass_l">
+					<div class="eye_l"></div>
+				</div>
+				<div class="glass_r">
+					<div class="eye_r"></div>
+				</div>
+			</div>
+			<!-- 裤子 -->
+			<div class="trousers">
+				<div class="trousers_top"></div>
+				<!-- 背带 -->
+				<div class="trousers_belt">
+					<div class="trousers_belt_l"></div>
+					<div class="trousers_belt_r"></div>
+				</div>
+			</div>
+			<!-- 嘴巴 -->
+			<div class="mouth"></div>
+		</div>
+		<div class="hand">
+			<div class="hand_l"></div>
+			<div class="hand_r"></div>
+		</div>
+		<div class="foot">
+			<div class="foot_l"></div>
+			<div class="foot_r"></div>
+		</div>
+	</div>
+</body>
+</html>

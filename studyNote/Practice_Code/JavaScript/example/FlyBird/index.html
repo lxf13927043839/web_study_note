@@ -1,0 +1,191 @@
+<!--
+第二版，未保存，还没有完善好
+存在的问题 
+  1、四个柱子重新显示的时候，间距会出现不一致的问题，会差了一个柱子的宽度
+答：这个问题已经解决，五个也没有问题
+  2、设置定时器之后没有清除掉
+答：处理已经ok
+  3、碰撞判断还不是很精细
+答：还是有点小问题
+  4、冗余的变量太多了，代码结构不清晰 
+答：基本上感觉可以的都进行初步优化成对象，特别是柱子那块
+基本的功能已经实现
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FlyBird</title>
+	<style type="text/css">
+		#container {
+			width: 748px;
+			height: 600px;
+			background: url(images/sky.png) repeat;
+			position: relative;
+			overflow: hidden;
+		}
+		.bird {
+			width: 34px;
+			height: 24px;
+			background: url(images/birds.png) no-repeat -8px -11px;
+			top: 100px;
+			left: 100px;
+			position: absolute;
+		}
+		#container .columnTop {
+			width: 52px;
+			height: 100px;
+			background: url(images/pipeTop.png) no-repeat left bottom;
+			position: absolute;
+		}
+
+		#container .columnBottom {
+			width: 52px;
+			height: 100px;
+			background: url(images/pipeBottom.png) no-repeat left top;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="bird"></div>
+	</div>
+	<script type="text/javascript">
+		var container = document.getElementById('container');
+		var birdElement = container.children[0];
+		var bgOfSky = {
+			// 背景移动的速度
+			moveSpeed: 5,
+			// 背景移动的left
+			bgLeft: 0,
+		};
+		var bird = {
+			speedY: 0,
+			x: birdElement.offsetLeft,
+			y: birdElement.offsetTop
+		};
+
+		var gameState = true;
+		var bgTimeFlag = null;
+		bgTimeFlag = setInterval(function () {
+			// 让背景图不断向做移动
+			bgOfSky.bgLeft -= bgOfSky.moveSpeed;
+			if (bgOfSky.bgLeft <= -container.clientWidth) {
+				bgOfSky.bgLeft = 0;
+			}
+			container.style.backgroundPositionX = bgOfSky.bgLeft + 'px';  
+			// 速度逐渐加快
+			bird.speedY++;
+			bird.y = bird.y + bird.speedY;
+			// console.log(bird.y);
+
+			/*
+				功能：bird触碰到底边时停止所有
+			*/
+			// if (bird.y >= container.clientHeight - bird.speedY) { 这里写错了，导致会超出600 后拉回，应该一步步打印数据，确认问题点
+			if (bird.y >= container.clientHeight - birdElement.offsetHeight) {
+				/*clearInterval(bgTimeFlag);
+				bgTimeFlag = null;
+				birdElement.style.top = container.clientHeight - birdElement.offsetHeight + 'px';
+				 return;*/
+				 bird.y = container.clientHeight - birdElement.offsetHeight;
+			}
+			if (bird.y <= 0) {
+				 bird.y = 0;
+			}
+			birdElement.style.top = bird.y + 'px';
+		},30);
+		// 鼠标点击的页面的时候，鸟上升的高度
+		document.onclick = function () {
+			bird.speedY = -10;
+		}
+
+		// 开始创建柱子 上边的柱子高度控制在200 ~ 300 之间，中间的间距是 100
+		
+		// 柱子对象，会有一系列的属性
+		var column = {
+			topMinHeight: 200,
+			topMaxHeight: 300,
+			space: 200,
+			speed: -2,
+			num: 5,
+			startPosition: 400,
+			// 这个是样式提前定义好的
+			width: 52,
+		};
+		var columnStartPositionArray = [];
+		// 计算柱子的起始位置
+		for(var i = 0, len = column.num; i < len; i++) {
+			columnStartPositionArray.push(i * column.space + column.startPosition);
+		}
+
+		// 计算柱子在循环定位时候的位置
+		var columnLoopPosition = {
+			x: 0
+		};
+		columnLoopPosition.x = columnStartPositionArray[columnStartPositionArray.length - 1] - column.startPosition - column.width + column.space;
+		if (columnLoopPosition < container.clientWidth) {
+			// 定位在显示区域中，说明柱子不够循环，只能减少显示区域
+			container.style.width = columnLoopPosition.x + 'px';
+		}
+
+		// 造柱子
+		var columnTime = [];
+		for (var i = 0, len = columnStartPositionArray.length; i < len; i++) {
+			var time = createColunm(columnStartPositionArray[i]);
+			columnTime.push(time);
+		}
+		
+
+		function createColunm(position) {
+			var divTop = document.createElement('div');
+			divTop.className = 'columnTop';
+			divTop.style.height = getRandom(column.topMinHeight, column.topMaxHeight) + 'px';
+			divTop.style.left = position + 'px';
+			container.appendChild(divTop);
+
+			var divBottom = document.createElement('div');
+			divBottom.className = 'columnBottom';
+			divBottom.style.height = container.clientHeight - divTop.offsetHeight - column.space + 'px';
+			divBottom.style.top =  divTop.offsetHeight + column.space + 'px';
+			divBottom.style.left = position + 'px';
+			container.appendChild(divBottom);
+			// 把高度和top值搞混了
+
+			// 定时器是开辟了多线程吗？？？
+		    var time = setInterval(function () {
+				divTop.style.left = (divTop.offsetLeft + column.speed + 'px');
+				divBottom.style.left = (divBottom.offsetLeft + column.speed + 'px');
+				if (divTop.offsetLeft <= -divTop.clientWidth) {
+					divTop.style.left = columnLoopPosition.x + 'px';
+					divBottom.style.left = columnLoopPosition.x + 'px';
+				}
+
+				// 是否与柱子发生触碰
+				if (birdElement.offsetLeft + birdElement.clientWidth >= divTop.offsetLeft &&
+					birdElement.offsetLeft <= divTop.offsetLeft + divTop.clientWidth) {
+					if (birdElement.offsetTop < divTop.offsetHeight || birdElement.offsetTop + birdElement.offsetHeight > divBottom.offsetTop) {
+						// 清除所有的定时器
+						clearInterval(bgTimeFlag);
+						bgTimeFlag = null;
+						for (var i = 0, len = columnTime.length; i < len; i++) {
+							clearInterval(columnTime[i]);
+						}
+						columnTime.length = 0;
+					}
+				}
+			},30);
+		    return time;
+		}
+
+		function getRandom(n, m) {
+			return Math.floor(Math.random()*(m - n + 1) + n);
+		}
+
+
+	</script>
+</body>
+</html>

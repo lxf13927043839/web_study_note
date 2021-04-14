@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>携程网导航栏</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			min-width: 320px;
+			max-width: 540px;
+			margin: 0 auto;
+		}
+		header {
+			width: 100%;
+			height: 100px;
+			margin-bottom: 15px;
+		}
+		header img {
+			width: 100%;
+		}
+		nav {
+			/*width: 100%;继承父容器宽度的100%，此时的 width = 父width - padding - margin,
+			直接写明，就指定了width，不涉及内外边距。*/
+			padding: 3px;
+
+		}
+		nav .row:nth-child(2) {
+			background-color: #3d98ff; 
+		}
+		nav .row:nth-child(3) {
+			background-color: #44c522;
+		}
+		nav .row:nth-child(4) {
+			background-color: #fc9720;
+		}
+
+		.row {
+			width: 100%;
+			height: 90px;
+			background-color: #ff697a;
+			border-radius: 9px;
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 5px;
+		}
+		.row3 {
+			flex: 1;
+			border-left: 1px solid #fff;
+		}
+		/*三个盒子的样式是一样的，所以用row3就可以，以及每个盒子中它并不是都有两个链接a需要再进行布局，可以把布局的两句话提取为hotel类，改进如下：*/
+		.hotel {
+			display: flex;
+			flex-direction: column;
+		}
+		.row1:first-child {
+			border: none;
+		}
+
+		.hotel a {
+			color: #fff;
+			text-align: center;
+			line-height: 45px;
+			text-decoration: none;
+			flex: 1;
+			text-shadow: 0 2px 2px rgba(0,0,0,0.6);
+		}
+		.hotel a:first-child {/*改成hotel类这样好，因为他们都是同时出现的*/
+			border-bottom: 1px solid #fff;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="images/ctrip.jpg">
+	</header>
+	<nav>
+		<div class="row">
+			<div class="row3"></div>
+			<div class="row3 hotel">
+				<a href="#1">海外酒店</a>
+				<a href="#1">特价酒店</a>
+			</div>
+			<div class="row3 hotel">
+				<a href="#1">团购</a>
+				<a href="#1">民宿~客栈</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="row3"></div>
+			<div class="row3 hotel">
+				<a href="#1">海外酒店</a>
+				<a href="#1">特价酒店</a>
+			</div>
+			<div class="row3 hotel">
+				<a href="#1">团购</a>
+				<a href="#1">民宿~客栈</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row3"></div>
+			<div class="row3 hotel">
+				<a href="#1">海外酒店</a>
+				<a href="#1">特价酒店</a>
+			</div>
+			<div class="row3 hotel">
+				<a href="#1">团购</a>
+				<a href="#1">民宿~客栈</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row3 hotel">
+				<a href="#1">海外酒店</a>
+				<a href="#1">特价酒店</a>
+			</div>
+			<div class="row3 hotel">
+				<a href="#1">海外酒店</a>
+				<a href="#1">特价酒店</a>
+			</div>
+			<div class="row3 hotel">
+				<a href="#1">团购</a>
+				<a href="#1">民宿~客栈</a>
+			</div>
+		</div>
+	</nav>
+</body>
+</html>

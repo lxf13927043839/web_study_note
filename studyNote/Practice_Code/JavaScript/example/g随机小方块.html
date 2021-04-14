@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>随机小方块</title>
+	<style type="text/css">
+		#container {
+			width: 800px;
+			height: 600px;
+			background-color: lightgray;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div id="container"></div>
+
+
+	<script type="text/javascript">
+		var container = document.getElementById('container');
+
+
+		// 随机工具对象,只有一个
+		var RandomTool = {
+			getRandom: function (min, max) {
+				return Math.floor(Math.random()*(max - min + 1) + min);
+			}
+		}
+		// 小盒子对象，需要很多个,给数据默认值，防止没有参数，导致错误
+		function Box(parentElement, boxInfo) {
+			boxInfo = boxInfo || '';
+			this.backgroundColor = boxInfo.backgroundColor || 'red';
+			this.width = boxInfo.width || 20;
+			this.height = boxInfo.height || 20;
+			this.x = boxInfo.x || 0;
+			this.y = boxInfo.y || 0;
+			this.parent = parentElement || '';
+			this.div = document.createElement('div');
+			parentElement.appendChild(this.div); 
+
+			this.boxStyleInit(); // 大概可以看成这个函数整体的代码放到这里
+		}
+		Box.prototype.boxStyleInit = function () {
+			var div = this.div;
+			div.style.backgroundColor = this.backgroundColor;
+			div.style.width = this.width + 'px';
+			div.style.height = this.height + 'px';
+			div.style.top = this.y + 'px';
+			div.style.left = this.x + 'px';
+			div.style.position = 'absolute';
+		}
+		Box.prototype.boxRandomPosition = function () {
+			var numX = RandomTool.getRandom(0, this.parent.clientWidth / this.width - 1) ;
+			var numY = RandomTool.getRandom(0, this.parent.clientHeight / this.height - 1) ;
+			this.div.style.left = numX * this.width + 'px';
+			this.div.style.top = numY * this.height + 'px';
+		}
+
+		// var box = new Box(container); // 这句话如果写在最前边，会无法找到boxStyleInit函数。因为解析时候是从上到下解析的。
+		// box.boxRandomPosition();
+		var smallBoxArray = [];
+		for (var i = 0; i < 10; i++) {
+			var r = RandomTool.getRandom(0,255);
+			var g = RandomTool.getRandom(0,255);
+			var b = RandomTool.getRandom(0,255);
+			var color = 'rgb('+ r + ',' + g +',' + b + ')';
+			var box = new Box(container,{
+				backgroundColor: color
+			});
+			smallBoxArray.push(box);
+		}
+
+		 function reflash() {
+			for (var i = 0, len = smallBoxArray.length; i < len; i++) {
+				smallBoxArray[i].boxRandomPosition();
+			} 	
+		 }
+		 reflash();
+		 setInterval(reflash,500);
+	</script>
+</body>
+</html>

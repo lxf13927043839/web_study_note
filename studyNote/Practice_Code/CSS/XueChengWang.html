@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>学成网首页</title>
+	<style type="text/css">
+		/*CSS样式初始化，一些集体声明*/
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		.clearfix:before,
+		.clearfix:after {
+			content: "";
+			display: table;
+		}
+		.clearfix:after {
+			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+		a {
+			color: #050505;
+			text-decoration: none;
+		}
+		input {
+				border: 0;  /* 所有的表单边框为0 */
+				box-sizing: border-box; /* CSS3盒子模型 border 和 padding 都包含到 width 里面去 */
+		}
+		body {
+			background-color: #f3f5f7;
+			height: 3000px;
+		}
+		.container {
+			width: 1200px;
+			margin: 0 auto;
+		}
+
+		/*页面头部的样式*/
+		header {
+			height: 101px;
+			/*background-color: red;*/
+			overflow: hidden;/*这里是解决嵌套块元素垂直外边距合并问题*/
+		}
+		nav {
+			width: 1366px;
+			height: 42px;
+			margin: 0 auto;
+			margin-top: 30px;
+			/*background-color: blue;*/
+			line-height: 42px;/*文字居中对齐*/
+		}
+		.logo {
+			width: 195px;
+			height: 41px;
+			background: url(source/myself/images/sprite.png) no-repeat 0 0;
+			float: left;
+		}
+		.navbar ul li{
+			float: left;
+			margin-right: 36px;/*44-8*/
+		}
+		.navbar ul li:first-child {
+			margin-left: 71px;/*80-9*/
+		}
+		.navbar ul li a {
+			padding-left: 9px;
+			padding-right: 8px;
+			padding-bottom: 8px;/*在图上测量的距离是11px，但是实际上border与文字之间本来会存在一点距离的*/
+			/*height: 42px;*/
+			font-size: 16px;/*这里是在浏览器F12的中调试出来的，还需要进一步调试，字太小*/
+		}
+		.navbar ul li a:hover {
+			text-decoration: none;
+			border-bottom: 2px solid #00a4ff;
+		}
+		/*搜索框部分*/
+		.search {
+			width: 410px;
+			height: 38px;
+			/*background-color: yellow;*/
+			float: left;
+			border: 1px solid #00a4ff;
+		}
+		.search input[type=text] {
+			width: 360px;
+			height: 38px;
+			/*margin-left: 20px; 先不要使用外边距，使用内边距会简单点*/
+			padding-left: 20px;
+			border: none;
+			float: left;
+		}
+		.search input[type=submit] {
+			width: 50px;
+			height: 38px;
+			border: none;
+			float: left;/*为什么不添加浮动的时候，该输入框的位置会偏下*/
+			background: #00a4ff url(source/myself/images/search_03.png) center center no-repeat;
+		}
+		/*个人信息部分*/
+		.personal {
+			width: 292px;
+			height: 42px;
+			padding-left: 32px;
+			float: left;
+		}
+		.personal a img {
+			margin-left: 30px;
+			vertical-align: middle;
+		}
+
+		/*开始banner部分的样式*/
+		.banner {
+			height: 420px;
+			background-color: #1c036c;
+		}
+		.banner-in {
+			height: 420px;
+			width: 1200px;
+			background: url(source/myself/images/banner_03.png) 0 0 no-repeat;
+			position: relative;
+		}
+		/*左边栏*/
+		.banner-left {
+			height: 420px;
+			width: 190px;
+			background-color: rgba(0,0,0,0.5);
+			float: left;
+			/*padding: 0 20px;
+			box-sizing: border-box;调试banner-left中的链接在盒子的距离，这里要用两个样式*/
+		}
+		/*.banner-in .banner-left ul li {
+			padding: 0 20px;
+		}这样写的样式有点多，可以通过把a的显示模式转为---块内元素*/
+		.banner-in .banner-left ul li a {
+			color: #fff;
+			font-size: 14px;
+			line-height: 45px;
+			padding: 0 20px;
+			display: block;/*转为块级元素，是因为 箭头符号要进行浮动的原因，如果不转换，对span不起作用，因为它被设置为浮动了*/
+		}
+		.banner-in .banner-left ul li a span {
+			float: right;
+		}
+		.banner-in .banner-left ul li a:hover {
+			color: #00b4ff;
+		}
+
+		/*右边栏*/
+		.banner-in .banner-right {
+			width: 228px;
+			height: 300px;
+			margin-top: 50px;
+			background-color: #fff;
+			float: right;
+		}
+		.banner-in .banner-right dl dt {
+			height: 48px;
+			background-color: #9bceea;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 48px;
+			letter-spacing: 2px;
+			color: #fff;
+			text-align: center;
+			margin-bottom: 7px;
+		}
+		.banner-in .banner-right dl dd {
+			height: 59px;
+			width: 192px;
+			color: #5f5f5f;
+			margin: 0 18px;
+			padding-top: 12px;
+			box-sizing: border-box;
+			border-bottom: 1px solid #efefef;
+		}
+		.banner-in .banner-right dl dd:last-child {
+			height: 37px;
+			width: 198px;
+			line-height: 37px;
+			padding: 0;
+			margin-top: 12px;
+			text-align: center;
+			border: 1px solid #00a4ff;
+		}
+		.banner-in .banner-right dl dd a {
+			font-size: 18px;
+			font-weight: 700;
+			letter-spacing: 2px;
+			color: #00a4ff;
+			display: block;
+			height: 37px;
+			width: 198px;
+			transition: all 0.5s;
+		}
+		.banner-in .banner-right dl dd a:hover {
+			background-color: #00a4ff;
+			color: #fff;
+		}
+		.banner-in .banner-right dl dd h4 {
+			font-size: 16px;
+			font-weight: normal;
+			color: #6f6f6f;
+		}
+		.banner-in .banner-right dl dd p {
+			font-size: 14px;
+			color: #a5a5a5;
+		}
+
+		/*banner中下方小圆点*/
+		.banner-in .circle {
+			width: 175px;
+			height: 22px;
+		/*	background-color: pink;*/
+			position: absolute;
+			left: 50%;
+			margin-left: -95px;
+			bottom: 31px;
+		}
+		.banner-in .circle li {
+			width: 12px;
+			height: 12px;
+			/*background-color: #64b6e6;*//*这个颜色是直接吸取出来的,但是实际上不是,他是由白色透明化得来的*/
+			background-color: rgba(255,255,255,0.3);
+			margin:5px 8px;
+			border-radius: 50%;
+			float: left;
+		}
+		.banner-in .circle .current {
+			width: 19px;
+			background-color: #fff;
+			border-radius: 5px;
+		}
+		/*banner样式结束*/
+
+		/*精品推荐部分*/
+		.recommand {
+			height: 60px;
+			line-height: 60px;
+			background-color: #fff;
+			box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+			margin-top: 8px;
+		}
+		.recommand a {
+			padding: 0 33px;
+			border-right: 1px solid #bfbfbf;
+		}
+		.recommand a:first-child {
+			color: #00a4ff;
+			font-weight: bold;
+		}
+		.recommand a:last-child {
+			border: none;
+			font-size: 14px;
+			float: right;
+		}
+		.recommand a:hover {
+			font-weight: 700;
+			color: #00a4ff;
+		}
+
+		/*精品推荐部分
+		精品推荐头部样式*/
+		.recommand-hd {
+			height: 24px;
+			/*background-color: pink;*/
+			margin-top: 36px;
+		}
+		.recommand-hd h4 {
+			color: #494949;
+			float: left;
+		}
+		.recommand-hd a {
+			color: #a5a5a5;
+			font-size: 14px;
+			float: right;
+		}
+		.recommand-hd a:hover {
+			color: #00a4ff;
+		}
+		/*精品推荐主体样式*/
+		.recommand-bd li{
+			width: 227px;
+			height: 270px;
+			background-color: #fff;
+			/*background-color: pink;*/
+			/*overflow: hidden;考虑到添加hot小图标的问题，不在li进行超出隐藏*//*图片的实际尺寸比盒子大了一点，可以使用超出隐藏*/
+			float: left;
+			margin-top: 15px;
+			margin-right: 15px;
+			margin-bottom: 15px;
+			position: relative; /*子绝父相*/
+			transition: all 0.8s;
+		}
+		.recommand-bd li:hover {
+			margin-top: 10px;
+			/*水平阴影 垂直阴影 模糊距离 阴影尺寸 阴影颜色 内外阴影*/
+			box-shadow: 0 5px 2px rgba(0,0,0,0.3);
+		}
+
+		.recommand-bd li .hot,
+		.recommand-bd li .new {
+			width: 40px;
+			height: 24px;
+			background: url(source/myself/images/sprite.png) no-repeat -57px -146px;
+			position: absolute;
+			right: -3px;
+			top: 0;
+		}
+		.recommand-bd li .new {
+			background-position: 0 -146px;
+		}
+
+		.recommand-bd li .img-overflow {
+			overflow: hidden;
+		}
+		.recommand-bd ul li h5,
+		.recommand-bd ul li p {
+			margin: 0 20px 0 24px;
+		}
+		.recommand-bd ul li h5 {
+			font-weight: normal;
+			line-height: 21px;
+			margin-top: 20px;
+			color: #050505;
+		}
+		.recommand-bd ul li p {
+			font-size: 12px;
+			margin-top: 14px;
+			color: #999999;
+		}
+		.recommand-bd ul li p span {
+			color: #ff7c2d;
+		}
+		.recommand-bd ul li:nth-child(5n) {
+			margin-right: 0;
+		}
+
+		/*页面的底部样式*/
+		footer {
+			height: 270px;
+			background-color: #fff;
+		}
+		.footer-in {
+			padding-top: 33px;
+			padding-left: 21px;
+		}
+		.footer-l {
+			float: left;
+		}
+		.footer-l p {
+			color: #666;
+			font-size: 12px; 
+			line-height: 18px;
+			margin-top: 19px;
+			margin-bottom: 9px;
+		}
+		.footer-l a {
+			color: #00a4ff;
+			width: 118px;
+			height: 34px;
+			display: block;
+			border: 1px solid #00a4ff;
+			line-height: 34px;
+			text-align: center;
+		}
+		.footer-l a:hover {
+			background-color: #00a4ff;
+			color: #fff;
+		}
+		.footer-r {
+			float: right;
+		}
+		.footer-r dl {
+			color: #333;
+			width: 225px;
+			float: left;
+		}
+		.footer-r dt {
+			font-size: 16px;
+			height: 32px;
+		}
+		.footer-r dd {
+			font-size: 12px;
+			height: 21px;
+		}
+		.footer-r dd a:hover {
+			color: #00a4ff;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<!-- <img src="source/myself/images/logo_03.png" alt="图片路径有问题！"> 采用精灵图方式实现-->
+			</div>
+			<!-- 导航栏部分 -->
+			<div class="navbar">
+				<ul>
+					<li><a href="#11">首页</a></li>
+					<li><a href="#11">课程</a></li>
+					<li><a href="#11">职业规划</a></li>
+				</ul>
+			</div>
+			<!-- 搜索框部分 -->
+			<div class="search">
+				<input type="text" placeholder="输入关键词">
+				<input type="submit" value=""> 
+			</div>
+			<!-- 个人信息部分 -->
+			<div class="personal">
+				<a href="#111">个人信息<img src="source/myself/images/personal_03.png" alt="图片路径有问题！"></a>
+				<a href="#111"><img src="source/myself/images/personal_03_03.png" width="33" height="33" alt="图片路径有问题！">qq-leishui</a>
+			</div>
+		</nav>
+	</header>
+	<!-- banner部分 -->
+	<div class="banner">
+		<!-- 中间版心 -->
+		<div class="banner-in container">
+			<!-- 左边栏 -->
+			<div class="banner-left">
+				<ul>
+					<li><a href="#111">前端开发 <span>></span></a></li>
+					<li><a href="#111">后端开发 <span>></span></a></li>
+					<li><a href="#111">移动开发 <span>></span></a></li>
+					<li><a href="#111">人工智能 <span>></span></a></li>
+					<li><a href="#111">商业预测 <span>></span></a></li>
+					<li><a href="#111">云计算&大数据 <span>></span></a></li>
+					<li><a href="#111">运维&从测试 <span>></span></a></li>
+					<li><a href="#111">UI设计 <span>></span></a></li>
+					<li><a href="#111">产品 <span>></span></a></li>
+				</ul>
+			</div>
+			<!-- 右边栏 -->
+			<div class="banner-right">
+				<dl>
+					<dt>我的课程表</dt>
+					<dd>
+						<h4>继续学习 程序语言设计</h4>
+						<p>正在学习-使用对象</p>
+					</dd>
+					<dd>
+						<h4>继续学习 程序语言设计</h4>
+						<p>正在学习-使用对象</p>
+					</dd>
+					<dd>
+						<h4>继续学习 程序语言设计</h4>
+						<p>正在学习-使用对象</p>
+					</dd>
+					<dd>
+						<a href="#11">全部课程</a>
+					</dd>
+				</dl>
+			</div>
+			<!-- 中下方小圆点 -->
+			<ul class="circle">
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 精品推荐部分 -->
+	<div class="recommand container">
+		<a href="#11">精品推荐</a>
+		<a href="#11">JQuery</a>
+		<a href="#11">Spark</a>
+		<a href="#11">MySQL</a>
+		<a href="#11">JavaWeb</a>
+		<a href="#11">MySQL</a>
+		<a href="#11">JavaWeb</a>
+		<a href="#11">修改兴趣</a>
+	</div>
+	<!-- 精品推荐整体 -->
+	<div class="recommand-products container">
+		<!-- 精品推荐-头部 -->
+		<div class="recommand-hd">
+			<h4>精品推荐</h4>
+			<a href="#11">查看全部</a>
+		</div>
+		<!-- 精品推荐主体部分 -->
+		<div class="recommand-bd clearfix">
+			<ul>
+				<li>
+					<div class="hot"></div>
+					<div class="img-overflow"><img src="source/myself/images/recommand_03.png"></div>
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<div class="new"></div>
+					<div class="img-overflow"><img src="source/myself/images/recommand_03.png"></div>
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<img src="source/myself/images/recommand_03.png">
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<img src="source/myself/images/recommand_03.png">
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<img src="source/myself/images/recommand_03.png">
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<img src="source/myself/images/recommand_03.png">
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<img src="source/myself/images/recommand_03.png">
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<img src="source/myself/images/recommand_03.png">
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<img src="source/myself/images/recommand_03.png">
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<img src="source/myself/images/recommand_03.png">
+					<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+			</ul>		
+		</div>
+	</div>
+	<!-- 页面的底部 -->
+	<footer>
+		<div class="footer-in container">
+			<div class="footer-l">
+				<img src="source/myself/images/footerin_07.png">
+				<p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。<br /> © 2017年XTCG Inc.保留所有权利。-沪I</p>
+				<a href="#111">下载APP</a>
+			</div>
+			<div class="footer-r">
+				<dl>
+					<dt>关于学成网</dt>
+					<dd><a href="#111">关于</a></dd>
+					<dd><a href="#111">管理团队</a></dd>
+					<dd><a href="#111">工作机会</a></dd>
+					<dd><a href="#111">客户服务</a></dd>
+					<dd><a href="#111">帮助</a></dd>
+				</dl>
+				<dl>
+					<dt>新手指南</dt>
+					<dd><a href="#111">如何注册</a></dd>
+					<dd><a href="#111">如何选课</a></dd>
+					<dd><a href="#111">如何拿到毕业证</a></dd>
+					<dd><a href="#111">学分是什么</a></dd>
+					<dd><a href="#111">考试未通过怎么办</a></dd>
+				</dl>
+				<dl>
+					<dt>合作伙伴</dt>
+					<dd><a href="#111">合作机构</a></dd>
+					<dd><a href="#111">合作导师</a></dd>
+				</dl>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
