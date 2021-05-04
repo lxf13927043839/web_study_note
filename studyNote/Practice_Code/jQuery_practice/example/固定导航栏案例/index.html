@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.w {
+			width: 1000px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="top"><img src="images/top.png"></div>
+		<div class="nav"><img src="images/nav.png"></div>
+		<div class="main w"><img src="images/main.png"></div>
+	</div>
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$(document).scroll(function () {
+				if ($(document).scrollTop() >= $('.top').height()) {
+					// 这里不能跟nav。offsetTop，因为他是动态变化的
+					$('.nav').css({'position':'fixed','top':'0px'});
+					$('.main').css('marginTop', $('.nav').height()+'px');
+				} else {
+					$('.nav').css({'position':'static'});
+					$('.main').css('marginTop','0px');
+				}
+			});
+		})
+	</script>
+</body>
+</html>

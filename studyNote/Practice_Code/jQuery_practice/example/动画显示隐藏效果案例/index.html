@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.wrapper li {
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" id="show" value="显示">
+	<input type="button" id="hide" value="隐藏">
+	<div class="wrapper">
+		<ul>
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+			<li><img src="images/4.jpg" alt=""></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#hide').click(function () {
+				$('.wrapper>ul>li').last().hide(500, function () {
+					$(this).prev().hide(500, arguments.callee);
+				});
+			});
+			$('#show').click(function () {
+				$('.wrapper>ul>li').first().show(500, function () {
+					$(this).next().show(500, arguments.callee);
+				});
+			});
+		})
+	</script>
+</body>
+</html>

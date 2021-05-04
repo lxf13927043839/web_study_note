@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		a {
+			text-decoration: none;
+			color: gray;
+		}
+		a:hover {
+			color: red;
+			font-weight: 900;
+		}
+		.wrapper {
+			margin: 10px;
+		}
+		.header {
+			width: 370px;
+			border: 1px solid #ccc;
+			border-bottom: none;
+		}
+		.header ul li {
+			float: left;
+			
+		}
+		.header ul li a {
+			display: inline-block;
+			padding: 5px 6px;
+			font-size: 18px;
+		}
+		.header ul li span {
+			display: inline-block;
+			font-size: 14px;
+			color: gray;
+		}
+
+
+		.clearfix:after {
+			content: '.';
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+
+		.footer {
+			border: 1px solid #ccc;
+			padding-top: 10px;
+			position: relative;
+			width: 960px;
+		}
+
+		.footer ul li {
+			width: 230px;
+			overflow: hidden;
+			float: left;
+			margin: 5px;
+		}
+		.footer ul li:hover {
+			position: relative;
+			top: -5px;
+			box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+		}
+		.footer ul li img {
+			display: block;
+			/*不这样图片下方写会有空白出现*/
+		}
+		.footer ul li div {
+			height: 60px;
+			background-color: #ccc;
+		}
+
+		.header ul {
+			position: relative;
+		}
+		.current {
+			width: 40px;
+			height: 5px;
+			background-color: red;
+			position: absolute;
+		}
+		.hide {
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		onload = function () {
+			var tab = document.getElementById('tab');
+			var lis = tab.getElementsByTagName('li');
+			for (var i = 0, len = lis.length; i < len; i++) {
+				var li = lis[i];
+				li.onmouseenter = function () {
+					var slider = document.getElementById('slider');
+					animateMoving(slider, this.offsetLeft + (this.clientWidth / 2 - slider.clientWidth/2));
+					// console.log('hello');
+				}
+			} 
+		}
+		function animateMoving(element, distance) {
+			if (element.timeFlag) {
+				clearInterval(element.timeFlag);
+				element.timeFlag = null;
+			}
+			var current = element.offsetLeft;
+			var step = 10;
+			if (distance < current) {
+				step = -Math.abs(step);
+			}
+
+			element.timeFlag = setInterval(function () {
+				current += step;
+				if(Math.abs(current - distance) < Math.abs(step)) {
+					element.style.left = distance + 'px';
+					clearInterval(element.timeFlag);
+					element.timeFlag = null;
+				}
+				element.style.left = current + 'px';
+			},50);
+		}
+		// jQuery代码
+		$(function () {
+			$('#tab li').mouseenter(function () {
+				// $('.footer ul').hide();
+				// 这样写，div滑块在ul列表中的位置，会影响index的值
+				// $('.footer ul'+ ':eq('+ $(this).index() + ')').show();
+
+				// 这种写法就ok，不关div
+				// $('.footer ul' + ':eq('+ $(this).index('#tab li') +')').show();
+
+				// 采用添加获取移除类样式的方式
+				var index = $(this).index('#tab li');
+				$('.footer ul:eq('+ index +')').siblings('ul').addClass('hide');
+				$('.footer ul:eq('+ index +')').removeClass('hide');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header clearfix">
+			<ul id='tab'>
+				<!-- <div class="current" id="slider"></div> 为了对应索引关系-->
+				<li><a href="javascript:void(0);">国际大品牌</a><span>|</span></li>
+				<li><a href="javascript:void(0);">国际名牌</a><span>|</span></li>
+				<li><a href="javascript:void(0);">清洁用品</a><span>|</span></li>
+				<li><a href="javascript:void(0);">男士精品</a></li>
+				<div class="current" id="slider"></div>
+			</ul>
+		</div>
+		<div class="footer">
+			<ul id="u1" class="clearfix">
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥45.90</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥45.90</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥45.90</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥45.90</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥45.90</span>
+					</div>
+				</li>
+			</ul>
+
+			<ul id="u2" class="clearfix hide">
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥22222</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥22222</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥22222</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥22222</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥22222</span>
+					</div>
+				</li>
+			</ul>
+
+			<ul id="u3" class="clearfix hide">
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥45.90</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥3333</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥3333</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥3333</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥3333</span>
+					</div>
+				</li>
+			</ul>
+
+			<ul id="u4" class="clearfix hide">
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥4444</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥4444</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥4444</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥4444</span>
+					</div>
+				</li>
+				<li>
+					<img src="images/recommand_03.png"><div>
+						<a href="javascript:void(0);">奥妙全自动深层洁净洗衣液3kg</a>
+						<span>￥45.90</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>	
+</body>
+</html>

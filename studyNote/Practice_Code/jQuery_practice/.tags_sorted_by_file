@@ -1,0 +1,1127 @@
+animateMoving	example\tab���л�����\index.html	/^		function animateMoving(element, distance) {$/;"	f
+Animation	example\tab���л�����\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Tween	example\tab���л�����\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	example\tab���л�����\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween.constructor	example\tab���л�����\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.cur	example\tab���л�����\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.init	example\tab���л�����\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	example\tab���л�����\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.propHooks._default	example\tab���л�����\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.run	example\tab���л�����\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+_jQuery	example\tab���л�����\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_load	example\tab���л�����\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+acceptData	example\tab���л�����\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+access	example\tab���л�����\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+actualDisplay	example\tab���л�����\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+add	example\tab���л�����\jquery-1.12.2.js	/^			add: function() {$/;"	m
+addGetHookIf	example\tab���л�����\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addToPrefiltersOrTransports	example\tab���л�����\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+adjustCSS	example\tab���л�����\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+ajaxConvert	example\tab���л�����\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	example\tab���л�����\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	example\tab���л�����\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+augmentWidthOrHeight	example\tab���л�����\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+boolHook.set	example\tab���л�����\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+buildFragment	example\tab���л�����\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildParams	example\tab���л�����\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	example\tab���л�����\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+completed	example\tab���л�����\jquery-1.12.2.js	/^function completed() {$/;"	f
+computeStyleTests	example\tab���л�����\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+createActiveXHR	example\tab���л�����\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createFxNow	example\tab���л�����\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createOptions	example\tab���л�����\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createSafeFragment	example\tab���л�����\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	example\tab���л�����\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createTween	example\tab���л�����\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+cssExpand	example\tab���л�����\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+curCSS	example\tab���л�����\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+dataAttr	example\tab���л�����\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataType	example\tab���л�����\jquery-1.12.2.js	/^		var dataType,$/;"	v
+defaultDisplay	example\tab���л�����\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultPrefilter	example\tab���л�����\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+detach	example\tab���л�����\jquery-1.12.2.js	/^function detach() {$/;"	f
+dir	example\tab���л�����\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+disableScript	example\tab���л�����\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+documentElement	example\tab���л�����\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+domManip	example\tab���л�����\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+filterHidden	example\tab���л�����\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+fixCloneNodeIssues	example\tab���л�����\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	example\tab���л�����\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fn	example\tab���л�����\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fontWeight	example\tab���л�����\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fxNow	example\tab���л�����\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+genFx	example\tab���л�����\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx.which.height	example\tab���л�����\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+getAll	example\tab���л�����\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getClass	example\tab���л�����\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getDisplay	example\tab���л�����\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getStyles	example\tab���л�����\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	example\tab���л�����\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getWidthOrHeight	example\tab���л�����\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	example\tab���л�����\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+hooks.empty.fire	example\tab���л�����\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+i	example\tab���л�����\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	example\tab���л�����\jquery-1.12.2.js	/^var i;$/;"	v
+iframe.BODY	example\tab���л�����\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.HTML	example\tab���л�����\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+init	example\tab���л�����\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+inspectPrefiltersOrTransports	example\tab���л�����\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	example\tab���л�����\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+internalData	example\tab���л�����\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalRemoveData	example\tab���л�����\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+isArrayLike	example\tab���л�����\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isEmptyDataObject	example\tab���л�����\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isHidden	example\tab���л�����\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+jQuery.Callbacks	example\tab���л�����\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Event	example\tab���л�����\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event.constructor	example\tab���л�����\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery._evalUrl	example\tab���л�����\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery.attrHooks.contenteditable.set	example\tab���л�����\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.style.get	example\tab���л�����\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.set	example\tab���л�����\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.value.set	example\tab���л�����\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.cssHooks.opacity.get	example\tab���л�����\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.set	example\tab���л�����\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.easing._default	example\tab���л�����\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing.linear	example\tab���л�����\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.swing	example\tab���л�����\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.event.global	example\tab���л�����\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.special.change.handle	example\tab���л�����\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.setup	example\tab���л�����\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.teardown	example\tab���л�����\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.postDispatch	example\tab���л�����\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.setup	example\tab���л�����\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.teardown	example\tab���л�����\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.expr.filters.animated	example\tab���л�����\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	example\tab���л�����\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	example\tab���л�����\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.filter	example\tab���л�����\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.fn.delay	example\tab���л�����\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.load	example\tab���л�����\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.ready	example\tab���л�����\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.size	example\tab���л�����\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fx.speeds._default	example\tab���л�����\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds.fast	example\tab���л�����\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.slow	example\tab���л�����\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.start	example\tab���л�����\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.stop	example\tab���л�����\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.tick	example\tab���л�����\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.timer	example\tab���л�����\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.noConflict	example\tab���л�����\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.offset.setOffset	example\tab���л�����\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.param	example\tab���л�����\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.parseHTML	example\tab���л�����\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseJSON	example\tab���л�����\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseXML	example\tab���л�����\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.propHooks.selected.get	example\tab���л�����\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	example\tab���л�����\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.ready.promise	example\tab���л�����\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.speed	example\tab���л�����\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.valHooks.button.get	example\tab���л�����\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.set	example\tab���л�����\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+letterSpacing	example\tab���л�����\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+location	example\tab���л�����\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+manipulationTarget	example\tab���л�����\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+nodeHook	example\tab���л�����\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook.set	example\tab���л�����\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeNames	example\tab���л�����\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nonce	example\tab���л�����\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+oldCallbacks	example\tab���л�����\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+on	example\tab���л�����\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+opt.complete	example\tab���л�����\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+propFilter	example\tab���л�����\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+r20	example\tab���л�����\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+rbrace	example\tab���л�����\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rclass	example\tab���л�����\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+readyList	example\tab���л�����\jquery-1.12.2.js	/^var readyList;$/;"	v
+remove	example\tab���л�����\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+restoreScript	example\tab���л�����\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+return	example\tab���л�����\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return.init	example\tab���л�����\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+returnFalse	example\tab���л�����\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnTrue	example\tab���л�����\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+rfocusable	example\tab���л�����\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rformElems	example\tab���л�����\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rhtml	example\tab���л�����\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rinlinejQuery	example\tab���л�����\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+risSimple	example\tab���л�����\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+rneedsContext	example\tab���л�����\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rreturn	example\tab���л�����\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rvalidtokens	example\tab���л�����\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+safeActiveElement	example\tab���л�����\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+setGlobalEval	example\tab���л�����\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setPositiveNumber	example\tab���л�����\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	example\tab���л�����\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+sibling	example\tab���л�����\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+siblings	example\tab���л�����\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+support.shrinkWrapBlocks	example\tab���л�����\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+swap	example\tab���л�����\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+vendorPropName	example\tab���л�����\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+winnow	example\tab���л�����\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+wrapMap.option	example\tab���л�����\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+Animation	example\�̶�����������\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Tween	example\�̶�����������\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	example\�̶�����������\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween.constructor	example\�̶�����������\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.cur	example\�̶�����������\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.init	example\�̶�����������\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	example\�̶�����������\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.propHooks._default	example\�̶�����������\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.run	example\�̶�����������\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+_jQuery	example\�̶�����������\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_load	example\�̶�����������\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+acceptData	example\�̶�����������\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+access	example\�̶�����������\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+actualDisplay	example\�̶�����������\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+add	example\�̶�����������\jquery-1.12.2.js	/^			add: function() {$/;"	m
+addGetHookIf	example\�̶�����������\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addToPrefiltersOrTransports	example\�̶�����������\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+adjustCSS	example\�̶�����������\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+ajaxConvert	example\�̶�����������\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	example\�̶�����������\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	example\�̶�����������\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+augmentWidthOrHeight	example\�̶�����������\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+boolHook.set	example\�̶�����������\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+buildFragment	example\�̶�����������\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildParams	example\�̶�����������\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	example\�̶�����������\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+completed	example\�̶�����������\jquery-1.12.2.js	/^function completed() {$/;"	f
+computeStyleTests	example\�̶�����������\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+createActiveXHR	example\�̶�����������\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createFxNow	example\�̶�����������\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createOptions	example\�̶�����������\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createSafeFragment	example\�̶�����������\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	example\�̶�����������\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createTween	example\�̶�����������\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+cssExpand	example\�̶�����������\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+curCSS	example\�̶�����������\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+dataAttr	example\�̶�����������\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataType	example\�̶�����������\jquery-1.12.2.js	/^		var dataType,$/;"	v
+defaultDisplay	example\�̶�����������\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultPrefilter	example\�̶�����������\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+detach	example\�̶�����������\jquery-1.12.2.js	/^function detach() {$/;"	f
+dir	example\�̶�����������\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+disableScript	example\�̶�����������\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+documentElement	example\�̶�����������\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+domManip	example\�̶�����������\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+filterHidden	example\�̶�����������\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+fixCloneNodeIssues	example\�̶�����������\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	example\�̶�����������\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fn	example\�̶�����������\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fontWeight	example\�̶�����������\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fxNow	example\�̶�����������\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+genFx	example\�̶�����������\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx.which.height	example\�̶�����������\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+getAll	example\�̶�����������\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getClass	example\�̶�����������\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getDisplay	example\�̶�����������\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getStyles	example\�̶�����������\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	example\�̶�����������\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getWidthOrHeight	example\�̶�����������\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	example\�̶�����������\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+hooks.empty.fire	example\�̶�����������\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+i	example\�̶�����������\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	example\�̶�����������\jquery-1.12.2.js	/^var i;$/;"	v
+iframe.BODY	example\�̶�����������\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.HTML	example\�̶�����������\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+init	example\�̶�����������\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+inspectPrefiltersOrTransports	example\�̶�����������\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	example\�̶�����������\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+internalData	example\�̶�����������\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalRemoveData	example\�̶�����������\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+isArrayLike	example\�̶�����������\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isEmptyDataObject	example\�̶�����������\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isHidden	example\�̶�����������\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+jQuery.Callbacks	example\�̶�����������\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Event	example\�̶�����������\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event.constructor	example\�̶�����������\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery._evalUrl	example\�̶�����������\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery.attrHooks.contenteditable.set	example\�̶�����������\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.style.get	example\�̶�����������\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.set	example\�̶�����������\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.value.set	example\�̶�����������\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.cssHooks.opacity.get	example\�̶�����������\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.set	example\�̶�����������\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.easing._default	example\�̶�����������\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing.linear	example\�̶�����������\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.swing	example\�̶�����������\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.event.global	example\�̶�����������\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.special.change.handle	example\�̶�����������\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.setup	example\�̶�����������\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.teardown	example\�̶�����������\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.postDispatch	example\�̶�����������\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.setup	example\�̶�����������\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.teardown	example\�̶�����������\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.expr.filters.animated	example\�̶�����������\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	example\�̶�����������\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	example\�̶�����������\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.filter	example\�̶�����������\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.fn.delay	example\�̶�����������\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.load	example\�̶�����������\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.ready	example\�̶�����������\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.size	example\�̶�����������\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fx.speeds._default	example\�̶�����������\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds.fast	example\�̶�����������\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.slow	example\�̶�����������\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.start	example\�̶�����������\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.stop	example\�̶�����������\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.tick	example\�̶�����������\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.timer	example\�̶�����������\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.noConflict	example\�̶�����������\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.offset.setOffset	example\�̶�����������\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.param	example\�̶�����������\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.parseHTML	example\�̶�����������\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseJSON	example\�̶�����������\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseXML	example\�̶�����������\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.propHooks.selected.get	example\�̶�����������\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	example\�̶�����������\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.ready.promise	example\�̶�����������\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.speed	example\�̶�����������\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.valHooks.button.get	example\�̶�����������\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.set	example\�̶�����������\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+letterSpacing	example\�̶�����������\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+location	example\�̶�����������\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+manipulationTarget	example\�̶�����������\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+nodeHook	example\�̶�����������\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook.set	example\�̶�����������\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeNames	example\�̶�����������\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nonce	example\�̶�����������\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+oldCallbacks	example\�̶�����������\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+on	example\�̶�����������\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+opt.complete	example\�̶�����������\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+propFilter	example\�̶�����������\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+r20	example\�̶�����������\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+rbrace	example\�̶�����������\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rclass	example\�̶�����������\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+readyList	example\�̶�����������\jquery-1.12.2.js	/^var readyList;$/;"	v
+remove	example\�̶�����������\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+restoreScript	example\�̶�����������\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+return	example\�̶�����������\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return.init	example\�̶�����������\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+returnFalse	example\�̶�����������\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnTrue	example\�̶�����������\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+rfocusable	example\�̶�����������\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rformElems	example\�̶�����������\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rhtml	example\�̶�����������\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rinlinejQuery	example\�̶�����������\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+risSimple	example\�̶�����������\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+rneedsContext	example\�̶�����������\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rreturn	example\�̶�����������\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rvalidtokens	example\�̶�����������\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+safeActiveElement	example\�̶�����������\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+setGlobalEval	example\�̶�����������\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setPositiveNumber	example\�̶�����������\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	example\�̶�����������\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+sibling	example\�̶�����������\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+siblings	example\�̶�����������\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+support.shrinkWrapBlocks	example\�̶�����������\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+swap	example\�̶�����������\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+vendorPropName	example\�̶�����������\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+winnow	example\�̶�����������\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+wrapMap.option	example\�̶�����������\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+Animation	example\�ַ��ٰ���\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Tween	example\�ַ��ٰ���\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	example\�ַ��ٰ���\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween.constructor	example\�ַ��ٰ���\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.cur	example\�ַ��ٰ���\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.init	example\�ַ��ٰ���\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	example\�ַ��ٰ���\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.propHooks._default	example\�ַ��ٰ���\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.run	example\�ַ��ٰ���\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+_jQuery	example\�ַ��ٰ���\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_load	example\�ַ��ٰ���\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+acceptData	example\�ַ��ٰ���\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+access	example\�ַ��ٰ���\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+actualDisplay	example\�ַ��ٰ���\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+add	example\�ַ��ٰ���\jquery-1.12.2.js	/^			add: function() {$/;"	m
+addGetHookIf	example\�ַ��ٰ���\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addToPrefiltersOrTransports	example\�ַ��ٰ���\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+adjustCSS	example\�ַ��ٰ���\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+ajaxConvert	example\�ַ��ٰ���\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	example\�ַ��ٰ���\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	example\�ַ��ٰ���\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+augmentWidthOrHeight	example\�ַ��ٰ���\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+boolHook.set	example\�ַ��ٰ���\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+buildFragment	example\�ַ��ٰ���\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildParams	example\�ַ��ٰ���\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	example\�ַ��ٰ���\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+completed	example\�ַ��ٰ���\jquery-1.12.2.js	/^function completed() {$/;"	f
+computeStyleTests	example\�ַ��ٰ���\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+createActiveXHR	example\�ַ��ٰ���\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createFxNow	example\�ַ��ٰ���\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createOptions	example\�ַ��ٰ���\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createSafeFragment	example\�ַ��ٰ���\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	example\�ַ��ٰ���\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createTween	example\�ַ��ٰ���\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+cssExpand	example\�ַ��ٰ���\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+curCSS	example\�ַ��ٰ���\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+dataAttr	example\�ַ��ٰ���\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataType	example\�ַ��ٰ���\jquery-1.12.2.js	/^		var dataType,$/;"	v
+defaultDisplay	example\�ַ��ٰ���\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultPrefilter	example\�ַ��ٰ���\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+detach	example\�ַ��ٰ���\jquery-1.12.2.js	/^function detach() {$/;"	f
+dir	example\�ַ��ٰ���\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+disableScript	example\�ַ��ٰ���\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+documentElement	example\�ַ��ٰ���\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+domManip	example\�ַ��ٰ���\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+filterHidden	example\�ַ��ٰ���\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+fixCloneNodeIssues	example\�ַ��ٰ���\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	example\�ַ��ٰ���\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fn	example\�ַ��ٰ���\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fontWeight	example\�ַ��ٰ���\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fxNow	example\�ַ��ٰ���\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+genFx	example\�ַ��ٰ���\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx.which.height	example\�ַ��ٰ���\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+getAll	example\�ַ��ٰ���\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getClass	example\�ַ��ٰ���\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getDisplay	example\�ַ��ٰ���\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getStyles	example\�ַ��ٰ���\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	example\�ַ��ٰ���\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getWidthOrHeight	example\�ַ��ٰ���\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	example\�ַ��ٰ���\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+hooks.empty.fire	example\�ַ��ٰ���\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+i	example\�ַ��ٰ���\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	example\�ַ��ٰ���\jquery-1.12.2.js	/^var i;$/;"	v
+iframe.BODY	example\�ַ��ٰ���\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.HTML	example\�ַ��ٰ���\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+init	example\�ַ��ٰ���\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+inspectPrefiltersOrTransports	example\�ַ��ٰ���\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	example\�ַ��ٰ���\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+internalData	example\�ַ��ٰ���\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalRemoveData	example\�ַ��ٰ���\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+isArrayLike	example\�ַ��ٰ���\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isEmptyDataObject	example\�ַ��ٰ���\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isHidden	example\�ַ��ٰ���\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+jQuery.Callbacks	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Event	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event.constructor	example\�ַ��ٰ���\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery._evalUrl	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery.attrHooks.contenteditable.set	example\�ַ��ٰ���\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.style.get	example\�ַ��ٰ���\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.set	example\�ַ��ٰ���\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.value.set	example\�ַ��ٰ���\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.cssHooks.opacity.get	example\�ַ��ٰ���\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.set	example\�ַ��ٰ���\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.easing._default	example\�ַ��ٰ���\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing.linear	example\�ַ��ٰ���\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.swing	example\�ַ��ٰ���\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.event.global	example\�ַ��ٰ���\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.special.change.handle	example\�ַ��ٰ���\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.setup	example\�ַ��ٰ���\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.teardown	example\�ַ��ٰ���\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.postDispatch	example\�ַ��ٰ���\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.setup	example\�ַ��ٰ���\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.teardown	example\�ַ��ٰ���\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.expr.filters.animated	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.filter	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.fn.delay	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.load	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.ready	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.size	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fx.speeds._default	example\�ַ��ٰ���\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds.fast	example\�ַ��ٰ���\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.slow	example\�ַ��ٰ���\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.start	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.stop	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.tick	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.timer	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.noConflict	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.offset.setOffset	example\�ַ��ٰ���\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.param	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.parseHTML	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseJSON	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseXML	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.propHooks.selected.get	example\�ַ��ٰ���\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	example\�ַ��ٰ���\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.ready.promise	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.speed	example\�ַ��ٰ���\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.valHooks.button.get	example\�ַ��ٰ���\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.set	example\�ַ��ٰ���\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+letterSpacing	example\�ַ��ٰ���\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+location	example\�ַ��ٰ���\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+manipulationTarget	example\�ַ��ٰ���\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+nodeHook	example\�ַ��ٰ���\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook.set	example\�ַ��ٰ���\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeNames	example\�ַ��ٰ���\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nonce	example\�ַ��ٰ���\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+oldCallbacks	example\�ַ��ٰ���\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+on	example\�ַ��ٰ���\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+opt.complete	example\�ַ��ٰ���\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+propFilter	example\�ַ��ٰ���\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+r20	example\�ַ��ٰ���\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+rbrace	example\�ַ��ٰ���\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rclass	example\�ַ��ٰ���\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+readyList	example\�ַ��ٰ���\jquery-1.12.2.js	/^var readyList;$/;"	v
+remove	example\�ַ��ٰ���\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+restoreScript	example\�ַ��ٰ���\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+return	example\�ַ��ٰ���\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return.init	example\�ַ��ٰ���\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+returnFalse	example\�ַ��ٰ���\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnTrue	example\�ַ��ٰ���\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+rfocusable	example\�ַ��ٰ���\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rformElems	example\�ַ��ٰ���\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rhtml	example\�ַ��ٰ���\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rinlinejQuery	example\�ַ��ٰ���\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+risSimple	example\�ַ��ٰ���\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+rneedsContext	example\�ַ��ٰ���\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rreturn	example\�ַ��ٰ���\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rvalidtokens	example\�ַ��ٰ���\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+safeActiveElement	example\�ַ��ٰ���\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+setGlobalEval	example\�ַ��ٰ���\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setPositiveNumber	example\�ַ��ٰ���\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	example\�ַ��ٰ���\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+sibling	example\�ַ��ٰ���\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+siblings	example\�ַ��ٰ���\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+support.shrinkWrapBlocks	example\�ַ��ٰ���\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+swap	example\�ַ��ٰ���\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+vendorPropName	example\�ַ��ٰ���\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+winnow	example\�ַ��ٰ���\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+wrapMap.option	example\�ַ��ٰ���\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+Animation	example\��Ʒչʾ����\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Tween	example\��Ʒչʾ����\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	example\��Ʒչʾ����\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween.constructor	example\��Ʒչʾ����\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.cur	example\��Ʒչʾ����\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.init	example\��Ʒչʾ����\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	example\��Ʒչʾ����\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.propHooks._default	example\��Ʒչʾ����\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.run	example\��Ʒչʾ����\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+_jQuery	example\��Ʒչʾ����\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_load	example\��Ʒչʾ����\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+acceptData	example\��Ʒչʾ����\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+access	example\��Ʒչʾ����\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+actualDisplay	example\��Ʒչʾ����\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+add	example\��Ʒչʾ����\jquery-1.12.2.js	/^			add: function() {$/;"	m
+addGetHookIf	example\��Ʒչʾ����\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addToPrefiltersOrTransports	example\��Ʒչʾ����\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+adjustCSS	example\��Ʒչʾ����\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+ajaxConvert	example\��Ʒչʾ����\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	example\��Ʒչʾ����\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	example\��Ʒչʾ����\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+augmentWidthOrHeight	example\��Ʒչʾ����\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+boolHook.set	example\��Ʒչʾ����\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+buildFragment	example\��Ʒչʾ����\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildParams	example\��Ʒչʾ����\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	example\��Ʒչʾ����\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+completed	example\��Ʒչʾ����\jquery-1.12.2.js	/^function completed() {$/;"	f
+computeStyleTests	example\��Ʒչʾ����\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+createActiveXHR	example\��Ʒչʾ����\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createFxNow	example\��Ʒչʾ����\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createOptions	example\��Ʒչʾ����\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createSafeFragment	example\��Ʒչʾ����\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	example\��Ʒչʾ����\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createTween	example\��Ʒչʾ����\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+cssExpand	example\��Ʒչʾ����\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+curCSS	example\��Ʒչʾ����\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+dataAttr	example\��Ʒչʾ����\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataType	example\��Ʒչʾ����\jquery-1.12.2.js	/^		var dataType,$/;"	v
+defaultDisplay	example\��Ʒչʾ����\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultPrefilter	example\��Ʒչʾ����\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+detach	example\��Ʒչʾ����\jquery-1.12.2.js	/^function detach() {$/;"	f
+dir	example\��Ʒչʾ����\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+disableScript	example\��Ʒչʾ����\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+documentElement	example\��Ʒչʾ����\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+domManip	example\��Ʒչʾ����\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+filterHidden	example\��Ʒչʾ����\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+fixCloneNodeIssues	example\��Ʒչʾ����\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	example\��Ʒչʾ����\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fn	example\��Ʒչʾ����\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fontWeight	example\��Ʒչʾ����\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fxNow	example\��Ʒչʾ����\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+genFx	example\��Ʒչʾ����\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx.which.height	example\��Ʒչʾ����\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+getAll	example\��Ʒչʾ����\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getClass	example\��Ʒչʾ����\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getDisplay	example\��Ʒչʾ����\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getStyles	example\��Ʒչʾ����\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	example\��Ʒչʾ����\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getWidthOrHeight	example\��Ʒչʾ����\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	example\��Ʒչʾ����\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+hooks.empty.fire	example\��Ʒչʾ����\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+i	example\��Ʒչʾ����\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	example\��Ʒչʾ����\jquery-1.12.2.js	/^var i;$/;"	v
+iframe.BODY	example\��Ʒչʾ����\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.HTML	example\��Ʒչʾ����\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+init	example\��Ʒչʾ����\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+inspectPrefiltersOrTransports	example\��Ʒչʾ����\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	example\��Ʒչʾ����\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+internalData	example\��Ʒչʾ����\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalRemoveData	example\��Ʒչʾ����\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+isArrayLike	example\��Ʒչʾ����\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isEmptyDataObject	example\��Ʒչʾ����\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isHidden	example\��Ʒչʾ����\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+jQuery.Callbacks	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Event	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event.constructor	example\��Ʒչʾ����\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery._evalUrl	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery.attrHooks.contenteditable.set	example\��Ʒչʾ����\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.style.get	example\��Ʒչʾ����\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.set	example\��Ʒչʾ����\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.value.set	example\��Ʒչʾ����\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.cssHooks.opacity.get	example\��Ʒչʾ����\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.set	example\��Ʒչʾ����\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.easing._default	example\��Ʒչʾ����\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing.linear	example\��Ʒչʾ����\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.swing	example\��Ʒչʾ����\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.event.global	example\��Ʒչʾ����\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.special.change.handle	example\��Ʒչʾ����\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.setup	example\��Ʒչʾ����\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.teardown	example\��Ʒչʾ����\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.postDispatch	example\��Ʒչʾ����\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.setup	example\��Ʒչʾ����\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.teardown	example\��Ʒչʾ����\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.expr.filters.animated	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.filter	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.fn.delay	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.load	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.ready	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.size	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fx.speeds._default	example\��Ʒչʾ����\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds.fast	example\��Ʒչʾ����\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.slow	example\��Ʒչʾ����\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.start	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.stop	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.tick	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.timer	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.noConflict	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.offset.setOffset	example\��Ʒչʾ����\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.param	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.parseHTML	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseJSON	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseXML	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.propHooks.selected.get	example\��Ʒչʾ����\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	example\��Ʒչʾ����\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.ready.promise	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.speed	example\��Ʒչʾ����\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.valHooks.button.get	example\��Ʒչʾ����\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.set	example\��Ʒչʾ����\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+letterSpacing	example\��Ʒչʾ����\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+location	example\��Ʒչʾ����\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+manipulationTarget	example\��Ʒչʾ����\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+nodeHook	example\��Ʒչʾ����\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook.set	example\��Ʒչʾ����\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeNames	example\��Ʒչʾ����\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nonce	example\��Ʒչʾ����\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+oldCallbacks	example\��Ʒչʾ����\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+on	example\��Ʒչʾ����\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+opt.complete	example\��Ʒչʾ����\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+propFilter	example\��Ʒչʾ����\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+r20	example\��Ʒչʾ����\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+rbrace	example\��Ʒչʾ����\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rclass	example\��Ʒչʾ����\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+readyList	example\��Ʒչʾ����\jquery-1.12.2.js	/^var readyList;$/;"	v
+remove	example\��Ʒչʾ����\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+restoreScript	example\��Ʒչʾ����\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+return	example\��Ʒչʾ����\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return.init	example\��Ʒչʾ����\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+returnFalse	example\��Ʒչʾ����\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnTrue	example\��Ʒչʾ����\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+rfocusable	example\��Ʒչʾ����\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rformElems	example\��Ʒչʾ����\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rhtml	example\��Ʒչʾ����\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rinlinejQuery	example\��Ʒչʾ����\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+risSimple	example\��Ʒչʾ����\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+rneedsContext	example\��Ʒչʾ����\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rreturn	example\��Ʒչʾ����\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rvalidtokens	example\��Ʒչʾ����\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+safeActiveElement	example\��Ʒչʾ����\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+setGlobalEval	example\��Ʒչʾ����\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setPositiveNumber	example\��Ʒչʾ����\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	example\��Ʒչʾ����\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+sibling	example\��Ʒչʾ����\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+siblings	example\��Ʒչʾ����\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+support.shrinkWrapBlocks	example\��Ʒչʾ����\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+swap	example\��Ʒչʾ����\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+vendorPropName	example\��Ʒչʾ����\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+winnow	example\��Ʒչʾ����\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+wrapMap.option	example\��Ʒչʾ����\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+Animation	example\������ʾ����\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Tween	example\������ʾ����\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	example\������ʾ����\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween.constructor	example\������ʾ����\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.cur	example\������ʾ����\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.init	example\������ʾ����\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	example\������ʾ����\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.propHooks._default	example\������ʾ����\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.run	example\������ʾ����\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+_jQuery	example\������ʾ����\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_load	example\������ʾ����\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+acceptData	example\������ʾ����\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+access	example\������ʾ����\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+actualDisplay	example\������ʾ����\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+add	example\������ʾ����\jquery-1.12.2.js	/^			add: function() {$/;"	m
+addGetHookIf	example\������ʾ����\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addToPrefiltersOrTransports	example\������ʾ����\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+adjustCSS	example\������ʾ����\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+ajaxConvert	example\������ʾ����\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	example\������ʾ����\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	example\������ʾ����\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+augmentWidthOrHeight	example\������ʾ����\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+boolHook.set	example\������ʾ����\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+buildFragment	example\������ʾ����\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildParams	example\������ʾ����\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	example\������ʾ����\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+completed	example\������ʾ����\jquery-1.12.2.js	/^function completed() {$/;"	f
+computeStyleTests	example\������ʾ����\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+createActiveXHR	example\������ʾ����\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createFxNow	example\������ʾ����\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createOptions	example\������ʾ����\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createSafeFragment	example\������ʾ����\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	example\������ʾ����\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createTween	example\������ʾ����\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+cssExpand	example\������ʾ����\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+curCSS	example\������ʾ����\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+dataAttr	example\������ʾ����\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataType	example\������ʾ����\jquery-1.12.2.js	/^		var dataType,$/;"	v
+defaultDisplay	example\������ʾ����\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultPrefilter	example\������ʾ����\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+detach	example\������ʾ����\jquery-1.12.2.js	/^function detach() {$/;"	f
+dir	example\������ʾ����\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+disableScript	example\������ʾ����\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+documentElement	example\������ʾ����\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+domManip	example\������ʾ����\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+filterHidden	example\������ʾ����\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+fixCloneNodeIssues	example\������ʾ����\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	example\������ʾ����\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fn	example\������ʾ����\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fontWeight	example\������ʾ����\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fxNow	example\������ʾ����\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+genFx	example\������ʾ����\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx.which.height	example\������ʾ����\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+getAll	example\������ʾ����\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getClass	example\������ʾ����\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getDisplay	example\������ʾ����\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getStyles	example\������ʾ����\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	example\������ʾ����\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getWidthOrHeight	example\������ʾ����\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	example\������ʾ����\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+hooks.empty.fire	example\������ʾ����\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+i	example\������ʾ����\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	example\������ʾ����\jquery-1.12.2.js	/^var i;$/;"	v
+iframe.BODY	example\������ʾ����\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.HTML	example\������ʾ����\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+init	example\������ʾ����\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+inspectPrefiltersOrTransports	example\������ʾ����\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	example\������ʾ����\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+internalData	example\������ʾ����\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalRemoveData	example\������ʾ����\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+isArrayLike	example\������ʾ����\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isEmptyDataObject	example\������ʾ����\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isHidden	example\������ʾ����\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+jQuery.Callbacks	example\������ʾ����\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Event	example\������ʾ����\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event.constructor	example\������ʾ����\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery._evalUrl	example\������ʾ����\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery.attrHooks.contenteditable.set	example\������ʾ����\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.style.get	example\������ʾ����\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.set	example\������ʾ����\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.value.set	example\������ʾ����\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.cssHooks.opacity.get	example\������ʾ����\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.set	example\������ʾ����\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.easing._default	example\������ʾ����\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing.linear	example\������ʾ����\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.swing	example\������ʾ����\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.event.global	example\������ʾ����\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.special.change.handle	example\������ʾ����\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.setup	example\������ʾ����\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.teardown	example\������ʾ����\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.postDispatch	example\������ʾ����\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.setup	example\������ʾ����\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.teardown	example\������ʾ����\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.expr.filters.animated	example\������ʾ����\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	example\������ʾ����\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	example\������ʾ����\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.filter	example\������ʾ����\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.fn.delay	example\������ʾ����\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.load	example\������ʾ����\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.ready	example\������ʾ����\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.size	example\������ʾ����\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fx.speeds._default	example\������ʾ����\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds.fast	example\������ʾ����\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.slow	example\������ʾ����\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.start	example\������ʾ����\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.stop	example\������ʾ����\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.tick	example\������ʾ����\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.timer	example\������ʾ����\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.noConflict	example\������ʾ����\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.offset.setOffset	example\������ʾ����\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.param	example\������ʾ����\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.parseHTML	example\������ʾ����\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseJSON	example\������ʾ����\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseXML	example\������ʾ����\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.propHooks.selected.get	example\������ʾ����\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	example\������ʾ����\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.ready.promise	example\������ʾ����\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.speed	example\������ʾ����\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.valHooks.button.get	example\������ʾ����\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.set	example\������ʾ����\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+letterSpacing	example\������ʾ����\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+location	example\������ʾ����\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+manipulationTarget	example\������ʾ����\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+nodeHook	example\������ʾ����\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook.set	example\������ʾ����\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeNames	example\������ʾ����\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nonce	example\������ʾ����\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+oldCallbacks	example\������ʾ����\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+on	example\������ʾ����\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+opt.complete	example\������ʾ����\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+propFilter	example\������ʾ����\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+r20	example\������ʾ����\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+rbrace	example\������ʾ����\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rclass	example\������ʾ����\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+readyList	example\������ʾ����\jquery-1.12.2.js	/^var readyList;$/;"	v
+remove	example\������ʾ����\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+restoreScript	example\������ʾ����\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+return	example\������ʾ����\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return.init	example\������ʾ����\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+returnFalse	example\������ʾ����\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnTrue	example\������ʾ����\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+rfocusable	example\������ʾ����\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rformElems	example\������ʾ����\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rhtml	example\������ʾ����\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rinlinejQuery	example\������ʾ����\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+risSimple	example\������ʾ����\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+rneedsContext	example\������ʾ����\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rreturn	example\������ʾ����\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rvalidtokens	example\������ʾ����\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+safeActiveElement	example\������ʾ����\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+setGlobalEval	example\������ʾ����\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setPositiveNumber	example\������ʾ����\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	example\������ʾ����\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+sibling	example\������ʾ����\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+siblings	example\������ʾ����\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+support.shrinkWrapBlocks	example\������ʾ����\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+swap	example\������ʾ����\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+vendorPropName	example\������ʾ����\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+winnow	example\������ʾ����\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+wrapMap.option	example\������ʾ����\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+Animation	example\������ʾ����Ч������\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Tween	example\������ʾ����Ч������\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	example\������ʾ����Ч������\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween.constructor	example\������ʾ����Ч������\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.cur	example\������ʾ����Ч������\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.init	example\������ʾ����Ч������\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	example\������ʾ����Ч������\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.propHooks._default	example\������ʾ����Ч������\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.run	example\������ʾ����Ч������\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+_jQuery	example\������ʾ����Ч������\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_load	example\������ʾ����Ч������\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+acceptData	example\������ʾ����Ч������\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+access	example\������ʾ����Ч������\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+actualDisplay	example\������ʾ����Ч������\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+add	example\������ʾ����Ч������\jquery-1.12.2.js	/^			add: function() {$/;"	m
+addGetHookIf	example\������ʾ����Ч������\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addToPrefiltersOrTransports	example\������ʾ����Ч������\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+adjustCSS	example\������ʾ����Ч������\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+ajaxConvert	example\������ʾ����Ч������\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	example\������ʾ����Ч������\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	example\������ʾ����Ч������\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+augmentWidthOrHeight	example\������ʾ����Ч������\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+boolHook.set	example\������ʾ����Ч������\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+buildFragment	example\������ʾ����Ч������\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildParams	example\������ʾ����Ч������\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	example\������ʾ����Ч������\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+completed	example\������ʾ����Ч������\jquery-1.12.2.js	/^function completed() {$/;"	f
+computeStyleTests	example\������ʾ����Ч������\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+createActiveXHR	example\������ʾ����Ч������\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createFxNow	example\������ʾ����Ч������\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createOptions	example\������ʾ����Ч������\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createSafeFragment	example\������ʾ����Ч������\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	example\������ʾ����Ч������\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createTween	example\������ʾ����Ч������\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+cssExpand	example\������ʾ����Ч������\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+curCSS	example\������ʾ����Ч������\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+dataAttr	example\������ʾ����Ч������\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataType	example\������ʾ����Ч������\jquery-1.12.2.js	/^		var dataType,$/;"	v
+defaultDisplay	example\������ʾ����Ч������\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultPrefilter	example\������ʾ����Ч������\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+detach	example\������ʾ����Ч������\jquery-1.12.2.js	/^function detach() {$/;"	f
+dir	example\������ʾ����Ч������\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+disableScript	example\������ʾ����Ч������\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+documentElement	example\������ʾ����Ч������\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+domManip	example\������ʾ����Ч������\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+filterHidden	example\������ʾ����Ч������\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+fixCloneNodeIssues	example\������ʾ����Ч������\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	example\������ʾ����Ч������\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fn	example\������ʾ����Ч������\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fontWeight	example\������ʾ����Ч������\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fxNow	example\������ʾ����Ч������\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+genFx	example\������ʾ����Ч������\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx.which.height	example\������ʾ����Ч������\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+getAll	example\������ʾ����Ч������\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getClass	example\������ʾ����Ч������\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getDisplay	example\������ʾ����Ч������\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getStyles	example\������ʾ����Ч������\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	example\������ʾ����Ч������\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getWidthOrHeight	example\������ʾ����Ч������\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	example\������ʾ����Ч������\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+hooks.empty.fire	example\������ʾ����Ч������\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+i	example\������ʾ����Ч������\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	example\������ʾ����Ч������\jquery-1.12.2.js	/^var i;$/;"	v
+iframe.BODY	example\������ʾ����Ч������\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.HTML	example\������ʾ����Ч������\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+init	example\������ʾ����Ч������\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+inspectPrefiltersOrTransports	example\������ʾ����Ч������\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	example\������ʾ����Ч������\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+internalData	example\������ʾ����Ч������\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalRemoveData	example\������ʾ����Ч������\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+isArrayLike	example\������ʾ����Ч������\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isEmptyDataObject	example\������ʾ����Ч������\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isHidden	example\������ʾ����Ч������\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+jQuery.Callbacks	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Event	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event.constructor	example\������ʾ����Ч������\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery._evalUrl	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery.attrHooks.contenteditable.set	example\������ʾ����Ч������\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.style.get	example\������ʾ����Ч������\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.set	example\������ʾ����Ч������\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.value.set	example\������ʾ����Ч������\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.cssHooks.opacity.get	example\������ʾ����Ч������\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.set	example\������ʾ����Ч������\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.easing._default	example\������ʾ����Ч������\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing.linear	example\������ʾ����Ч������\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.swing	example\������ʾ����Ч������\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.event.global	example\������ʾ����Ч������\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.special.change.handle	example\������ʾ����Ч������\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.setup	example\������ʾ����Ч������\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.teardown	example\������ʾ����Ч������\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.postDispatch	example\������ʾ����Ч������\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.setup	example\������ʾ����Ч������\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.teardown	example\������ʾ����Ч������\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.expr.filters.animated	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.filter	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.fn.delay	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.load	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.ready	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.size	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fx.speeds._default	example\������ʾ����Ч������\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds.fast	example\������ʾ����Ч������\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.slow	example\������ʾ����Ч������\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.start	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.stop	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.tick	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.timer	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.noConflict	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.offset.setOffset	example\������ʾ����Ч������\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.param	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.parseHTML	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseJSON	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseXML	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.propHooks.selected.get	example\������ʾ����Ч������\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	example\������ʾ����Ч������\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.ready.promise	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.speed	example\������ʾ����Ч������\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.valHooks.button.get	example\������ʾ����Ч������\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.set	example\������ʾ����Ч������\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+letterSpacing	example\������ʾ����Ч������\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+location	example\������ʾ����Ч������\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+manipulationTarget	example\������ʾ����Ч������\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+nodeHook	example\������ʾ����Ч������\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook.set	example\������ʾ����Ч������\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeNames	example\������ʾ����Ч������\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nonce	example\������ʾ����Ч������\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+oldCallbacks	example\������ʾ����Ч������\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+on	example\������ʾ����Ч������\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+opt.complete	example\������ʾ����Ч������\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+propFilter	example\������ʾ����Ч������\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+r20	example\������ʾ����Ч������\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+rbrace	example\������ʾ����Ч������\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rclass	example\������ʾ����Ч������\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+readyList	example\������ʾ����Ч������\jquery-1.12.2.js	/^var readyList;$/;"	v
+remove	example\������ʾ����Ч������\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+restoreScript	example\������ʾ����Ч������\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+return	example\������ʾ����Ч������\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return.init	example\������ʾ����Ч������\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+returnFalse	example\������ʾ����Ч������\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnTrue	example\������ʾ����Ч������\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+rfocusable	example\������ʾ����Ч������\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rformElems	example\������ʾ����Ч������\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rhtml	example\������ʾ����Ч������\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rinlinejQuery	example\������ʾ����Ч������\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+risSimple	example\������ʾ����Ч������\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+rneedsContext	example\������ʾ����Ч������\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rreturn	example\������ʾ����Ч������\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rvalidtokens	example\������ʾ����Ч������\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+safeActiveElement	example\������ʾ����Ч������\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+setGlobalEval	example\������ʾ����Ч������\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setPositiveNumber	example\������ʾ����Ч������\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	example\������ʾ����Ч������\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+sibling	example\������ʾ����Ч������\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+siblings	example\������ʾ����Ч������\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+support.shrinkWrapBlocks	example\������ʾ����Ч������\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+swap	example\������ʾ����Ч������\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+vendorPropName	example\������ʾ����Ч������\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+winnow	example\������ʾ����Ч������\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+wrapMap.option	example\������ʾ����Ч������\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+Animation	jQuery\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Tween	jQuery\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	jQuery\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween.constructor	jQuery\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.cur	jQuery\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.init	jQuery\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	jQuery\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.propHooks._default	jQuery\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.run	jQuery\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+_jQuery	jQuery\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_load	jQuery\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+acceptData	jQuery\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+access	jQuery\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+actualDisplay	jQuery\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+add	jQuery\jquery-1.12.2.js	/^			add: function() {$/;"	m
+addGetHookIf	jQuery\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addToPrefiltersOrTransports	jQuery\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+adjustCSS	jQuery\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+ajaxConvert	jQuery\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	jQuery\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	jQuery\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+augmentWidthOrHeight	jQuery\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+boolHook.set	jQuery\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+buildFragment	jQuery\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildParams	jQuery\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	jQuery\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+completed	jQuery\jquery-1.12.2.js	/^function completed() {$/;"	f
+computeStyleTests	jQuery\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+createActiveXHR	jQuery\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createFxNow	jQuery\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createOptions	jQuery\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createSafeFragment	jQuery\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	jQuery\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createTween	jQuery\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+cssExpand	jQuery\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+curCSS	jQuery\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+dataAttr	jQuery\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataType	jQuery\jquery-1.12.2.js	/^		var dataType,$/;"	v
+defaultDisplay	jQuery\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultPrefilter	jQuery\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+detach	jQuery\jquery-1.12.2.js	/^function detach() {$/;"	f
+dir	jQuery\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+disableScript	jQuery\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+documentElement	jQuery\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+domManip	jQuery\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+filterHidden	jQuery\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+fixCloneNodeIssues	jQuery\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	jQuery\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fn	jQuery\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fontWeight	jQuery\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fxNow	jQuery\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+genFx	jQuery\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx.which.height	jQuery\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+getAll	jQuery\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getClass	jQuery\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getDisplay	jQuery\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getStyles	jQuery\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	jQuery\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getWidthOrHeight	jQuery\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	jQuery\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+hooks.empty.fire	jQuery\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+i	jQuery\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	jQuery\jquery-1.12.2.js	/^var i;$/;"	v
+iframe.BODY	jQuery\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.HTML	jQuery\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+init	jQuery\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+inspectPrefiltersOrTransports	jQuery\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	jQuery\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+internalData	jQuery\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalRemoveData	jQuery\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+isArrayLike	jQuery\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isEmptyDataObject	jQuery\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isHidden	jQuery\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+jQuery.Callbacks	jQuery\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Event	jQuery\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event.constructor	jQuery\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery._evalUrl	jQuery\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery.attrHooks.contenteditable.set	jQuery\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.style.get	jQuery\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.set	jQuery\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.value.set	jQuery\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.cssHooks.opacity.get	jQuery\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.set	jQuery\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.easing._default	jQuery\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing.linear	jQuery\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.swing	jQuery\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.event.global	jQuery\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.special.change.handle	jQuery\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.setup	jQuery\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.teardown	jQuery\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.postDispatch	jQuery\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.setup	jQuery\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.teardown	jQuery\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.expr.filters.animated	jQuery\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	jQuery\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	jQuery\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.filter	jQuery\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.fn.delay	jQuery\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.load	jQuery\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.ready	jQuery\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.size	jQuery\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fx.speeds._default	jQuery\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds.fast	jQuery\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.slow	jQuery\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.start	jQuery\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.stop	jQuery\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.tick	jQuery\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.timer	jQuery\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.noConflict	jQuery\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.offset.setOffset	jQuery\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.param	jQuery\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.parseHTML	jQuery\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseJSON	jQuery\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseXML	jQuery\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.propHooks.selected.get	jQuery\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	jQuery\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.ready.promise	jQuery\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.speed	jQuery\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.valHooks.button.get	jQuery\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.set	jQuery\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+letterSpacing	jQuery\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+location	jQuery\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+manipulationTarget	jQuery\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+nodeHook	jQuery\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook.set	jQuery\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeNames	jQuery\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nonce	jQuery\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+oldCallbacks	jQuery\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+on	jQuery\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+opt.complete	jQuery\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+propFilter	jQuery\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+r20	jQuery\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+rbrace	jQuery\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rclass	jQuery\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+readyList	jQuery\jquery-1.12.2.js	/^var readyList;$/;"	v
+remove	jQuery\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+restoreScript	jQuery\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+return	jQuery\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return.init	jQuery\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+returnFalse	jQuery\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnTrue	jQuery\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+rfocusable	jQuery\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rformElems	jQuery\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rhtml	jQuery\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rinlinejQuery	jQuery\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+risSimple	jQuery\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+rneedsContext	jQuery\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rreturn	jQuery\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rvalidtokens	jQuery\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+safeActiveElement	jQuery\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+setGlobalEval	jQuery\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setPositiveNumber	jQuery\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	jQuery\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+sibling	jQuery\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+siblings	jQuery\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+support.shrinkWrapBlocks	jQuery\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+swap	jQuery\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+vendorPropName	jQuery\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+winnow	jQuery\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+wrapMap.option	jQuery\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

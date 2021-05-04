@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <style type="text/css">
+        #dialog-link {
+            padding: .4em 1em .4em 20px;
+            text-decoration: none;
+            position: relative;
+        }
+        #dialog-link span.ui-icon {
+            margin: 0 5px 0 0;
+            position: absolute;
+            left: .2em;
+            top: 50%;
+            margin-top: -8px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="demoHeaders">登录</h2>
+    <p>
+        <button id="dialog-link" class="ui-button ui-corner-all ui-widget">
+            <span class="ui-icon ui-icon-newwin"></span>输入信息
+        </button>
+    </p>
+    <div id="dialog" title="输入信息">
+        <p>
+            账户：<input type="text" id="user"><br />
+            密码：<input type="text" id="password">
+        </p>
+    </div>
+
+    <script type="text/javascript" src="jQuery/jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $( "#dialog" ).dialog({
+                autoOpen: false,
+                width: 400,
+                buttons: [
+                    {
+                        text: "确认",
+                        click: function() {
+                            $( this ).dialog( "close" );
+                        }
+                    },
+                    {
+                        text: "取消",
+                        click: function() {
+                            $( this ).dialog( "close" );
+                        }
+                    }
+                ]
+            });
+          // Link to open the dialog
+            $( "#dialog-link" ).click(function( event ) {
+                $( "#dialog" ).dialog( "open" );
+                event.preventDefault();
+            });
+            // Hover states on the static widgets
+            $( "#dialog-link, #icons li" ).hover(
+                function() {
+                    $( this ).addClass( "ui-state-hover" );
+                },
+                function() {
+                    $( this ).removeClass( "ui-state-hover" );
+                }
+            );
+        });
+
+        
+    </script>
+</body>
+</html>

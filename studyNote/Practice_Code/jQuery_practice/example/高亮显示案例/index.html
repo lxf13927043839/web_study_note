@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>高亮显示案例</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		body {
+			background-color: #000;
+		}
+		.wrapper {
+			width: 630px;
+			border: 1px solid #fff;	
+			padding-top: 10px;
+			padding-left: 10px;
+			margin: 50px;
+		}
+		.wrapper li {
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.clearfix:after {
+			content: ".";
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper clearfix">
+		<ul>
+			<li><a href="javascript:void(0);"><img src="images/01.jpg" alt=""></a></li>
+			<li><a href="javascript:void(0);"><img src="images/02.jpg" alt=""></a></li>
+			<li><a href="javascript:void(0);"><img src="images/03.jpg" alt=""></a></li>
+			<li><a href="javascript:void(0);"><img src="images/04.jpg" alt=""></a></li>
+			<li><a href="javascript:void(0);"><img src="images/05.jpg" alt=""></a></li>
+			<li><a href="javascript:void(0);"><img src="images/06.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.wrapper>ul>li').mouseover(function () {
+				$(this).siblings('li').css('opacity','0.5');
+				$(this).css('opacity','1');
+			});
+			$('.wrapper').mouseout(function (e) {
+				$(this).find('li').css('opacity','1');
+			});
+		});
+	</script>
+</body>
+</html>

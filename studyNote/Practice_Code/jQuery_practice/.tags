@@ -1,0 +1,1127 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Animation	.\example\tab栏切换案例\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Animation	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Animation	.\example\高亮显示案例\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Animation	.\example\固定导航栏案例\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Animation	.\example\精品展示案例\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Animation	.\example\手风琴案例\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Animation	.\jQuery\jquery-1.12.2.js	/^function Animation( elem, properties, options ) {$/;"	f
+Tween	.\example\tab栏切换案例\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	.\example\tab栏切换案例\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween	.\example\高亮显示案例\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	.\example\高亮显示案例\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween	.\example\固定导航栏案例\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	.\example\固定导航栏案例\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween	.\example\精品展示案例\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	.\example\精品展示案例\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween	.\example\手风琴案例\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	.\example\手风琴案例\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween	.\jQuery\jquery-1.12.2.js	/^Tween.prototype = {$/;"	c
+Tween	.\jQuery\jquery-1.12.2.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween.constructor	.\example\tab栏切换案例\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.constructor	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.constructor	.\example\高亮显示案例\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.constructor	.\example\固定导航栏案例\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.constructor	.\example\精品展示案例\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.constructor	.\example\手风琴案例\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.constructor	.\jQuery\jquery-1.12.2.js	/^	constructor: Tween,$/;"	p
+Tween.cur	.\example\tab栏切换案例\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.cur	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.cur	.\example\高亮显示案例\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.cur	.\example\固定导航栏案例\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.cur	.\example\精品展示案例\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.cur	.\example\手风琴案例\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.cur	.\jQuery\jquery-1.12.2.js	/^	cur: function() {$/;"	m
+Tween.init	.\example\tab栏切换案例\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	.\example\tab栏切换案例\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.init	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.init	.\example\高亮显示案例\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	.\example\高亮显示案例\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.init	.\example\固定导航栏案例\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	.\example\固定导航栏案例\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.init	.\example\精品展示案例\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	.\example\精品展示案例\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.init	.\example\手风琴案例\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	.\example\手风琴案例\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.init	.\jQuery\jquery-1.12.2.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	.\jQuery\jquery-1.12.2.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.propHooks._default	.\example\tab栏切换案例\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.propHooks._default	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.propHooks._default	.\example\高亮显示案例\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.propHooks._default	.\example\固定导航栏案例\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.propHooks._default	.\example\精品展示案例\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.propHooks._default	.\example\手风琴案例\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.propHooks._default	.\jQuery\jquery-1.12.2.js	/^	_default: {$/;"	p
+Tween.run	.\example\tab栏切换案例\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+Tween.run	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+Tween.run	.\example\高亮显示案例\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+Tween.run	.\example\固定导航栏案例\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+Tween.run	.\example\精品展示案例\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+Tween.run	.\example\手风琴案例\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+Tween.run	.\jQuery\jquery-1.12.2.js	/^	run: function( percent ) {$/;"	m
+_jQuery	.\example\tab栏切换案例\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_jQuery	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_jQuery	.\example\高亮显示案例\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_jQuery	.\example\固定导航栏案例\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_jQuery	.\example\精品展示案例\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_jQuery	.\example\手风琴案例\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_jQuery	.\jQuery\jquery-1.12.2.js	/^	_jQuery = window.jQuery,$/;"	v
+_load	.\example\tab栏切换案例\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+_load	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+_load	.\example\高亮显示案例\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+_load	.\example\固定导航栏案例\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+_load	.\example\精品展示案例\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+_load	.\example\手风琴案例\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+_load	.\jQuery\jquery-1.12.2.js	/^var _load = jQuery.fn.load;$/;"	v
+acceptData	.\example\tab栏切换案例\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+acceptData	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+acceptData	.\example\高亮显示案例\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+acceptData	.\example\固定导航栏案例\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+acceptData	.\example\精品展示案例\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+acceptData	.\example\手风琴案例\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+acceptData	.\jQuery\jquery-1.12.2.js	/^var acceptData = function( elem ) {$/;"	f
+access	.\example\tab栏切换案例\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+access	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+access	.\example\高亮显示案例\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+access	.\example\固定导航栏案例\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+access	.\example\精品展示案例\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+access	.\example\手风琴案例\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+access	.\jQuery\jquery-1.12.2.js	/^var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {$/;"	f
+actualDisplay	.\example\tab栏切换案例\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+actualDisplay	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+actualDisplay	.\example\高亮显示案例\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+actualDisplay	.\example\固定导航栏案例\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+actualDisplay	.\example\精品展示案例\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+actualDisplay	.\example\手风琴案例\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+actualDisplay	.\jQuery\jquery-1.12.2.js	/^function actualDisplay( name, doc ) {$/;"	f
+add	.\example\tab栏切换案例\jquery-1.12.2.js	/^			add: function() {$/;"	m
+add	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^			add: function() {$/;"	m
+add	.\example\高亮显示案例\jquery-1.12.2.js	/^			add: function() {$/;"	m
+add	.\example\固定导航栏案例\jquery-1.12.2.js	/^			add: function() {$/;"	m
+add	.\example\精品展示案例\jquery-1.12.2.js	/^			add: function() {$/;"	m
+add	.\example\手风琴案例\jquery-1.12.2.js	/^			add: function() {$/;"	m
+add	.\jQuery\jquery-1.12.2.js	/^			add: function() {$/;"	m
+addGetHookIf	.\example\tab栏切换案例\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addGetHookIf	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addGetHookIf	.\example\高亮显示案例\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addGetHookIf	.\example\固定导航栏案例\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addGetHookIf	.\example\精品展示案例\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addGetHookIf	.\example\手风琴案例\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addGetHookIf	.\jQuery\jquery-1.12.2.js	/^function addGetHookIf( conditionFn, hookFn ) {$/;"	f
+addToPrefiltersOrTransports	.\example\tab栏切换案例\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+addToPrefiltersOrTransports	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+addToPrefiltersOrTransports	.\example\高亮显示案例\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+addToPrefiltersOrTransports	.\example\固定导航栏案例\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+addToPrefiltersOrTransports	.\example\精品展示案例\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+addToPrefiltersOrTransports	.\example\手风琴案例\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+addToPrefiltersOrTransports	.\jQuery\jquery-1.12.2.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+adjustCSS	.\example\tab栏切换案例\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+adjustCSS	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+adjustCSS	.\example\高亮显示案例\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+adjustCSS	.\example\固定导航栏案例\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+adjustCSS	.\example\精品展示案例\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+adjustCSS	.\example\手风琴案例\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+adjustCSS	.\jQuery\jquery-1.12.2.js	/^function adjustCSS( elem, prop, valueParts, tween ) {$/;"	f
+ajaxConvert	.\example\tab栏切换案例\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxConvert	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxConvert	.\example\高亮显示案例\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxConvert	.\example\固定导航栏案例\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxConvert	.\example\精品展示案例\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxConvert	.\example\手风琴案例\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxConvert	.\jQuery\jquery-1.12.2.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	.\example\tab栏切换案例\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxExtend	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxExtend	.\example\高亮显示案例\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxExtend	.\example\固定导航栏案例\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxExtend	.\example\精品展示案例\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxExtend	.\example\手风琴案例\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxExtend	.\jQuery\jquery-1.12.2.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	.\example\tab栏切换案例\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+ajaxHandleResponses	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+ajaxHandleResponses	.\example\高亮显示案例\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+ajaxHandleResponses	.\example\固定导航栏案例\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+ajaxHandleResponses	.\example\精品展示案例\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+ajaxHandleResponses	.\example\手风琴案例\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+ajaxHandleResponses	.\jQuery\jquery-1.12.2.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+animateMoving	.\example\tab栏切换案例\index.html	/^		function animateMoving(element, distance) {$/;"	f
+augmentWidthOrHeight	.\example\tab栏切换案例\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+augmentWidthOrHeight	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+augmentWidthOrHeight	.\example\高亮显示案例\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+augmentWidthOrHeight	.\example\固定导航栏案例\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+augmentWidthOrHeight	.\example\精品展示案例\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+augmentWidthOrHeight	.\example\手风琴案例\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+augmentWidthOrHeight	.\jQuery\jquery-1.12.2.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+boolHook.set	.\example\tab栏切换案例\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+boolHook.set	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+boolHook.set	.\example\高亮显示案例\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+boolHook.set	.\example\固定导航栏案例\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+boolHook.set	.\example\精品展示案例\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+boolHook.set	.\example\手风琴案例\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+boolHook.set	.\jQuery\jquery-1.12.2.js	/^	set: function( elem, value, name ) {$/;"	m
+buildFragment	.\example\tab栏切换案例\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildFragment	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildFragment	.\example\高亮显示案例\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildFragment	.\example\固定导航栏案例\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildFragment	.\example\精品展示案例\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildFragment	.\example\手风琴案例\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildFragment	.\jQuery\jquery-1.12.2.js	/^function buildFragment( elems, context, scripts, selection, ignored ) {$/;"	f
+buildParams	.\example\tab栏切换案例\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+buildParams	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+buildParams	.\example\高亮显示案例\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+buildParams	.\example\固定导航栏案例\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+buildParams	.\example\精品展示案例\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+buildParams	.\example\手风琴案例\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+buildParams	.\jQuery\jquery-1.12.2.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	.\example\tab栏切换案例\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+cloneCopyEvent	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+cloneCopyEvent	.\example\高亮显示案例\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+cloneCopyEvent	.\example\固定导航栏案例\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+cloneCopyEvent	.\example\精品展示案例\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+cloneCopyEvent	.\example\手风琴案例\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+cloneCopyEvent	.\jQuery\jquery-1.12.2.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+completed	.\example\tab栏切换案例\jquery-1.12.2.js	/^function completed() {$/;"	f
+completed	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function completed() {$/;"	f
+completed	.\example\高亮显示案例\jquery-1.12.2.js	/^function completed() {$/;"	f
+completed	.\example\固定导航栏案例\jquery-1.12.2.js	/^function completed() {$/;"	f
+completed	.\example\精品展示案例\jquery-1.12.2.js	/^function completed() {$/;"	f
+completed	.\example\手风琴案例\jquery-1.12.2.js	/^function completed() {$/;"	f
+completed	.\jQuery\jquery-1.12.2.js	/^function completed() {$/;"	f
+computeStyleTests	.\example\tab栏切换案例\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+computeStyleTests	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+computeStyleTests	.\example\高亮显示案例\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+computeStyleTests	.\example\固定导航栏案例\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+computeStyleTests	.\example\精品展示案例\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+computeStyleTests	.\example\手风琴案例\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+computeStyleTests	.\jQuery\jquery-1.12.2.js	/^	function computeStyleTests() {$/;"	f
+createActiveXHR	.\example\tab栏切换案例\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createActiveXHR	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createActiveXHR	.\example\高亮显示案例\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createActiveXHR	.\example\固定导航栏案例\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createActiveXHR	.\example\精品展示案例\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createActiveXHR	.\example\手风琴案例\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createActiveXHR	.\jQuery\jquery-1.12.2.js	/^function createActiveXHR() {$/;"	f
+createFxNow	.\example\tab栏切换案例\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createFxNow	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createFxNow	.\example\高亮显示案例\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createFxNow	.\example\固定导航栏案例\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createFxNow	.\example\精品展示案例\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createFxNow	.\example\手风琴案例\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createFxNow	.\jQuery\jquery-1.12.2.js	/^function createFxNow() {$/;"	f
+createOptions	.\example\tab栏切换案例\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createOptions	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createOptions	.\example\高亮显示案例\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createOptions	.\example\固定导航栏案例\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createOptions	.\example\精品展示案例\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createOptions	.\example\手风琴案例\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createOptions	.\jQuery\jquery-1.12.2.js	/^function createOptions( options ) {$/;"	f
+createSafeFragment	.\example\tab栏切换案例\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createSafeFragment	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createSafeFragment	.\example\高亮显示案例\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createSafeFragment	.\example\固定导航栏案例\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createSafeFragment	.\example\精品展示案例\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createSafeFragment	.\example\手风琴案例\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createSafeFragment	.\jQuery\jquery-1.12.2.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	.\example\tab栏切换案例\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createStandardXHR	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createStandardXHR	.\example\高亮显示案例\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createStandardXHR	.\example\固定导航栏案例\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createStandardXHR	.\example\精品展示案例\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createStandardXHR	.\example\手风琴案例\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createStandardXHR	.\jQuery\jquery-1.12.2.js	/^function createStandardXHR() {$/;"	f
+createTween	.\example\tab栏切换案例\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+createTween	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+createTween	.\example\高亮显示案例\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+createTween	.\example\固定导航栏案例\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+createTween	.\example\精品展示案例\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+createTween	.\example\手风琴案例\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+createTween	.\jQuery\jquery-1.12.2.js	/^function createTween( value, prop, animation ) {$/;"	f
+cssExpand	.\example\tab栏切换案例\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+cssExpand	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+cssExpand	.\example\高亮显示案例\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+cssExpand	.\example\固定导航栏案例\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+cssExpand	.\example\精品展示案例\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+cssExpand	.\example\手风琴案例\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+cssExpand	.\jQuery\jquery-1.12.2.js	/^var cssExpand = [ "Top", "Right", "Bottom", "Left" ];$/;"	v
+curCSS	.\example\tab栏切换案例\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+curCSS	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+curCSS	.\example\高亮显示案例\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+curCSS	.\example\固定导航栏案例\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+curCSS	.\example\精品展示案例\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+curCSS	.\example\手风琴案例\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+curCSS	.\jQuery\jquery-1.12.2.js	/^	curCSS = function( elem, name, computed ) {$/;"	f
+dataAttr	.\example\tab栏切换案例\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataAttr	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataAttr	.\example\高亮显示案例\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataAttr	.\example\固定导航栏案例\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataAttr	.\example\精品展示案例\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataAttr	.\example\手风琴案例\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataAttr	.\jQuery\jquery-1.12.2.js	/^function dataAttr( elem, key, data ) {$/;"	f
+dataType	.\example\tab栏切换案例\jquery-1.12.2.js	/^		var dataType,$/;"	v
+dataType	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		var dataType,$/;"	v
+dataType	.\example\高亮显示案例\jquery-1.12.2.js	/^		var dataType,$/;"	v
+dataType	.\example\固定导航栏案例\jquery-1.12.2.js	/^		var dataType,$/;"	v
+dataType	.\example\精品展示案例\jquery-1.12.2.js	/^		var dataType,$/;"	v
+dataType	.\example\手风琴案例\jquery-1.12.2.js	/^		var dataType,$/;"	v
+dataType	.\jQuery\jquery-1.12.2.js	/^		var dataType,$/;"	v
+defaultDisplay	.\example\tab栏切换案例\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultDisplay	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultDisplay	.\example\高亮显示案例\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultDisplay	.\example\固定导航栏案例\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultDisplay	.\example\精品展示案例\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultDisplay	.\example\手风琴案例\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultDisplay	.\jQuery\jquery-1.12.2.js	/^function defaultDisplay( nodeName ) {$/;"	f
+defaultPrefilter	.\example\tab栏切换案例\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+defaultPrefilter	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+defaultPrefilter	.\example\高亮显示案例\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+defaultPrefilter	.\example\固定导航栏案例\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+defaultPrefilter	.\example\精品展示案例\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+defaultPrefilter	.\example\手风琴案例\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+defaultPrefilter	.\jQuery\jquery-1.12.2.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+detach	.\example\tab栏切换案例\jquery-1.12.2.js	/^function detach() {$/;"	f
+detach	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function detach() {$/;"	f
+detach	.\example\高亮显示案例\jquery-1.12.2.js	/^function detach() {$/;"	f
+detach	.\example\固定导航栏案例\jquery-1.12.2.js	/^function detach() {$/;"	f
+detach	.\example\精品展示案例\jquery-1.12.2.js	/^function detach() {$/;"	f
+detach	.\example\手风琴案例\jquery-1.12.2.js	/^function detach() {$/;"	f
+detach	.\jQuery\jquery-1.12.2.js	/^function detach() {$/;"	f
+dir	.\example\tab栏切换案例\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+dir	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+dir	.\example\高亮显示案例\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+dir	.\example\固定导航栏案例\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+dir	.\example\精品展示案例\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+dir	.\example\手风琴案例\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+dir	.\jQuery\jquery-1.12.2.js	/^var dir = function( elem, dir, until ) {$/;"	f
+disableScript	.\example\tab栏切换案例\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+disableScript	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+disableScript	.\example\高亮显示案例\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+disableScript	.\example\固定导航栏案例\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+disableScript	.\example\精品展示案例\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+disableScript	.\example\手风琴案例\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+disableScript	.\jQuery\jquery-1.12.2.js	/^function disableScript( elem ) {$/;"	f
+documentElement	.\example\tab栏切换案例\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+documentElement	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+documentElement	.\example\高亮显示案例\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+documentElement	.\example\固定导航栏案例\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+documentElement	.\example\精品展示案例\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+documentElement	.\example\手风琴案例\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+documentElement	.\jQuery\jquery-1.12.2.js	/^var documentElement = document.documentElement;$/;"	v
+domManip	.\example\tab栏切换案例\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+domManip	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+domManip	.\example\高亮显示案例\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+domManip	.\example\固定导航栏案例\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+domManip	.\example\精品展示案例\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+domManip	.\example\手风琴案例\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+domManip	.\jQuery\jquery-1.12.2.js	/^function domManip( collection, args, callback, ignored ) {$/;"	f
+filterHidden	.\example\tab栏切换案例\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+filterHidden	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+filterHidden	.\example\高亮显示案例\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+filterHidden	.\example\固定导航栏案例\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+filterHidden	.\example\精品展示案例\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+filterHidden	.\example\手风琴案例\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+filterHidden	.\jQuery\jquery-1.12.2.js	/^function filterHidden( elem ) {$/;"	f
+fixCloneNodeIssues	.\example\tab栏切换案例\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixCloneNodeIssues	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixCloneNodeIssues	.\example\高亮显示案例\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixCloneNodeIssues	.\example\固定导航栏案例\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixCloneNodeIssues	.\example\精品展示案例\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixCloneNodeIssues	.\example\手风琴案例\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixCloneNodeIssues	.\jQuery\jquery-1.12.2.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	.\example\tab栏切换案例\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fixDefaultChecked	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fixDefaultChecked	.\example\高亮显示案例\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fixDefaultChecked	.\example\固定导航栏案例\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fixDefaultChecked	.\example\精品展示案例\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fixDefaultChecked	.\example\手风琴案例\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fixDefaultChecked	.\jQuery\jquery-1.12.2.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fn	.\example\tab栏切换案例\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fn	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fn	.\example\高亮显示案例\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fn	.\example\固定导航栏案例\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fn	.\example\精品展示案例\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fn	.\example\手风琴案例\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fn	.\jQuery\jquery-1.12.2.js	/^				fn = function( elem, key, value ) {$/;"	f
+fontWeight	.\example\tab栏切换案例\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fontWeight	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fontWeight	.\example\高亮显示案例\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fontWeight	.\example\固定导航栏案例\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fontWeight	.\example\精品展示案例\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fontWeight	.\example\手风琴案例\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fontWeight	.\jQuery\jquery-1.12.2.js	/^		fontWeight: "400"$/;"	p
+fxNow	.\example\tab栏切换案例\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+fxNow	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+fxNow	.\example\高亮显示案例\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+fxNow	.\example\固定导航栏案例\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+fxNow	.\example\精品展示案例\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+fxNow	.\example\手风琴案例\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+fxNow	.\jQuery\jquery-1.12.2.js	/^	fxNow, timerId,$/;"	v
+genFx	.\example\tab栏切换案例\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx	.\example\高亮显示案例\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx	.\example\固定导航栏案例\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx	.\example\精品展示案例\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx	.\example\手风琴案例\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx	.\jQuery\jquery-1.12.2.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx.which.height	.\example\tab栏切换案例\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+genFx.which.height	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+genFx.which.height	.\example\高亮显示案例\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+genFx.which.height	.\example\固定导航栏案例\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+genFx.which.height	.\example\精品展示案例\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+genFx.which.height	.\example\手风琴案例\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+genFx.which.height	.\jQuery\jquery-1.12.2.js	/^		attrs = { height: type },$/;"	p
+getAll	.\example\tab栏切换案例\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getAll	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getAll	.\example\高亮显示案例\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getAll	.\example\固定导航栏案例\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getAll	.\example\精品展示案例\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getAll	.\example\手风琴案例\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getAll	.\jQuery\jquery-1.12.2.js	/^function getAll( context, tag ) {$/;"	f
+getClass	.\example\tab栏切换案例\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getClass	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getClass	.\example\高亮显示案例\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getClass	.\example\固定导航栏案例\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getClass	.\example\精品展示案例\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getClass	.\example\手风琴案例\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getClass	.\jQuery\jquery-1.12.2.js	/^function getClass( elem ) {$/;"	f
+getDisplay	.\example\tab栏切换案例\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getDisplay	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getDisplay	.\example\高亮显示案例\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getDisplay	.\example\固定导航栏案例\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getDisplay	.\example\精品展示案例\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getDisplay	.\example\手风琴案例\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getDisplay	.\jQuery\jquery-1.12.2.js	/^function getDisplay( elem ) {$/;"	f
+getStyles	.\example\tab栏切换案例\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	.\example\tab栏切换案例\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getStyles	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getStyles	.\example\高亮显示案例\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	.\example\高亮显示案例\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getStyles	.\example\固定导航栏案例\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	.\example\固定导航栏案例\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getStyles	.\example\精品展示案例\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	.\example\精品展示案例\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getStyles	.\example\手风琴案例\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	.\example\手风琴案例\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getStyles	.\jQuery\jquery-1.12.2.js	/^	getStyles = function( elem ) {$/;"	f
+getStyles	.\jQuery\jquery-1.12.2.js	/^var getStyles, curCSS,$/;"	v
+getWidthOrHeight	.\example\tab栏切换案例\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWidthOrHeight	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWidthOrHeight	.\example\高亮显示案例\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWidthOrHeight	.\example\固定导航栏案例\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWidthOrHeight	.\example\精品展示案例\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWidthOrHeight	.\example\手风琴案例\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWidthOrHeight	.\jQuery\jquery-1.12.2.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	.\example\tab栏切换案例\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+getWindow	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+getWindow	.\example\高亮显示案例\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+getWindow	.\example\固定导航栏案例\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+getWindow	.\example\精品展示案例\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+getWindow	.\example\手风琴案例\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+getWindow	.\jQuery\jquery-1.12.2.js	/^function getWindow( elem ) {$/;"	f
+hooks.empty.fire	.\example\tab栏切换案例\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+hooks.empty.fire	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+hooks.empty.fire	.\example\高亮显示案例\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+hooks.empty.fire	.\example\固定导航栏案例\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+hooks.empty.fire	.\example\精品展示案例\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+hooks.empty.fire	.\example\手风琴案例\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+hooks.empty.fire	.\jQuery\jquery-1.12.2.js	/^			hooks.empty.fire = function() {$/;"	f
+i	.\example\tab栏切换案例\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	.\example\tab栏切换案例\jquery-1.12.2.js	/^var i;$/;"	v
+i	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var i;$/;"	v
+i	.\example\高亮显示案例\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	.\example\高亮显示案例\jquery-1.12.2.js	/^var i;$/;"	v
+i	.\example\固定导航栏案例\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	.\example\固定导航栏案例\jquery-1.12.2.js	/^var i;$/;"	v
+i	.\example\精品展示案例\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	.\example\精品展示案例\jquery-1.12.2.js	/^var i;$/;"	v
+i	.\example\手风琴案例\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	.\example\手风琴案例\jquery-1.12.2.js	/^var i;$/;"	v
+i	.\jQuery\jquery-1.12.2.js	/^		var i, prop, copy,$/;"	v
+i	.\jQuery\jquery-1.12.2.js	/^var i;$/;"	v
+iframe.BODY	.\example\tab栏切换案例\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.BODY	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.BODY	.\example\高亮显示案例\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.BODY	.\example\固定导航栏案例\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.BODY	.\example\精品展示案例\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.BODY	.\example\手风琴案例\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.BODY	.\jQuery\jquery-1.12.2.js	/^		BODY: "block"$/;"	p
+iframe.HTML	.\example\tab栏切换案例\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+iframe.HTML	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+iframe.HTML	.\example\高亮显示案例\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+iframe.HTML	.\example\固定导航栏案例\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+iframe.HTML	.\example\精品展示案例\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+iframe.HTML	.\example\手风琴案例\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+iframe.HTML	.\jQuery\jquery-1.12.2.js	/^		HTML: "block",$/;"	p
+init	.\example\tab栏切换案例\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+init	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+init	.\example\高亮显示案例\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+init	.\example\固定导航栏案例\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+init	.\example\精品展示案例\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+init	.\example\手风琴案例\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+init	.\jQuery\jquery-1.12.2.js	/^init.prototype = jQuery.fn;$/;"	c
+inspectPrefiltersOrTransports	.\example\tab栏切换案例\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports	.\example\高亮显示案例\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports	.\example\固定导航栏案例\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports	.\example\精品展示案例\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports	.\example\手风琴案例\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports	.\jQuery\jquery-1.12.2.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	.\example\tab栏切换案例\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	.\example\高亮显示案例\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	.\example\固定导航栏案例\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	.\example\精品展示案例\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	.\example\手风琴案例\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	.\jQuery\jquery-1.12.2.js	/^	function inspect( dataType ) {$/;"	f
+internalData	.\example\tab栏切换案例\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalData	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalData	.\example\高亮显示案例\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalData	.\example\固定导航栏案例\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalData	.\example\精品展示案例\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalData	.\example\手风琴案例\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalData	.\jQuery\jquery-1.12.2.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ) {$/;"	f
+internalRemoveData	.\example\tab栏切换案例\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+internalRemoveData	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+internalRemoveData	.\example\高亮显示案例\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+internalRemoveData	.\example\固定导航栏案例\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+internalRemoveData	.\example\精品展示案例\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+internalRemoveData	.\example\手风琴案例\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+internalRemoveData	.\jQuery\jquery-1.12.2.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+isArrayLike	.\example\tab栏切换案例\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isArrayLike	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isArrayLike	.\example\高亮显示案例\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isArrayLike	.\example\固定导航栏案例\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isArrayLike	.\example\精品展示案例\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isArrayLike	.\example\手风琴案例\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isArrayLike	.\jQuery\jquery-1.12.2.js	/^function isArrayLike( obj ) {$/;"	f
+isEmptyDataObject	.\example\tab栏切换案例\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isEmptyDataObject	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isEmptyDataObject	.\example\高亮显示案例\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isEmptyDataObject	.\example\固定导航栏案例\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isEmptyDataObject	.\example\精品展示案例\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isEmptyDataObject	.\example\手风琴案例\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isEmptyDataObject	.\jQuery\jquery-1.12.2.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isHidden	.\example\tab栏切换案例\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+isHidden	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+isHidden	.\example\高亮显示案例\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+isHidden	.\example\固定导航栏案例\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+isHidden	.\example\精品展示案例\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+isHidden	.\example\手风琴案例\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+isHidden	.\jQuery\jquery-1.12.2.js	/^var isHidden = function( elem, el ) {$/;"	f
+jQuery.Callbacks	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Callbacks	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Callbacks	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Callbacks	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Callbacks	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Callbacks	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Callbacks	.\jQuery\jquery-1.12.2.js	/^jQuery.Callbacks = function( options ) {$/;"	f
+jQuery.Event	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event	.\jQuery\jquery-1.12.2.js	/^jQuery.Event = function( src, props ) {$/;"	c
+jQuery.Event.constructor	.\example\tab栏切换案例\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery.Event.constructor	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery.Event.constructor	.\example\高亮显示案例\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery.Event.constructor	.\example\固定导航栏案例\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery.Event.constructor	.\example\精品展示案例\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery.Event.constructor	.\example\手风琴案例\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery.Event.constructor	.\jQuery\jquery-1.12.2.js	/^	constructor: jQuery.Event,$/;"	p
+jQuery._evalUrl	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery._evalUrl	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery._evalUrl	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery._evalUrl	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery._evalUrl	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery._evalUrl	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery._evalUrl	.\jQuery\jquery-1.12.2.js	/^jQuery._evalUrl = function( url ) {$/;"	f
+jQuery.attrHooks.contenteditable.set	.\example\tab栏切换案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.contenteditable.set	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.contenteditable.set	.\example\高亮显示案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.contenteditable.set	.\example\固定导航栏案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.contenteditable.set	.\example\精品展示案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.contenteditable.set	.\example\手风琴案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.contenteditable.set	.\jQuery\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.style.get	.\example\tab栏切换案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.get	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.get	.\example\高亮显示案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.get	.\example\固定导航栏案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.get	.\example\精品展示案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.get	.\example\手风琴案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.get	.\jQuery\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.attrHooks.style.set	.\example\tab栏切换案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.style.set	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.style.set	.\example\高亮显示案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.style.set	.\example\固定导航栏案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.style.set	.\example\精品展示案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.style.set	.\example\手风琴案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.style.set	.\jQuery\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.attrHooks.value.set	.\example\tab栏切换案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.value.set	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.value.set	.\example\高亮显示案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.value.set	.\example\固定导航栏案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.value.set	.\example\精品展示案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.value.set	.\example\手风琴案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.attrHooks.value.set	.\jQuery\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+jQuery.cssHooks.opacity.get	.\example\tab栏切换案例\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.get	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.get	.\example\高亮显示案例\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.get	.\example\固定导航栏案例\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.get	.\example\精品展示案例\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.get	.\example\手风琴案例\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.get	.\jQuery\jquery-1.12.2.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.set	.\example\tab栏切换案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.cssHooks.opacity.set	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.cssHooks.opacity.set	.\example\高亮显示案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.cssHooks.opacity.set	.\example\固定导航栏案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.cssHooks.opacity.set	.\example\精品展示案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.cssHooks.opacity.set	.\example\手风琴案例\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.cssHooks.opacity.set	.\jQuery\jquery-1.12.2.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.easing._default	.\example\tab栏切换案例\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing._default	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing._default	.\example\高亮显示案例\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing._default	.\example\固定导航栏案例\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing._default	.\example\精品展示案例\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing._default	.\example\手风琴案例\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing._default	.\jQuery\jquery-1.12.2.js	/^	_default: "swing"$/;"	p
+jQuery.easing.linear	.\example\tab栏切换案例\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.linear	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.linear	.\example\高亮显示案例\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.linear	.\example\固定导航栏案例\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.linear	.\example\精品展示案例\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.linear	.\example\手风琴案例\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.linear	.\jQuery\jquery-1.12.2.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.swing	.\example\tab栏切换案例\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.easing.swing	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.easing.swing	.\example\高亮显示案例\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.easing.swing	.\example\固定导航栏案例\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.easing.swing	.\example\精品展示案例\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.easing.swing	.\example\手风琴案例\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.easing.swing	.\jQuery\jquery-1.12.2.js	/^	swing: function( p ) {$/;"	m
+jQuery.event.global	.\example\tab栏切换案例\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.global	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.global	.\example\高亮显示案例\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.global	.\example\固定导航栏案例\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.global	.\example\精品展示案例\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.global	.\example\手风琴案例\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.global	.\jQuery\jquery-1.12.2.js	/^	global: {},$/;"	p
+jQuery.event.special.change.handle	.\example\tab栏切换案例\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.handle	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.handle	.\example\高亮显示案例\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.handle	.\example\固定导航栏案例\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.handle	.\example\精品展示案例\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.handle	.\example\手风琴案例\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.handle	.\jQuery\jquery-1.12.2.js	/^		handle: function( event ) {$/;"	m
+jQuery.event.special.change.setup	.\example\tab栏切换案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.setup	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.setup	.\example\高亮显示案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.setup	.\example\固定导航栏案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.setup	.\example\精品展示案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.setup	.\example\手风琴案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.setup	.\jQuery\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.change.teardown	.\example\tab栏切换案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.change.teardown	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.change.teardown	.\example\高亮显示案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.change.teardown	.\example\固定导航栏案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.change.teardown	.\example\精品展示案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.change.teardown	.\example\手风琴案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.change.teardown	.\jQuery\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.postDispatch	.\example\tab栏切换案例\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.postDispatch	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.postDispatch	.\example\高亮显示案例\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.postDispatch	.\example\固定导航栏案例\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.postDispatch	.\example\精品展示案例\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.postDispatch	.\example\手风琴案例\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.postDispatch	.\jQuery\jquery-1.12.2.js	/^		postDispatch: function( event ) {$/;"	m
+jQuery.event.special.submit.setup	.\example\tab栏切换案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.setup	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.setup	.\example\高亮显示案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.setup	.\example\固定导航栏案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.setup	.\example\精品展示案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.setup	.\example\手风琴案例\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.setup	.\jQuery\jquery-1.12.2.js	/^		setup: function() {$/;"	m
+jQuery.event.special.submit.teardown	.\example\tab栏切换案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.teardown	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.teardown	.\example\高亮显示案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.teardown	.\example\固定导航栏案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.teardown	.\example\精品展示案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.teardown	.\example\手风琴案例\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.event.special.submit.teardown	.\jQuery\jquery-1.12.2.js	/^		teardown: function() {$/;"	m
+jQuery.expr.filters.animated	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.animated	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.animated	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.animated	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.animated	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.animated	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.animated	.\jQuery\jquery-1.12.2.js	/^jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	.\jQuery\jquery-1.12.2.js	/^jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	.\jQuery\jquery-1.12.2.js	/^jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.filter	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.filter	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.filter	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.filter	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.filter	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.filter	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.filter	.\jQuery\jquery-1.12.2.js	/^jQuery.filter = function( expr, elems, not ) {$/;"	f
+jQuery.fn.delay	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.delay	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.delay	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.delay	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.delay	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.delay	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.delay	.\jQuery\jquery-1.12.2.js	/^jQuery.fn.delay = function( time, type ) {$/;"	f
+jQuery.fn.load	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.load	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.load	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.load	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.load	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.load	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.load	.\jQuery\jquery-1.12.2.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.ready	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.ready	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.ready	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.ready	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.ready	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.ready	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.ready	.\jQuery\jquery-1.12.2.js	/^jQuery.fn.ready = function( fn ) {$/;"	f
+jQuery.fn.size	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fn.size	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fn.size	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fn.size	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fn.size	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fn.size	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fn.size	.\jQuery\jquery-1.12.2.js	/^jQuery.fn.size = function() {$/;"	f
+jQuery.fx.speeds._default	.\example\tab栏切换案例\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds._default	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds._default	.\example\高亮显示案例\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds._default	.\example\固定导航栏案例\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds._default	.\example\精品展示案例\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds._default	.\example\手风琴案例\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds._default	.\jQuery\jquery-1.12.2.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds.fast	.\example\tab栏切换案例\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.fast	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.fast	.\example\高亮显示案例\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.fast	.\example\固定导航栏案例\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.fast	.\example\精品展示案例\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.fast	.\example\手风琴案例\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.fast	.\jQuery\jquery-1.12.2.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.slow	.\example\tab栏切换案例\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.speeds.slow	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.speeds.slow	.\example\高亮显示案例\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.speeds.slow	.\example\固定导航栏案例\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.speeds.slow	.\example\精品展示案例\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.speeds.slow	.\example\手风琴案例\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.speeds.slow	.\jQuery\jquery-1.12.2.js	/^	slow: 600,$/;"	p
+jQuery.fx.start	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.start	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.start	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.start	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.start	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.start	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.start	.\jQuery\jquery-1.12.2.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.stop	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.stop	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.stop	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.stop	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.stop	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.stop	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.stop	.\jQuery\jquery-1.12.2.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.tick	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.tick	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.tick	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.tick	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.tick	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.tick	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.tick	.\jQuery\jquery-1.12.2.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.timer	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.fx.timer	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.fx.timer	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.fx.timer	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.fx.timer	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.fx.timer	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.fx.timer	.\jQuery\jquery-1.12.2.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.noConflict	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.noConflict	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.noConflict	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.noConflict	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.noConflict	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.noConflict	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.noConflict	.\jQuery\jquery-1.12.2.js	/^jQuery.noConflict = function( deep ) {$/;"	f
+jQuery.offset.setOffset	.\example\tab栏切换案例\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.offset.setOffset	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.offset.setOffset	.\example\高亮显示案例\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.offset.setOffset	.\example\固定导航栏案例\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.offset.setOffset	.\example\精品展示案例\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.offset.setOffset	.\example\手风琴案例\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.offset.setOffset	.\jQuery\jquery-1.12.2.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.param	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.param	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.param	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.param	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.param	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.param	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.param	.\jQuery\jquery-1.12.2.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.parseHTML	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseHTML	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseHTML	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseHTML	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseHTML	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseHTML	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseHTML	.\jQuery\jquery-1.12.2.js	/^jQuery.parseHTML = function( data, context, keepScripts ) {$/;"	f
+jQuery.parseJSON	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseJSON	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseJSON	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseJSON	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseJSON	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseJSON	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseJSON	.\jQuery\jquery-1.12.2.js	/^jQuery.parseJSON = function( data ) {$/;"	f
+jQuery.parseXML	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.parseXML	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.parseXML	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.parseXML	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.parseXML	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.parseXML	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.parseXML	.\jQuery\jquery-1.12.2.js	/^jQuery.parseXML = function( data ) {$/;"	f
+jQuery.propHooks.selected.get	.\example\tab栏切换案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.get	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.get	.\example\高亮显示案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.get	.\example\固定导航栏案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.get	.\example\精品展示案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.get	.\example\手风琴案例\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.get	.\jQuery\jquery-1.12.2.js	/^		get: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	.\example\tab栏切换案例\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	.\example\高亮显示案例\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	.\example\固定导航栏案例\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	.\example\精品展示案例\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	.\example\手风琴案例\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.propHooks.selected.set	.\jQuery\jquery-1.12.2.js	/^		set: function( elem ) {$/;"	m
+jQuery.ready.promise	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.ready.promise	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.ready.promise	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.ready.promise	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.ready.promise	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.ready.promise	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.ready.promise	.\jQuery\jquery-1.12.2.js	/^jQuery.ready.promise = function( obj ) {$/;"	f
+jQuery.speed	.\example\tab栏切换案例\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.speed	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.speed	.\example\高亮显示案例\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.speed	.\example\固定导航栏案例\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.speed	.\example\精品展示案例\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.speed	.\example\手风琴案例\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.speed	.\jQuery\jquery-1.12.2.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+jQuery.valHooks.button.get	.\example\tab栏切换案例\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.get	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.get	.\example\高亮显示案例\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.get	.\example\固定导航栏案例\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.get	.\example\精品展示案例\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.get	.\example\手风琴案例\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.get	.\jQuery\jquery-1.12.2.js	/^		get: function( elem, name ) {$/;"	m
+jQuery.valHooks.button.set	.\example\tab栏切换案例\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+jQuery.valHooks.button.set	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+jQuery.valHooks.button.set	.\example\高亮显示案例\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+jQuery.valHooks.button.set	.\example\固定导航栏案例\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+jQuery.valHooks.button.set	.\example\精品展示案例\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+jQuery.valHooks.button.set	.\example\手风琴案例\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+jQuery.valHooks.button.set	.\jQuery\jquery-1.12.2.js	/^		set: nodeHook.set$/;"	p
+letterSpacing	.\example\tab栏切换案例\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+letterSpacing	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+letterSpacing	.\example\高亮显示案例\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+letterSpacing	.\example\固定导航栏案例\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+letterSpacing	.\example\精品展示案例\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+letterSpacing	.\example\手风琴案例\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+letterSpacing	.\jQuery\jquery-1.12.2.js	/^		letterSpacing: "0",$/;"	p
+location	.\example\tab栏切换案例\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+location	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+location	.\example\高亮显示案例\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+location	.\example\固定导航栏案例\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+location	.\example\精品展示案例\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+location	.\example\手风琴案例\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+location	.\jQuery\jquery-1.12.2.js	/^var location = window.location;$/;"	v
+manipulationTarget	.\example\tab栏切换案例\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+manipulationTarget	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+manipulationTarget	.\example\高亮显示案例\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+manipulationTarget	.\example\固定导航栏案例\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+manipulationTarget	.\example\精品展示案例\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+manipulationTarget	.\example\手风琴案例\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+manipulationTarget	.\jQuery\jquery-1.12.2.js	/^function manipulationTarget( elem, content ) {$/;"	f
+nodeHook	.\example\tab栏切换案例\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook	.\example\高亮显示案例\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook	.\example\固定导航栏案例\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook	.\example\精品展示案例\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook	.\example\手风琴案例\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook	.\jQuery\jquery-1.12.2.js	/^var nodeHook, boolHook,$/;"	v
+nodeHook.set	.\example\tab栏切换案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeHook.set	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeHook.set	.\example\高亮显示案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeHook.set	.\example\固定导航栏案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeHook.set	.\example\精品展示案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeHook.set	.\example\手风琴案例\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeHook.set	.\jQuery\jquery-1.12.2.js	/^		set: function( elem, value, name ) {$/;"	m
+nodeNames	.\example\tab栏切换案例\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nodeNames	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nodeNames	.\example\高亮显示案例\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nodeNames	.\example\固定导航栏案例\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nodeNames	.\example\精品展示案例\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nodeNames	.\example\手风琴案例\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nodeNames	.\jQuery\jquery-1.12.2.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|" +$/;"	v
+nonce	.\example\tab栏切换案例\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+nonce	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+nonce	.\example\高亮显示案例\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+nonce	.\example\固定导航栏案例\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+nonce	.\example\精品展示案例\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+nonce	.\example\手风琴案例\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+nonce	.\jQuery\jquery-1.12.2.js	/^var nonce = jQuery.now();$/;"	v
+oldCallbacks	.\example\tab栏切换案例\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+oldCallbacks	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+oldCallbacks	.\example\高亮显示案例\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+oldCallbacks	.\example\固定导航栏案例\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+oldCallbacks	.\example\精品展示案例\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+oldCallbacks	.\example\手风琴案例\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+oldCallbacks	.\jQuery\jquery-1.12.2.js	/^var oldCallbacks = [],$/;"	v
+on	.\example\tab栏切换案例\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+on	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+on	.\example\高亮显示案例\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+on	.\example\固定导航栏案例\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+on	.\example\精品展示案例\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+on	.\example\手风琴案例\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+on	.\jQuery\jquery-1.12.2.js	/^function on( elem, types, selector, data, fn, one ) {$/;"	f
+opt.complete	.\example\tab栏切换案例\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+opt.complete	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+opt.complete	.\example\高亮显示案例\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+opt.complete	.\example\固定导航栏案例\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+opt.complete	.\example\精品展示案例\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+opt.complete	.\example\手风琴案例\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+opt.complete	.\jQuery\jquery-1.12.2.js	/^	opt.complete = function() {$/;"	f
+propFilter	.\example\tab栏切换案例\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+propFilter	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+propFilter	.\example\高亮显示案例\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+propFilter	.\example\固定导航栏案例\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+propFilter	.\example\精品展示案例\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+propFilter	.\example\手风琴案例\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+propFilter	.\jQuery\jquery-1.12.2.js	/^function propFilter( props, specialEasing ) {$/;"	f
+r20	.\example\tab栏切换案例\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+r20	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+r20	.\example\高亮显示案例\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+r20	.\example\固定导航栏案例\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+r20	.\example\精品展示案例\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+r20	.\example\手风琴案例\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+r20	.\jQuery\jquery-1.12.2.js	/^var r20 = \/%20\/g,$/;"	v
+rbrace	.\example\tab栏切换案例\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rbrace	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rbrace	.\example\高亮显示案例\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rbrace	.\example\固定导航栏案例\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rbrace	.\example\精品展示案例\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rbrace	.\example\手风琴案例\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rbrace	.\jQuery\jquery-1.12.2.js	/^var rbrace = \/^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$\/,$/;"	v
+rclass	.\example\tab栏切换案例\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+rclass	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+rclass	.\example\高亮显示案例\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+rclass	.\example\固定导航栏案例\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+rclass	.\example\精品展示案例\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+rclass	.\example\手风琴案例\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+rclass	.\jQuery\jquery-1.12.2.js	/^var rclass = \/[\\t\\r\\n\\f]\/g;$/;"	v
+readyList	.\example\tab栏切换案例\jquery-1.12.2.js	/^var readyList;$/;"	v
+readyList	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var readyList;$/;"	v
+readyList	.\example\高亮显示案例\jquery-1.12.2.js	/^var readyList;$/;"	v
+readyList	.\example\固定导航栏案例\jquery-1.12.2.js	/^var readyList;$/;"	v
+readyList	.\example\精品展示案例\jquery-1.12.2.js	/^var readyList;$/;"	v
+readyList	.\example\手风琴案例\jquery-1.12.2.js	/^var readyList;$/;"	v
+readyList	.\jQuery\jquery-1.12.2.js	/^var readyList;$/;"	v
+remove	.\example\tab栏切换案例\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+remove	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+remove	.\example\高亮显示案例\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+remove	.\example\固定导航栏案例\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+remove	.\example\精品展示案例\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+remove	.\example\手风琴案例\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+remove	.\jQuery\jquery-1.12.2.js	/^function remove( elem, selector, keepData ) {$/;"	f
+restoreScript	.\example\tab栏切换案例\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+restoreScript	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+restoreScript	.\example\高亮显示案例\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+restoreScript	.\example\固定导航栏案例\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+restoreScript	.\example\精品展示案例\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+restoreScript	.\example\手风琴案例\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+restoreScript	.\jQuery\jquery-1.12.2.js	/^function restoreScript( elem ) {$/;"	f
+return	.\example\tab栏切换案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return	.\example\高亮显示案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return	.\example\固定导航栏案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return	.\example\精品展示案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return	.\example\手风琴案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return	.\jQuery\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return.init	.\example\tab栏切换案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+return.init	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+return.init	.\example\高亮显示案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+return.init	.\example\固定导航栏案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+return.init	.\example\精品展示案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+return.init	.\example\手风琴案例\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+return.init	.\jQuery\jquery-1.12.2.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+returnFalse	.\example\tab栏切换案例\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnFalse	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnFalse	.\example\高亮显示案例\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnFalse	.\example\固定导航栏案例\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnFalse	.\example\精品展示案例\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnFalse	.\example\手风琴案例\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnFalse	.\jQuery\jquery-1.12.2.js	/^function returnFalse() {$/;"	f
+returnTrue	.\example\tab栏切换案例\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+returnTrue	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+returnTrue	.\example\高亮显示案例\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+returnTrue	.\example\固定导航栏案例\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+returnTrue	.\example\精品展示案例\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+returnTrue	.\example\手风琴案例\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+returnTrue	.\jQuery\jquery-1.12.2.js	/^function returnTrue() {$/;"	f
+rfocusable	.\example\tab栏切换案例\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rfocusable	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rfocusable	.\example\高亮显示案例\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rfocusable	.\example\固定导航栏案例\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rfocusable	.\example\精品展示案例\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rfocusable	.\example\手风琴案例\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rfocusable	.\jQuery\jquery-1.12.2.js	/^var rfocusable = \/^(?:input|select|textarea|button|object)$\/i,$/;"	v
+rformElems	.\example\tab栏切换案例\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rformElems	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rformElems	.\example\高亮显示案例\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rformElems	.\example\固定导航栏案例\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rformElems	.\example\精品展示案例\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rformElems	.\example\手风琴案例\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rformElems	.\jQuery\jquery-1.12.2.js	/^var rformElems = \/^(?:input|select|textarea)$\/i,$/;"	v
+rhtml	.\example\tab栏切换案例\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rhtml	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rhtml	.\example\高亮显示案例\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rhtml	.\example\固定导航栏案例\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rhtml	.\example\精品展示案例\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rhtml	.\example\手风琴案例\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rhtml	.\jQuery\jquery-1.12.2.js	/^var rhtml = \/<|&#?\\w+;\/,$/;"	v
+rinlinejQuery	.\example\tab栏切换案例\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+rinlinejQuery	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+rinlinejQuery	.\example\高亮显示案例\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+rinlinejQuery	.\example\固定导航栏案例\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+rinlinejQuery	.\example\精品展示案例\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+rinlinejQuery	.\example\手风琴案例\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+rinlinejQuery	.\jQuery\jquery-1.12.2.js	/^var rinlinejQuery = \/ jQuery\\d+="(?:null|\\d+)"\/g,$/;"	v
+risSimple	.\example\tab栏切换案例\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+risSimple	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+risSimple	.\example\高亮显示案例\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+risSimple	.\example\固定导航栏案例\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+risSimple	.\example\精品展示案例\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+risSimple	.\example\手风琴案例\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+risSimple	.\jQuery\jquery-1.12.2.js	/^var risSimple = \/^.[^:#\\[\\.,]*$\/;$/;"	v
+rneedsContext	.\example\tab栏切换案例\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rneedsContext	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rneedsContext	.\example\高亮显示案例\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rneedsContext	.\example\固定导航栏案例\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rneedsContext	.\example\精品展示案例\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rneedsContext	.\example\手风琴案例\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rneedsContext	.\jQuery\jquery-1.12.2.js	/^var rneedsContext = jQuery.expr.match.needsContext;$/;"	v
+rreturn	.\example\tab栏切换案例\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rreturn	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rreturn	.\example\高亮显示案例\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rreturn	.\example\固定导航栏案例\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rreturn	.\example\精品展示案例\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rreturn	.\example\手风琴案例\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rreturn	.\jQuery\jquery-1.12.2.js	/^var rreturn = \/\\r\/g,$/;"	v
+rvalidtokens	.\example\tab栏切换案例\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+rvalidtokens	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+rvalidtokens	.\example\高亮显示案例\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+rvalidtokens	.\example\固定导航栏案例\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+rvalidtokens	.\example\精品展示案例\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+rvalidtokens	.\example\手风琴案例\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+rvalidtokens	.\jQuery\jquery-1.12.2.js	/^var rvalidtokens = \/(,)|(\\[|{)|(}|])|"(?:[^"\\\\\\r\\n]|\\\\["\\\\\\\/bfnrt]|\\\\u[\\da-fA-F]{4})*"\\s*:?|true|false|null|-?(?!0\\d)\\d+(?:\\.\\d+|)(?:[eE][+-]?\\d+|)\/g;$/;"	v
+safeActiveElement	.\example\tab栏切换案例\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+safeActiveElement	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+safeActiveElement	.\example\高亮显示案例\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+safeActiveElement	.\example\固定导航栏案例\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+safeActiveElement	.\example\精品展示案例\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+safeActiveElement	.\example\手风琴案例\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+safeActiveElement	.\jQuery\jquery-1.12.2.js	/^function safeActiveElement() {$/;"	f
+setGlobalEval	.\example\tab栏切换案例\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setGlobalEval	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setGlobalEval	.\example\高亮显示案例\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setGlobalEval	.\example\固定导航栏案例\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setGlobalEval	.\example\精品展示案例\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setGlobalEval	.\example\手风琴案例\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setGlobalEval	.\jQuery\jquery-1.12.2.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setPositiveNumber	.\example\tab栏切换案例\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+setPositiveNumber	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+setPositiveNumber	.\example\高亮显示案例\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+setPositiveNumber	.\example\固定导航栏案例\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+setPositiveNumber	.\example\精品展示案例\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+setPositiveNumber	.\example\手风琴案例\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+setPositiveNumber	.\jQuery\jquery-1.12.2.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	.\example\tab栏切换案例\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+showHide	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+showHide	.\example\高亮显示案例\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+showHide	.\example\固定导航栏案例\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+showHide	.\example\精品展示案例\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+showHide	.\example\手风琴案例\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+showHide	.\jQuery\jquery-1.12.2.js	/^function showHide( elements, show ) {$/;"	f
+sibling	.\example\tab栏切换案例\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+sibling	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+sibling	.\example\高亮显示案例\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+sibling	.\example\固定导航栏案例\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+sibling	.\example\精品展示案例\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+sibling	.\example\手风琴案例\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+sibling	.\jQuery\jquery-1.12.2.js	/^function sibling( cur, dir ) {$/;"	f
+siblings	.\example\tab栏切换案例\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+siblings	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+siblings	.\example\高亮显示案例\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+siblings	.\example\固定导航栏案例\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+siblings	.\example\精品展示案例\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+siblings	.\example\手风琴案例\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+siblings	.\jQuery\jquery-1.12.2.js	/^var siblings = function( n, elem ) {$/;"	f
+support.shrinkWrapBlocks	.\example\tab栏切换案例\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+support.shrinkWrapBlocks	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+support.shrinkWrapBlocks	.\example\高亮显示案例\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+support.shrinkWrapBlocks	.\example\固定导航栏案例\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+support.shrinkWrapBlocks	.\example\精品展示案例\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+support.shrinkWrapBlocks	.\example\手风琴案例\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+support.shrinkWrapBlocks	.\jQuery\jquery-1.12.2.js	/^	support.shrinkWrapBlocks = function() {$/;"	f
+swap	.\example\tab栏切换案例\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+swap	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+swap	.\example\高亮显示案例\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+swap	.\example\固定导航栏案例\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+swap	.\example\精品展示案例\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+swap	.\example\手风琴案例\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+swap	.\jQuery\jquery-1.12.2.js	/^var swap = function( elem, options, callback, args ) {$/;"	f
+vendorPropName	.\example\tab栏切换案例\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+vendorPropName	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+vendorPropName	.\example\高亮显示案例\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+vendorPropName	.\example\固定导航栏案例\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+vendorPropName	.\example\精品展示案例\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+vendorPropName	.\example\手风琴案例\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+vendorPropName	.\jQuery\jquery-1.12.2.js	/^function vendorPropName( name ) {$/;"	f
+winnow	.\example\tab栏切换案例\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+winnow	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+winnow	.\example\高亮显示案例\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+winnow	.\example\固定导航栏案例\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+winnow	.\example\精品展示案例\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+winnow	.\example\手风琴案例\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+winnow	.\jQuery\jquery-1.12.2.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+wrapMap.option	.\example\tab栏切换案例\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+wrapMap.option	.\example\动画显示隐藏效果案例\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+wrapMap.option	.\example\高亮显示案例\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+wrapMap.option	.\example\固定导航栏案例\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+wrapMap.option	.\example\精品展示案例\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+wrapMap.option	.\example\手风琴案例\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
+wrapMap.option	.\jQuery\jquery-1.12.2.js	/^	option: [ 1, "<select multiple='multiple'>", "<\/select>" ],$/;"	p
