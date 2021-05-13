@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery天气预报案例</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+
+		}
+		.container {
+			width: 400px;
+			min-height: 300px;
+			background-color: lightgreen;
+			text-align: center;
+			padding: 10px;
+			font-size: 10px;
+		}
+		.container .date {
+			text-align: left;
+			margin-left: 50px;
+			border: 1px solid #000;
+			margin-bottom: 10px;
+			font-weight: 900;
+		}
+		.container .date .day {
+			background-color: #fff;
+		}
+		.container .date .night {
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<select>
+			<option value="101281901">揭西</option>
+			<option value="101280601">深圳</option>
+			<option value="101280101">广州</option>
+			<option value="101281701">中山</option>
+			<option value="101300501">桂林</option>
+		</select>
+		<input type="button" id="btn" value="查询">
+		<div id="show">
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="./jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="./template-web.js"></script>
+	<script type="text/html" id="template">
+		{{if weather}}
+			{{each weather as value i}}
+				<div class="date">日期:{{value.date}}
+					<ul class="day">
+						<li>白天天气:{{value.info.day[1]}}</li>
+						<li>白天温度:{{value.info.day[2]}}</li>
+						<li>白天风向:{{value.info.day[3]}}</li>
+						<li>白天风速:{{value.info.day[4]}}</li>
+					</ul>
+					<ul class="night">
+						<li>夜间天气:{{value.info.night[1]}}</li>
+						<li>夜间温度:{{value.info.night[2]}}</li>
+						<li>夜间风向:{{value.info.night[3]}}</li>
+						<li>夜间风速:{{value.info.night[4]}}</li>
+					</ul>
+				</div>
+			{{/each}}
+		{{/if}}
+	</script>
+	<script type="text/javascript">
+		/*https://cdn.weather.hao.360.cn/sed_api_weather_info.php?code=101280601&param=pm25&v=1&app=hao360&_jsonp=__jsonp5__&t=2701338*/
+		$(function () {
+			$('#btn').click(function () {
+				var code = $('select').children(':selected').attr('value');
+				$.ajax({
+					url: 'https://cdn.weather.hao.360.cn/sed_api_weather_info.php?',
+					data: {param: 'pm25', app: 'hao360', code: code},
+					jsonp: '_jsonp',
+					jsonpCallback: 'getInfo',
+					dataType: 'jsonp',
+					success: function (data) {
+						/*var html = template('template',data);
+						$('#show').html(html);*/
+						var source = '{{if weather}}'
+						// as在新版本中没有使用了 {{each weather as value i}}
+							+'{{each weather value i}}'
+								+'<div class="date">日期:{{value.date}}'
+									+'<ul class="day">'
+										+'<li>白天天气:{{value.info.day[1]}}</li>'
+										+'<li>白天温度:{{value.info.day[2]}}</li>'
+										+'<li>白天风向:{{value.info.day[3]}}</li>'
+										+'<li>白天风速:{{value.info.day[4]}}</li>'
+									+'</ul>'
+									+'<ul class="night">'
+										+'<li>夜间天气:{{value.info.night[1]}}</li>'
+										+'<li>夜间温度:{{value.info.night[2]}}</li>'
+										+'<li>夜间风向:{{value.info.night[3]}}</li>'
+										+'<li>夜间风速:{{value.info.night[4]}}</li>'
+									+'</ul>'
+								+'</div>'
+							+'{{/each}}'
+						+'{{/if}}';
+						var render = template.compile(source);
+						var html = render(data);
+						$('#show').html(html);
+					}
+				});
+			});
+		});
+		
+	</script>
+</body>
+</html>

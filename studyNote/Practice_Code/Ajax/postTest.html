@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery调用ajax</title>
+	<style type="text/css">
+		.container {
+			width: 300px;
+			height: 300px;
+			background-color: lightgreen;
+		}		
+	</style>
+</head>
+<body>
+	<div class="container">
+		图书名字<input type="text" id='bookName'>
+		<input type="button" value="查询" id="btn">
+		<div id="show"></div>
+	</div>
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn').click(function () {
+				ajax({
+					url: 'http://www.myWebServer.com/index.php',
+					type: 'get',
+					data: {bookName: $('#bookName').val()},
+					dataType: 'json',
+					success: function (data) {
+						var str = null;
+						if (data.flag === 0) {
+							str = '查询的书籍未找到';
+						} else {
+							str = '<ul><li>'+data.name+'</li><li>'+data.author+'</li><li>'+data.desc+'</li></ul>';
+						}
+						console.dir(data);
+						$('#show').html(str);
+					}
+				});
+			});
+		});
+		function ajax(obj) {
+			var origin = {
+				type: 'get',
+				dataType: 'text',
+				data: {},
+				url: '',
+				async: true,
+				success: function (data) {
+					console.log(data);
+				}
+			}
+			// 获取参数值,没有传递的参数的使用默认值
+			for (var key in obj) {
+				origin[key] = obj[key];
+			}
+			// 处理data
+			var data = '';
+			for (var key in origin.data) {
+				data = data + key + '=' + origin.data[key] + '&';
+			}
+			data = data.substring(0, data.length - 1);
+
+			// 处理url
+			if (origin.type === 'get') {
+				origin.url = origin.url + '?' + data;
+			}
+
+			// 开始ajax
+			var xhr = null;
+			if (window.XMLHttpRequest) {
+				xhr = new XMLHttpRequest();
+			} else {
+				xhr = ActiveXObject('Microsoft.XMLHTTP');
+			}
+			// encodeURI兼容IE6
+			xhr.open(origin.type, encodeURI(origin.url), origin.async);
+
+			var parma = null;
+			if (origin.type === 'post') {
+				parma = data;
+				// post要设置请求头,请求头没有设置好，返回来的数据是有问题的
+				xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+			}
+			xhr.send(parma);
+
+			// 如果是同步的情况的话，直接返回 responseText
+			if (origin.async === false) {
+				if (origin.dataType === 'json') {
+					return JSON.parse(xhr.responseText);
+				} else {
+					return xhr.responseText;
+				}
+			}
+
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						var retData = xhr.responseText;
+						if (origin.dataType === 'json') {
+							retData = JSON.parse(retData);
+							// retData = eval(''+retData+'');
+						} 
+						origin.success(retData);
+ 					}
+				}
+			};
+		}
+	</script>
+</body>
+</html>

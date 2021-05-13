@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>天气预报二次接口</title>
+	<style type="text/css">
+		ul {
+			list-style: none;
+		}
+		#show {
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<input type="text" placeholder="请输入城市名称" id="city" />
+		<input type="button" value="查询" id="btn" />
+		<div id="show"></div>
+	</div>
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="template-web.js"></script>
+	<script type="text/html" id="template">
+		{{if retData}}
+			<ul>
+				<li>风向：{{retData.WD}}</li>
+				<li>风速：{{retData.WS}}</li>
+				<li>海拔：{{retData.altitude}}</li>
+				<li>日期：{{retData.date}}</li>
+				<li>纬度：{{retData.latitude}}</li>
+				<li>精度：{{retData.longitude}}</li>
+				<li>日出时间：{{retData.sunrise}}</li>
+				<li>日落时间：{{retData.sunset}}</li>
+				<li>天气：{{retData.weather}}</li>
+			</ul>
+		{{/if}}
+	</script>
+	<script type="text/javascript">
+		$(function () {
+			$('#btn').click(function () {
+				$.ajax({
+					url: './citycode.php',
+					data: {cityName: $('#city').val()},
+					dataType: 'json',
+					type: 'get',
+					success: function (data) {
+						console.log(data);
+						$.ajax({
+							url: './cityweather.php',
+							data: {cityCode: data.cityCode},
+							dataType: 'json',
+							type: 'get',
+							success: function (data) {
+								var html = template('template', data);
+								$('#show').html(html);
+							}
+						});
+					},
+				});
+			});
+		});
+	</script>
+</body>
+</html>

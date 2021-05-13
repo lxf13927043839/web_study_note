@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>省市县三级联动</title>
+</head>
+<body>
+	<div class="container">
+		<select id="province">
+			<option>请选择省级...</option>
+		</select>
+		<select id="city">
+			<option>请选择市级...</option>
+		</select>
+		<select id="county">
+			<option>请选择县级...</option>			
+		</select>
+	</div>
+	<script type="text/javascript" src="./jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			function request(obj, callback) {
+				$.ajax({
+					url: 'http://www.myWebServer.com/Summary_example/select.php',
+					type: 'get',
+					data: obj,
+					dataType: 'json',
+					success: function (data) {
+						callback(data);
+					},
+				});
+			}
+			request({
+				flag: 1,
+			}, function (data) {
+				// 这个省级的会初始化一次，只执行一次
+				var str = $('#province').html();
+				$.each(data, function (index, value) {
+					str += '<option value='+value.id+'>'+value.province+'</option>';
+				});
+				$('#province').html(str);
+			});
+			
+			$('#province').change(function () {
+				var pId = $(this).children(':selected').attr('value');
+				request({
+					flag: 2,
+					pId: pId,
+				},function (data) {
+					$('#city option:gt(0)').remove();
+					var str = $('#city').html();
+					$.each(data, function (index, value) {
+						str += '<option value='+value.id+'>'+value.city+'</option>';
+					});
+					$('#city').html(str);
+				});
+			});
+
+			$('#city').change(function () {
+				var cId = $(this).children(':selected').attr('value');
+				request({
+					flag: 3,
+					cId: cId,
+				},function (data) {
+					$('#county option:gt(0)').remove();
+					/*var str = $('#county').html();
+					$.each(data, function (index, value) {
+						str += '<option value='+value.id+'>'+value.county+'</option>';
+					});
+					$('#county').html(str);*/
+					var str = '';
+					$.each(data, function (index, value) {
+						str += '<option value='+value.id+'>'+value.county+'</option>';
+					});
+					$('#county').append(str);
+				});
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<booklist>
+	<book>
+		<name>三国演义</name>
+		<author>罗贯中</author>
+		<desc>一个站在纷争的时代</desc>
+	</book>
+	<book>
+		<name>西游记</name>
+		<author>吴承恩</author>
+		<desc>西天取经</desc>
+	</book>
+</booklist>

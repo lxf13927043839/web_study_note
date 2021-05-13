@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>跨域学习</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			function ajax(obj) {
+				var defaults = {
+					url: '',
+					dataType: 'jsonp',
+					jsonp: 'callback',
+					data: {},
+					success: function (data) {
+						console.log(data);
+					}
+				}
+
+				for (var key in obj) {
+					defaults[key] = obj[key];
+				}
+				// data拼接
+				var param = '';
+				for (var key in defaults.data) {
+					param += '&' + key + '=' + defaults.data[key];
+				}	
+
+				// expando: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
+				var version = '1.12.2';
+				var jsonpCallback = 'jQuery' + ( version + Math.random() ).replace(/\D/g, '')+ '_' + (new Date().getTime());
+
+				if (defaults.jsonpCallback) {
+					jsonpCallback = defaults.jsonpCallback;
+				}
+
+				window[jsonpCallback] = function (data) {
+					defaults.success(data);
+				}
+
+				var script = document.createElement('script');
+				script.src = defaults.url + '?' + defaults.jsonp + '=' + jsonpCallback + param;
+				var head = document.getElementsByTagName('head')[0];
+				head.appendChild(script);
+			}
+			ajax({
+				url: 'http://www.myWebServer.com/index.php',
+				data: {
+					username: 'lxf',
+					password: '123',
+				},
+			});
+		});
+	</script>
+	
+</body>
+</html>
