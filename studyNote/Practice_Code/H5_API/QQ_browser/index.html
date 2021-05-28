@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QQ浏览器下载页面</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css">
+
+	<script type="text/javascript" src="js/jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+
+	<style type="text/css">
+		#bg {
+			width: 1000px;
+			height: 1000px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%) rotateZ(0deg);
+			/*background-color: pink;*/
+			transition: all 2s;
+		}
+		.rotate {
+			transform: translate(-50%, -50%) rotateZ(-60deg) !important;
+		}
+		.circle {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			background: -webkit-linear-gradient(top, #fff, lightgray);
+		}
+		.row1 .scale {
+			width: 60px;
+			height: 60px;
+			margin-top: -250px;
+		}
+		.row1 .cir1Pos {	
+			margin-left: -300px;
+		}
+		.row1 .cir2Pos {
+			margin-left: 0px;
+		}
+		.row1 .cir3Pos {
+			margin-left: 500px;
+		}
+
+		.row2 .scale {
+			width: 200px;
+			height: 200px;
+		}
+		.row2 .cir1Pos {
+			margin-top: -50px;
+			margin-left: -500px;
+		}
+		.row2 .cir2Pos {
+			margin-top: 50px;
+			margin-left: 0px;
+		}
+		.row2 .cir3Pos {
+			margin-top: -80px;
+			margin-left: 400px;
+		}
+
+		.row3 .scale {
+			width: 400px;
+			height: 400px;
+		}
+		.row3 .cir1Pos {
+			margin-top: 150px;
+			margin-left: -200px;
+		}
+		.row3 .cir2Pos {
+			margin-top: 50px;
+			margin-left: 700px;
+		}
+
+		@keyframes cirMove {
+			form {
+				transform: translate(0px) rotate(0deg);
+			}
+			to {
+				transform: translate(-800px) rotate(720deg);
+			}
+		}
+		.row1 .cirMoving {
+			animation: cirMove 10s linear infinite;
+		}
+		.row2 .cirMoving {
+			animation: cirMove 20s linear infinite;
+		}
+		.row3 .cirMoving {
+			animation: cirMove 30s linear infinite;
+		}
+		/*第一屏*/
+		.section1 {
+			perspective: 1000px;
+		}
+		/*起始的时候图片放大*/
+		.container-01 {
+			width: 880px;
+			height: 320px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			background: url(images/skin.gif) no-repeat;
+			transform: translate(-50%, -50%) translateZ(500px) rotateY(180deg);
+			transition: all 1s;
+		}
+		.swichSmall {
+			transform: translate(-50%, -50%) translateZ(0px) rotateY(0deg);
+		}
+
+		.section2 {
+			perspective: 1000px;
+		}
+		.container-02 {
+			width: 316px;
+			height: 360px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%) translateZ(-2000px) scale(.1);
+			transition: all 2s;
+		}
+		/*第三屏*/
+		.section3 {
+			perspective: 1000px;
+		}
+		.title-03 {
+			position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    margin-left: -412px;
+		    margin-top: -10px;
+		    /*一开始的角度尽量不超90，超过了效果不太好看*/
+		    transform: translateZ(1001px) rotateY(-60deg);
+		    /*transform: translateZ(200px) rotateY(-60deg);*/
+
+		    transition: all 3s;
+		}
+		.container-03 {
+			position: absolute;
+		    width: 1440px;
+		    height: 760px;
+		    top: 50%;
+		    left: 50%;
+		    margin-left: -270px;
+		    margin-top: -284px;
+		    background-color: pink;
+		    transform: translateZ(1001px) rotateX(120deg);
+
+		    transition: all 3s;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="bg">
+		<div class="row1">
+			<div class="cir1Pos circle scale cirMoving"></div>
+			<div class="cir2Pos circle scale cirMoving"></div>
+			<div class="cir3Pos circle scale cirMoving"></div>
+		</div>
+		<div class="row2">
+			<div class="cir1Pos circle scale cirMoving"></div>
+			<div class="cir2Pos circle scale cirMoving"></div>
+			<div class="cir3Pos circle scale cirMoving"></div>
+		</div>
+		<div class="row3">
+			<div class="cir1Pos circle scale cirMoving"></div>
+			<div class="cir2Pos circle scale cirMoving"></div>
+		</div>
+	</div>
+	<div id="fullpage">
+		<div class="section section1">
+			<div class="container-01 start">
+				<img src="images/skin.png" alt="">
+			</div>
+		</div>
+		<!-- 忘记加perspective -->
+		<div class="section section2">
+			<div class="container-02">
+				<img src="images/title1_1.png">
+				<img src="images/title1_2.png">
+			</div>
+		</div>
+
+		<div class="section section3">
+			<div class="container-03">
+				<img src="images/p3ui_tab.png">
+			</div>
+			<img src="images/title3.png" class="title-03">
+		</div>
+
+		<div class="section">第四屏</div>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			setTimeout(function () {
+				$('.container-01').addClass('swichSmall');
+			},200);
+			$('#fullpage').fullpage({
+				navigation: true,
+
+				loopBottom: true,
+				onLeave: function (index, nextIndex, direction) {
+					if (index.index === 0) {
+						$('#bg').addClass('rotate');
+					} else {
+						$('#bg').removeClass('rotate');
+					}
+
+					if (nextIndex.index === 1) {
+						$('.container-02').css('transform', 'translate(-50%, -50%) translateZ(0px)');
+					} else {
+						$('.container-02').css('transform', 'translate(-50%, -50%) translateZ(1001px)');
+					}
+
+					if (nextIndex.index === 2) {
+						$('.container-03').css('transform', 'rotateX(30deg)');
+						$('.title-03').css('transform', 'rotateY(0deg)');
+					}
+
+					if (nextIndex.index === 3) {
+						$('.container-03').css('transform', 'translateX(2000px) rotateZ(-30deg)'); 
+						
+						$('.title-03').css('transform', 'translateZ(2001px) rotateY(-120deg)');
+					}
+				}
+			});
+		});
+	</script>
+</body>
+</html>

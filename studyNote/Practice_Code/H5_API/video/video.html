@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>video控件</title>
+
+	<style type="text/css">
+		@font-face {
+			font-family: 'icomoon';
+			src:  url('fonts/icomoon.eot?4khlp5');
+			src:  url('fonts/icomoon.eot?4khlp5#iefix') format('embedded-opentype'),
+			url('fonts/icomoon.ttf?4khlp5') format('truetype'),
+			url('fonts/icomoon.woff?4khlp5') format('woff'),
+			url('fonts/icomoon.svg?4khlp5#icomoon') format('svg');
+			font-weight: normal;
+			font-style: normal;
+			font-display: block;
+		}
+		span {
+			font-family: 'icomoon';
+			font-size: 30px;
+			line-height: 40px;
+			color: #fff;
+		}
+		.play_ico::before {
+			content: "\ea1c";
+		}
+		.pause_ico::before {
+			content: "\ea1d";
+		}
+		.large_ico::before {
+			content: "\e989";
+		}
+		.small_ico::before {
+			content: "\e98c";
+		}
+
+
+		.wrapper {
+			width: 720px;
+			height: 360px;
+			margin: 100px auto;
+			position: relative;
+			background-color: black;
+		}
+		
+		.wrapper video {
+			width: 640px;
+			height: 360px;
+			margin-left: 40px;			
+		}
+		video::-webkit-media-controls {
+		    display: none !important;
+		}
+
+		.loading {
+			width: 640px;
+			height: 360px;
+			position: absolute;
+			left: 40px;
+			top: 0;
+		}
+		.controls {
+			width: 700px;
+			height: 40px;
+			background-color: rgba(255,255,255,.2);
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			bottom: 15px;
+			border-radius: 5px;
+			box-sizing: border-box;
+			padding: 0 10px; 
+			z-index: 2147483647;
+		}
+		.controls > span {
+			cursor: pointer;
+		}
+		.slider-bar {
+			width: 430px;
+			height: 10px;
+			background-color: rgba(0,0,0,.5);
+			position: absolute;
+			top: 16px;
+			left: 45px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		.slider {
+			width: 100%;
+			height: 100%;
+			border-radius: 3px;
+			background-color: #fff;
+			display: none;
+		}
+		.time {
+			height: 20px;
+			line-height: 20px;
+			position: absolute;
+			left: 490px;
+			top: 11px;
+		}
+
+		.time span {
+			font-size: 18px;
+			/*前边的span 设置了 line-height 40px*/
+			line-height: 20px;
+		}
+		.large {
+			position: absolute;
+			right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<video src="fun.mp4" controls="" id="video">您的浏览器版本版本支持video,请更新后再尝试</video>
+		<img src="loading.gif" class="loading">
+		<div class="controls">
+			<span class="play_ico" id="play"></span>
+			<div class="slider-bar">
+				<div class="slider"></div>
+			</div>
+			<div class="time">
+				<span class="currentTime">00:00:00</span><span>/</span><span class="totalTime">00:00:00</span>
+			</div>
+			<span class="large large_ico"></span>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			function getTime(time) {
+				var hour = Math.floor(time / 60 / 60 % 24);
+				var minute = Math.floor(time / 60 % 60);
+				var second = Math.floor(time % 60);
+				hour = hour < 10 ? '0' + hour : hour + '';
+				minute = minute < 10 ? '0' + minute : minute + '';
+				second = second < 10 ? '0' + second : second + '';
+				return hour +':'+ minute +':'+ second;
+			}
+
+			var video = $('#video').get(0);
+			video.oncanplay = function () {
+				$('.loading').hide();
+				// 显示视频总长度
+				$('.totalTime').html(getTime(video.duration));
+			};
+			// 视频时间变化事件
+			video.ontimeupdate = function () {
+				// 实时显示时间
+				$('.currentTime').html(getTime(video.currentTime));
+				// 进度条跟着变化
+				var percentage = video.currentTime / video.duration*100 + '%';
+				$('.slider').show().css('width', percentage);
+			}
+			// 播放按钮
+			$('#play').click(function () {
+				if ($(this).hasClass('play_ico')) {
+					video.play();
+					$(this).addClass('pause_ico').removeClass('play_ico');
+
+				} else if ($(this).hasClass('pause_ico')) {
+					video.pause();
+					$(this).addClass('play_ico').removeClass('pause_ico');
+				}
+				
+			});
+			// 点击进度条
+			$('.slider-bar').click(function (e) {
+				var x = e.offsetX;
+				// 直接给css 使用百分比
+				var percentage = x / $(this).width()*100 + '%';
+				// $('.slider').show().css('width', percentage);
+
+				video.currentTime = x / $(this).width() * video.duration;
+			});
+			// 播放结束的时候
+			video.onended = function () {
+				video.currentTime = 0;
+				$('#play').removeClass('pause_ico').addClass('play_ico');
+			}
+			// 放大缩小
+			$('.large').click(function () {
+				if ($(this).hasClass('large_ico')) {
+					video.webkitRequestFullScreen();
+					$(this).removeClass('large_ico').addClass('small_ico');
+				} else if ($(this).hasClass('small_ico')) {
+					document.webkitCancelFullScreen();
+					$(this).removeClass('small_ico').addClass('large_ico');
+				}
+			});
+
+			// 问题剩下就是全屏之后显示兄弟元素。
+		});
+	</script>
+</body>
+</html>

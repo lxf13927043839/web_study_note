@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>CSS测试</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            text-align: center;
+            width: 600px;
+            height: 200px;
+            background: linear-gradient(to right ,yellow, skyblue);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav"></div>
+    <script type="text/javascript">
+        var nav = document.querySelector('.nav');
+        nav.addEventListener('touchstart', function (e) {
+            console.dir(e);
+            var clientX = Math.floor(e.targetTouches[0].clientX);
+            var clientY = Math.floor(e.targetTouches[0].clientY);
+            var pageX = Math.floor(e.targetTouches[0].pageX);
+            var pageY = Math.floor(e.targetTouches[0].pageY);
+
+
+            var str = 'client:'+clientX +','+ clientY+'\n'+'page:'+pageX +','+pageY;
+            this.innerText = str;
+
+        });
+        /*nav.addEventListener('touchmove', function () {
+            console.log('touchmove');
+        });*/
+
+        /*nav.addEventListener('touchend', function () {
+            console.log('touchend');
+        });*/
+    </script>
+</body>
+</html>
