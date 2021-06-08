@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	<title>类别页面</title>
+	<style type="text/css">
+		/*
+			base.css
+		*/
+		html, body, div, img, a, p, input, ul, li, form, h3 {
+			margin: 0;
+			padding: 0;
+
+			box-sizing: border-box;
+			-webkit-tap-highlight-color: transparent;
+		}
+		ul {
+			list-style: none;
+		}
+		input {
+			outline: none;
+			border: none;
+			border: 1px solid #ccc;
+		}
+		a {
+			text-decoration: none;
+			color: #666;
+			font-size: 13px;
+		}
+		.lf {
+			float: left;
+		}
+		.rf {
+			float: right;
+		}
+		.clearfix::after {
+			content: ".";
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+
+		.m_left10 {
+			margin-left: 10px; 
+		}
+		.m_right10 {
+			margin-right: 10px; 
+		}
+
+		/*
+			category 样式
+		*/
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+
+		.ct_layout {
+			width: 100%;
+			height: 100%;
+			padding-bottom: 50px;
+		}
+
+		/*头部样式*/
+		.ct_header {
+			width: 100%;
+			height: 50px;
+			position: relative;
+		}
+		.ct_back, 
+		.ct_menu {
+			display: block;
+			width: 49px;
+			height: 49px;
+			background-color: red;
+			background: url(images/jd-sprites.png) no-repeat;
+			background-size: 200px 200px;
+			padding: 14px;
+			background-origin: content-box;
+			background-clip: content-box;
+		}
+		.ct_back {
+			background-position: -20px 0;
+			float: left;
+		}
+		.ct_menu {
+			background-position: -60px 0;
+			float: right;
+		}
+		.ct_search {
+			width: 100%;
+			height: 100%;
+			padding: 10px 49px;
+			position: absolute;
+		}
+		.ct_search > input {
+			width: 100%;
+			height: 30px;
+			border-radius: 10px;
+			padding-left: 10px;
+			color: #666;
+		}
+
+		.ct_content {
+			width: 100%;
+			height: 100%;
+			
+		}
+		.ct_content .content_left {
+			width: 100px;
+			height: 100%;
+			float: left;
+			overflow: hidden;
+			position: relative;
+		}
+		.content_left ul {
+			width: 100%;
+			position: absolute;
+		}
+		.content_left li {
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+		}
+		.content_left li a {
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-color: #ccc;
+			border-bottom: 1px solid #666;
+			border-right: 1px solid #666;
+		}
+		.content_left li.active a {
+			color: red;
+			background-color: #fff;
+			border: none;
+		}
+
+		.content_right {
+			/*不写高度，那么它就会内容所撑开，达不到效果*/
+			height: 100%;
+			margin-left: 100px;
+			/*设置为弹性布局，让右盒子信息有动态长度*/
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+
+		}
+		.content_right img {
+			display: block;
+			width: 100%;
+		}
+		.content_right h3 {
+			padding: 10px 0px;
+			padding-left: 10px;
+			border-bottom: 1px solid #ccc;
+			height: 50px;
+			line-height: 50px;
+			margin-bottom: 12px;
+		}
+		.detail {
+			flex: 1;
+			overflow: hidden;
+			/*这里加定位是为了 swipe的滑动条*/
+			position: relative;
+		}
+		.detail ul {
+			width: 100%;
+		}
+		.detail ul li {
+			width: 33.33%;
+			float: left;
+			text-align: center;
+			font-size: 13px;
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+	<div class="ct_layout">
+		<div class="ct_header">
+			<a href="javascript:void(0);" class="ct_back"></a>
+			<form action="" class="ct_search">
+				<input type="text" placeholder="请输入商品名称">
+			</form>
+			<a href="javascript:void(0);" class="ct_menu"></a>
+		</div>
+		<div class="ct_content">
+			<div class="content_left">
+				<ul>
+	                <li class=""><a href="javascript:void(0);">热门推荐</a></li>
+	                <li class="active"><a href="javascript:void(0);">潮流女装</a></li>
+	                <li class=""><a href="javascript:void(0);">品牌男装</a></li>
+	                <li class=""><a href="javascript:void(0);">内衣配饰</a></li>
+	                <li class=""><a href="javascript:void(0);">家用电器</a></li>
+	                <li class=""><a href="javascript:void(0);">电脑办公</a></li>
+	                <li class=""><a href="javascript:void(0);">手机数码</a></li>
+	                <li class=""><a href="javascript:void(0);">母婴频道</a></li>
+	                <li class=""><a href="javascript:void(0);">图书</a></li>
+	                <li class=""><a href="javascript:void(0);">家居家纺</a></li>
+	                <li class=""><a href="javascript:void(0);">居家生活</a></li>
+	                <li class=""><a href="javascript:void(0);">家具建材</a></li>
+	                <li class=""><a href="javascript:void(0);">热门推荐</a></li>
+	                <li class=""><a href="javascript:void(0);">潮流女装</a></li>
+	                <li class=""><a href="javascript:void(0);">品牌男装</a></li>
+	                <li class=""><a href="javascript:void(0);">内衣配饰</a></li>
+	                <li class=""><a href="javascript:void(0);">家用电器</a></li>
+	                <li class=""><a href="javascript:void(0);">电脑办公</a></li>
+	                <li class=""><a href="javascript:void(0);">手机数码</a></li>
+	                <li class=""><a href="javascript:void(0);">母婴频道</a></li>
+	                <li class=""><a href="javascript:void(0);">图书</a></li>
+	                <li class=""><a href="javascript:void(0);">家居家纺</a></li>
+	                <li class=""><a href="javascript:void(0);">居家生活</a></li>
+	                <li class=""><a href="javascript:void(0);">家具建材</a></li>
+	            </ul>
+			</div>
+			<div class="content_right">
+				<a href="javascript:void(0);">
+					<img src="images/banner_1.jpg" />
+				</a>
+				<h3>热门分类</h3>
+				<div class="detail">
+					<ul class="clearfix">
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/nv-fy.jpg" />
+							</a>
+							<p>毛衣</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="zepto/zepto.min.js"></script>
+	<script type="text/javascript" src="zepto/touch.js"></script>
+	<script type="text/javascript" src="js/fastclick.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			// 左侧内容滑动效果
+			var content_left = document.querySelector('.content_left');
+			var ul_left = content_left.children[0];
+
+			var startY = 0;
+			var distanceTop = 0;
+			ul_left.addEventListener('touchstart', function (e) {
+				startY = e.targetTouches[0].clientY;
+				distanceTop = ul_left.offsetTop;
+				
+				ul_left.style.transition = 'none';
+			});
+
+			var range = 100;
+			// 下拉，top的值是越来越大的
+			var maxTop = 0 + range;
+			// 上拉，top的值是越来越小的 
+			var minTop = - (ul_left.offsetHeight - content_left.clientHeight) - range;
+			ul_left.addEventListener('touchmove', function (e) {
+				var y = e.targetTouches[0].clientY;
+				
+				var diff = y - startY;
+				// console.log(diff + distanceTop);
+				if (diff + distanceTop > maxTop) {
+		
+					ul_left.style.top = maxTop + 'px';
+
+				} else if (diff + distanceTop < minTop) {
+					ul_left.style.top =  minTop + 'px';	
+
+				} else {
+
+					ul_left.style.top = diff + distanceTop + 'px';
+				}
+			});
+
+			ul_left.addEventListener('touchend', function (e) {
+
+				ul_left.style.transition = 'top 0.5s linear';
+				if (ul_left.offsetTop > 0) {
+					ul_left.style.top = '0px';
+				} else if (ul_left.offsetTop < -(ul_left.offsetHeight - content_left.clientHeight)) {
+					ul_left.style.top = -(ul_left.offsetHeight - content_left.clientHeight)+'px';
+				}
+			});
+
+			
+			// addEventListener 允许多次注册同个事件
+			var lis = ul_left.children;
+			for (var i = 0; i < lis.length; i++) {
+				var li = lis[i];
+				li.setAttribute('index', i);
+			}
+
+			// 使用自己封装的 模拟的click事件
+			// tap(ul_left, function (e) {
+			// 	for (var i = 0; i < lis.length; i++) {
+			// 		var li = lis[i];
+			// 		li.classList.remove('active');
+			// 	}
+			// 	//  这里的事件源是 a 链接
+			// 	e.target.parentNode.classList.add('active');
+
+			// 	var index = e.target.parentNode.getAttribute('index');
+				
+			// 	var liHeight = lis[0].offsetHeight;
+			// 	var topValue =  -index * liHeight;
+			// 	if ( topValue < minTop + range) {
+			// 		topValue =  minTop + range;
+			// 	}
+			// 	ul_left.style.top = topValue + 'px';
+
+			// });
+
+			// 使用zepto来处理
+			/*$('.content_left').on('tap', function (e) {
+				for (var i = 0; i < lis.length; i++) {
+					var li = lis[i];
+					li.classList.remove('active');
+				}
+				//  这里的事件源是 a 链接
+				e.target.parentNode.classList.add('active');
+
+				var index = e.target.parentNode.getAttribute('index');
+				
+				var liHeight = lis[0].offsetHeight;
+				var topValue =  -index * liHeight;
+				if ( topValue < minTop + range) {
+					topValue =  minTop + range;
+				}
+				ul_left.style.top = topValue + 'px';
+			});*/
+
+			// 使用fastclick,在pc 和 移动端都能够使用
+			if ('addEventListener' in document) {
+	            document.addEventListener('DOMContentLoaded', function() {
+	        	// 参数可以是任意的dom元素，如果写 document.body，说明会将document.body下面的所有元素都绑定 fastclick
+	                FastClick.attach(document.body);
+	            }, false);
+	        }
+	        ul_left.addEventListener('click', function (e) {
+	        	for (var i = 0; i < lis.length; i++) {
+					var li = lis[i];
+					li.classList.remove('active');
+				}
+				//  这里的事件源是 a 链接
+				e.target.parentNode.classList.add('active');
+
+				var index = e.target.parentNode.getAttribute('index');
+				
+				var liHeight = lis[0].offsetHeight;
+				var topValue =  -index * liHeight;
+				if ( topValue < minTop + range) {
+					topValue =  minTop + range;
+				}
+				ul_left.style.top = topValue + 'px';
+	        });
+
+	        // 内容右边，详细内容
+	        var myScroll = new IScroll('.detail', {
+	            mouseWheel: true,
+	            scrollbars: true
+	        });
+
+			//做一个 tap 事件，即模拟click事件的简单封装		
+			function tap(element, callback) {
+				if (typeof element !== 'object') {
+					return;
+				}
+				var startX, startY, startTime; 
+				element.addEventListener('touchstart', function (e) {
+					if (e.targetTouches.length > 1) {
+						return;
+					}
+
+					startX = e.targetTouches[0].clientX;
+					startY = e.targetTouches[0].clientY;
+					startTime = new Date();
+					// 添加点击前的一些准备工作。
+				}); 
+				element.addEventListener('touchend', function (e) {
+					if (e.changedTouches.length > 1) {
+						return;
+					}
+					if (new Date() - startTime > 150) {
+						return;
+					}
+					var x = e.changedTouches[0].clientX;
+					var y = e.changedTouches[0].clientY;
+
+					if (Math.abs(startX - x) < 6 && Math.abs(startY - y) < 6) {
+						// 点击后发生的处理事情
+						if (callback) {
+							callback(e);
+						}
+					}
+				}); 
+			}
+		};
+	</script>
+</body>
+</html>

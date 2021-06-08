@@ -1,0 +1,88 @@
+@import 'fonts.less';
+
+/*这里只是先简单处理*/
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*
+  做媒体查询，用的UI稿件是640px,把它分成20份的
+*/
+@media screen and (device-width: 640px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (device-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media screen and (device-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (device-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+body {
+  background-color: #F7F4F1;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  .items {
+    > ul {
+      margin: 0 24/32rem;
+      > li {
+        .itemTop {
+          margin-top: 27/32rem;
+          margin-bottom: 30/32rem;
+          overflow: hidden;
+          font-size:  28/32rem;
+          h4 {
+            float: left;
+          }
+          span {
+            float: right;
+          }
+        }
+        .item {
+          height: 224/32rem;
+          border: 3px dashed #ddd;
+          box-sizing: border-box;
+          background-color: #fff;
+          font-size: 104/32rem;
+          padding-top: 36/32rem;
+          text-align: center;
+          a {
+            text-align: center;
+            color: #AEAEAE;
+            display: block;
+            span {
+                margin-top: 20/32rem;
+                display: block;
+                font-size: 26/32rem;
+                color: #ADADAD;
+            }
+              
+          }
+          
+        }
+      }
+    }
+  }
+}

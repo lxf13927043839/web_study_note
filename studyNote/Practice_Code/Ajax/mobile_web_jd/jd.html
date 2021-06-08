@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	<title>web京东</title>
+	<style type="text/css">
+		/*
+			base.css
+		*/
+		html, body, div, img, a, p, input, ul, li, form, h3 {
+			margin: 0;
+			padding: 0;
+
+			box-sizing: border-box;
+			-webkit-tap-highlight-color: transparent;
+		}
+		ul {
+			list-style: none;
+		}
+		input {
+			outline: none;
+			border: none;
+			border: 1px solid #ccc;
+		}
+		a {
+			text-decoration: none;
+			color: #666;
+			font-size: 13px;
+		}
+		.lf {
+			float: left;
+		}
+		.rf {
+			float: right;
+		}
+		.clearfix::after {
+			content: ".";
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+
+		.m_left10 {
+			margin-left: 10px; 
+		}
+		.m_right10 {
+			margin-right: 10px; 
+		}
+
+		/*index.css*/
+		.jd_layout {
+			width: 100%;
+			height: 1000px;
+			max-width: 640px;
+			min-width: 320px;
+			margin: 0 auto;
+			background-color: #ccc;
+		}
+		/*顶部搜索框样式*/
+		.jd_search {
+			width: 100%;
+			height: 40px;
+			/*background-color: #e92322;*/
+			/*固定定位是相对于浏览器而言
+			要加上max-width来解决
+			*/
+			max-width: 640px;
+			position: fixed;
+			z-index: 999;
+		}
+		.jd_logo {
+			width: 56px;
+			height: 30px;
+			display: block;
+			background-color: blue;
+			position: absolute;
+			left: 10px;
+			top: 5px;
+			/*要把背景图缩小，是因为原图400x400它的图片太大了*/
+			background: url(images/jd-sprites.png) 0 -109px;
+			background-size: 200px 200px;
+		}
+		.jd_login {
+			width: 40px;
+			height: 40px;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			line-height: 40px;
+			color: #fff;
+		}
+		.search_box {
+			width: 100%;
+			height: 100%;
+			padding-left: 76px;
+			padding-right: 45px;
+		}
+		.search_box .search_name {
+			width: 100%;
+			height: 30px;
+			margin-top: 5px;
+			border-radius: 15px;
+			padding-left: 27px;
+		}
+		.search_box::before {
+			content: "";
+			display: block;
+			width: 27px;
+			height: 23px;
+			background: url(images/jd-sprites.png) -56px -109px;
+			background-size: 200px 200px;
+			position: absolute;
+			top: 9px;
+			left: 80px;
+		}
+		/*顶部搜索框样式*/
+
+		/*轮播图样式*/
+		.jd_banner {
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+		.jd_bannerImg {
+			width: 800%;
+			position: relative;
+			left: 0;
+		}
+		.jd_bannerImg > li {
+			/*width: 12.5%;*/
+			/*一共变成9张图了*/
+			width: 11.11%;
+			float: left;
+		}
+		.jd_bannerImg > li img {
+			width: 100%;
+			display: block;
+		}
+
+		.jd_bannerCircle {
+			/*这里由子元素去撑开盒子*/
+			position: absolute;
+			bottom: 5px;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		.jd_bannerCircle li {
+			width: 6px;
+			height: 6px;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			float: left;
+			margin-left: 10px;
+		}
+		.jd_bannerCircle li:first-child {
+			margin: 0;
+		}
+		.current {
+			background-color: #fff;
+		}
+		.transition {
+			transition: left 1s linear;
+		}
+		/*轮播图样式*/	
+
+		/*导航栏样式*/
+		.jd_nav {
+			width: 100%;
+			background-color: #fff;
+			padding: 10px 0;
+		}
+		.jd_nav li {
+			width: 25%;
+			float: left;
+			text-align: center;
+			margin-top: 5px;
+		}
+		.jd_nav li img {
+			width: 50px;
+			margin-bottom: 5px;
+		}
+
+		/*导航栏样式*/
+
+		/*产品信息*/
+		.jd_product {
+			width: 100%;
+		}
+		.jd_productBox {
+			margin-top: 10px;
+			background-color: #fff;
+		}
+		.jd_productTip {
+			width: 100%;
+		}
+		.jd_productTip h3 {
+			height: 30px;
+			line-height: 30px;
+			width: 100%;
+			padding-left: 30px;
+			border-bottom: 1px solid #ccc;
+			position: relative;
+		}
+		.jd_productTip h3::before {
+			content: "";
+			display: block;
+			width: 3px;
+			height: 12px;
+			border-right: 1px solid red;
+			position: absolute;
+			top: 9px;
+			left: 17px;
+		}
+		.jd_productInfo {
+
+		}
+		.jd_productInfo a {
+			width: 50%;
+			display: block;
+		}
+		.jd_productInfo a img {
+			width: 100%;
+			display: block;
+		}
+		.border_l {
+			border-left: 1px solid #ccc;
+		}
+		.border_r {
+			border-right: 1px solid #ccc;
+		}
+		.border_b {
+			border-bottom: 1px solid #ccc;
+		}
+
+		.sk .sk_icon {
+			width: 16px;
+			height: 20px;
+			display: inline-block;
+			background: url(images/seckill-icon.png);
+			background-size: 16px 20px;
+		}
+		.sk .time span {
+			width: 13px;
+			height: 18px;
+			line-height: 18px;
+			text-align: center;
+			display: inline-block;
+			background-color: black;
+			color: #fff;
+		}
+		.sk .time span:nth-child(3n) {
+			width: 8px;
+			background-color: transparent;
+			color: #000;
+		}
+		.sk .sk_text {
+			color: red;
+		}
+
+		.sk .jd_productInfo {
+			width: 100%;
+			padding: 20px 0;
+		}
+		.sk .jd_productInfo li {
+			width: 33.33%;
+			float: left;
+			text-align: center;
+		}
+		.sk .jd_productInfo li a {
+			width: 100%;
+			display: inline-block;
+		}
+		.sk .jd_productInfo li img {
+			width: 60%;
+			display: inline-block;
+		}
+ 		/*产品信息*/
+
+	</style>
+</head>
+<body>
+	<div class="jd_layout">
+		<!-- 顶部搜索框 -->
+		<div class="jd_search">
+			<a href="javascript:void(0);" class="jd_logo"></a>
+			<form action="" class="search_box">
+				<input type="text" placeholder="请输入商品名称" class="search_name">
+			</form>
+			<a href="javascript:void(0);" class="jd_login">登录</a>
+		</div>
+
+		<!-- 轮播图 -->
+		<div class="jd_banner clearfix">
+			<ul class="jd_bannerImg">
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l2.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l3.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l4.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l5.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l6.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l7.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l8.jpg" />
+					</a>
+				</li>
+			</ul>
+			<ul class="jd_bannerCircle">
+				<!-- <li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li> -->
+			</ul>
+		</div>
+
+		<!-- 导航栏 -->
+		<div class="jd_nav">
+			<ul class="clearfix">
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav0.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav2.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav3.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav4.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav5.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav6.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav7.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav1.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+			</ul>	
+		</div>
+
+		<!-- 产品信息 -->
+		<div class="jd_product clearfix">
+			<div class="jd_productBox sk">
+				<div class="jd_productTip clearfix">
+					<!-- 标题左边 -->
+					<div class="tipLeft lf">
+					 	<span class="sk_icon m_right10 m_left10 lf"></span>
+					 	<span class="lf sk_text">掌上秒杀</span>
+					 	<div class="time lf m_left10">
+					 		<span>0</span>
+					 		<span>0</span>
+					 		<span>:</span>
+					 		<span>0</span>
+					 		<span>0</span>
+					 		<span>:</span>
+					 		<span>0</span>
+					 		<span>0</span>
+					 	</div>
+					</div>
+					<!-- 标题右边 -->					
+					<div class="tipRight rf">
+						<a href="javascript:void(0);">更多秒杀</a>
+					</div>
+				</div>
+				<div class="jd_productInfo clearfix">
+					<ul>
+						<li>
+							<a href="javascript:void(0);"><img src="uploads/detail01.jpg"></a>
+							<p>&yen;10.00</p>
+							<p>&yen;20.00</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);"><img src="uploads/detail01.jpg"></a>
+							<p>&yen;10.00</p>
+							<p>&yen;20.00</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);"><img src="uploads/detail01.jpg"></a>
+							<p>&yen;10.00</p>
+							<p>&yen;20.00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="jd_productBox">
+				<div class="jd_productTip">
+					<h3>京东超市</h3>
+				</div>
+				<div class="jd_productInfo clearfix">
+					<a href="javascript:void(0);" class="lf"><img src="uploads/cp1.jpg"></a>
+					<a href="javascript:void(0);" class="border_l border_b lf"><img src="uploads/cp2.jpg"></a>
+					<a href="javascript:void(0);" class="border_l lf"><img src="uploads/cp3.jpg"></a>
+				</div>
+			</div>
+			<div class="jd_productBox">
+				<div class="jd_productTip">
+					<h3>京东超市</h3>
+				</div>
+				<div class="jd_productInfo clearfix">
+					<a href="javascript:void(0);" class="rf"><img src="uploads/cp4.jpg"></a>
+					<a href="javascript:void(0);" class="border_r border_b lf"><img src="uploads/cp5.jpg"></a>
+					<a href="javascript:void(0);" class="border_r lf"><img src="uploads/cp6.jpg"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		/*
+			顶部搜索栏js效果
+		*/
+		searchBoxColorTransition();
+
+		/*
+			秒杀模块的倒计时
+		*/
+		calculateSkTime();
+
+		/*
+			轮播图效果
+		*/
+		// 1 先动态生成小圆圈
+		var jd_bannerImg = document.querySelector('.jd_bannerImg');
+		var availImgTotalNum = jd_bannerImg.children.length;
+		var documentFragment = document.createDocumentFragment();
+		for (var i = 0; i < availImgTotalNum; i++) {
+			var li = document.createElement('li');
+			if (i === 0) {
+				li.className = 'current';
+			}
+			documentFragment.appendChild(li);
+		}
+		var jd_bannerCircle = document.querySelector('.jd_bannerCircle');
+		jd_bannerCircle.appendChild(documentFragment);
+
+		// 2、先克隆 首尾 两张图，分别加在 尾首。
+	 	//（1）先克隆最后的一张图，因为后面还要添加一张图
+	 	var cloneLast = jd_bannerImg.children[availImgTotalNum - 1].cloneNode(true);
+	 	//（2）克隆原本的第一张图
+	 	var cloneFirst = jd_bannerImg.children[0].cloneNode(true);
+
+		jd_bannerImg.insertBefore(cloneLast, jd_bannerImg.children[0]);
+		jd_bannerImg.appendChild(cloneFirst);
+
+		// 计算下ul容器宽度
+		jd_bannerImg.style.width = 100 * (jd_bannerImg.children.length) + '%';
+
+
+		// 这里动态添加了一张图片会，还需要改 li 所占的百分比，这里先直接改 css 样式
+		for (var i = 0; i < jd_bannerImg.children.length; i++) {
+			jd_bannerImg.children[i].style.width = 100 / jd_bannerImg.children.length + '%';
+		}
+		// 3 向右移动，添加过渡效果。
+		// jd_bannerImg.style.transition = 'all 1s linear'; // 写all出现的问题可能比较多
+		var imgWidth = document.querySelector('.jd_bannerImg li a img').offsetWidth;
+
+		// 显示原来的第一张图
+		jd_bannerImg.style.left = -imgWidth + 'px';
+
+		// 当浏览器窗口发送变化的时候，需要重新设置大小
+		window.onresize = function () {
+			imgWidth = document.querySelector('.jd_bannerImg li a img').offsetWidth;
+		}
+
+
+		// 4 自动播放
+		// 一开始首页的索引是 1 。从 0 开始
+		var index = 1;
+		var jd_bannerCircle = document.querySelector('.jd_bannerCircle');
+		Circles = jd_bannerCircle.children;
+		var timeId = null;
+
+		function startAutoPlay() {
+			timeId = setInterval(function () {	
+
+				// 判断是不是克隆的那张,别的地方也有对index进行操作，可能同时发生，然后超过了 把 === 改成 >= 
+				if ( index >= availImgTotalNum + 1) {
+						jd_bannerImg.className = 'jd_bannerImg';
+						jd_bannerImg.style.left = -imgWidth + 'px';
+						// 测试用的
+						// clearInterval(timeId);
+						// return false;
+						index = 1; // 首页的索引是 1。	
+				}
+				// 此时 0 px 还没有渲染上去，所以让刷新函数延时 1 毫秒
+				setTimeout(function () {
+					index++;
+					if (index === 2) {
+						jd_bannerImg.className = 'jd_bannerImg transition';
+					}
+					 
+					jd_bannerImg.style.left = -index * imgWidth + 'px';
+					// 设置好当前的小圆点
+					for (var i = 0; i < Circles.length; i++) {
+						Circles[i].className = '';
+					}
+					// 加 1 是因为在首页添加了一张图片
+					if (index === availImgTotalNum + 1) {
+						Circles[0].className = 'current';
+
+					} else {
+						Circles[index - 1].className = 'current';
+					}
+				},1);
+
+			}, 1500);
+		}
+
+		startAutoPlay();
+
+		// 5、触摸拖动的功能
+		// false 表示无触摸，true表示有，布尔类型
+		var touchFlag = true;
+		var distance = 50;
+		var startX = 0;
+		var bannerOffsetLeft = 0;
+		jd_bannerImg.addEventListener('touchstart', function (e) {
+			clearInterval(timeId);
+			// 触摸的时候，先把过渡效果去掉
+			jd_bannerImg.className = 'jd_bannerImg';
+
+			if (index === availImgTotalNum + 1) {
+				index = 1;		
+			}
+			if (index === 0) {
+				index = availImgTotalNum;
+			}
+  			console.log(index);
+			jd_bannerImg.style.left = -index*imgWidth + 'px';
+
+			// 这个不能在move中获取，一次触摸就获取一次位置
+			bannerOffsetLeft = jd_bannerImg.offsetLeft;
+			startX = Math.floor(e.targetTouches[0].clientX);
+
+		});
+
+		// move 是处理图片的移动
+		jd_bannerImg.addEventListener('touchmove', function (e) {
+			// touchFlag 用来做一个缓冲，一直滑动不会太快
+
+			if (touchFlag) {
+				var moveX = Math.floor(e.targetTouches[0].clientX);
+				var diff = moveX - startX;
+				jd_bannerImg.style.left = bannerOffsetLeft + diff + 'px';				
+			}
+
+		});
+		// 手指离开时，要做判断
+		jd_bannerImg.addEventListener('touchend', function (e) {
+			touchFlag = false;
+			// 离开是时候把过渡效果加上
+			jd_bannerImg.className = 'jd_bannerImg transition';
+
+			var endX = Math.floor(e.changedTouches[0].clientX);
+			// console.log(endX);
+			var diff = endX - startX;
+			// 拖拽的幅度要大于设定值，如果没有就恢复。
+			if (Math.abs(diff) > distance) {
+				if (diff > 0) {
+					index--;
+				} else { // 下一张
+					index++; 
+				}
+				jd_bannerImg.style.left = -index*imgWidth + 'px';
+			} else {
+				jd_bannerImg.style.left = bannerOffsetLeft + 'px';
+			}
+			// 小圆圈的移动
+			for (var i = 0; i < Circles.length; i++) {
+				Circles[i].className = '';
+			}
+			if (index === availImgTotalNum + 1) {
+				Circles[0].className = 'current';
+
+			} else if (index === 0){
+				Circles[Circles.length - 1].className = 'current';
+			} else {
+				Circles[index - 1].className = 'current';				
+			}
+		
+			// 感觉这样的话，它每次都会触发做这个事，感觉没什么必要，自动轮播的时候不需要这个
+			// jd_bannerImg.addEventListener('webkitTransitionEnd', function () {
+			// 	console.log('webkitTransitionEnd');
+			// })
+			// 这里要做下延时，等动画过去,延时多长的时间，要根据过渡效果的时间来设置。
+			setTimeout(function () {
+				touchFlag = true;
+				// 不清除的话，会越来越快的
+				clearInterval(timeId);
+				startAutoPlay();
+			}, 2000);
+
+
+		});
+
+
+		function calculateSkTime() {
+			// 秒作为单位
+			// querySelector,它的参数是选择器，不是类名
+			var spans = document.querySelector('.time').querySelectorAll('span');
+			var totalTime = 5600; 
+			// 定时器是 1 秒后才执行的。
+			calculateTime(totalTime, spans);
+			var timeId = setInterval(function () {
+				totalTime--;
+				if (totalTime < 0) {
+					clearInterval(timeId);
+					return false;
+				}
+				calculateTime(totalTime, spans);
+			}, 1000);
+		}
+		function calculateTime(totalTime, element) {
+			var hour = Math.floor(totalTime / 60 / 60);
+			var minute = Math.floor(totalTime / 60 % 60);
+			var second = Math.floor(totalTime % 60);
+
+			element[0].innerText = Math.floor(hour / 10);
+			element[1].innerText = Math.floor(hour % 10);
+			element[3].innerText = Math.floor(minute / 10);
+			element[4].innerText = Math.floor(minute % 10);
+			element[6].innerText = Math.floor(second / 10);
+			element[7].innerText = Math.floor(second % 10);
+		}
+
+		function searchBoxColorTransition() {
+			/*
+	    	头部搜索块的js效果
+	    	1.获取当前banner的高度
+	    	2.获取当前屏幕滚动时，banner滚动出屏幕的距离
+	    	3.计算比例值，获取透明度，设置背景颜色的样式
+	   		判断，如果当banner还没有完全 滚出屏幕，那么才有必要计算透明度和设置透明度
+	     */
+	    	var jdSearch = document.getElementsByClassName('jd_search')[0];
+	    	var bannerHeight = document.getElementsByClassName('jd_banner')[0].offsetHeight;
+	    	document.onscroll = function () {
+	    		// 获取页面滚动出去的距离
+				var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+				if (scrollTop < bannerHeight) {
+					var opcityPercentage = scrollTop / bannerHeight;
+					var color = 'rgba(233, 23, 22,'+ opcityPercentage +')';
+					jdSearch.style.backgroundColor = color;
+				}
+	    	}
+		}
+	</script>
+</body>
+</html>

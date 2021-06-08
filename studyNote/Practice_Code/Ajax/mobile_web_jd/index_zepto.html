@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	<title>zepto练习</title>
+	<style type="text/css">
+		/*
+			base.css
+		*/
+		html, body, div, img, a, p, input, ul, li, form, h3 {
+			margin: 0;
+			padding: 0;
+
+			box-sizing: border-box;
+			-webkit-tap-highlight-color: transparent;
+		}
+		ul {
+			list-style: none;
+		}
+		input {
+			outline: none;
+			border: none;
+			border: 1px solid #ccc;
+		}
+		a {
+			text-decoration: none;
+			color: #666;
+			font-size: 13px;
+		}
+		.lf {
+			float: left;
+		}
+		.rf {
+			float: right;
+		}
+		.clearfix::after {
+			content: ".";
+			display: block;
+			height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+
+		.m_left10 {
+			margin-left: 10px; 
+		}
+		.m_right10 {
+			margin-right: 10px; 
+		}
+
+		/*index.css*/
+		.jd_layout {
+			width: 100%;
+			height: 1000px;
+			max-width: 640px;
+			min-width: 320px;
+			margin: 0 auto;
+			background-color: #ccc;
+		}
+		/*顶部搜索框样式*/
+		.jd_search {
+			width: 100%;
+			height: 40px;
+			/*background-color: #e92322;*/
+			/*固定定位是相对于浏览器而言
+			要加上max-width来解决
+			*/
+			max-width: 640px;
+			position: fixed;
+			z-index: 999;
+		}
+		.jd_logo {
+			width: 56px;
+			height: 30px;
+			display: block;
+			background-color: blue;
+			position: absolute;
+			left: 10px;
+			top: 5px;
+			/*要把背景图缩小，是因为原图400x400它的图片太大了*/
+			background: url(images/jd-sprites.png) 0 -109px;
+			background-size: 200px 200px;
+		}
+		.jd_login {
+			width: 40px;
+			height: 40px;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			line-height: 40px;
+			color: #fff;
+		}
+		.search_box {
+			width: 100%;
+			height: 100%;
+			padding-left: 76px;
+			padding-right: 45px;
+		}
+		.search_box .search_name {
+			width: 100%;
+			height: 30px;
+			margin-top: 5px;
+			border-radius: 15px;
+			padding-left: 27px;
+		}
+		.search_box::before {
+			content: "";
+			display: block;
+			width: 27px;
+			height: 23px;
+			background: url(images/jd-sprites.png) -56px -109px;
+			background-size: 200px 200px;
+			position: absolute;
+			top: 9px;
+			left: 80px;
+		}
+		/*顶部搜索框样式*/
+
+		/*轮播图样式*/
+		.jd_banner {
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+		.jd_bannerImg {
+			width: 800%;
+			position: relative;
+			left: 0;
+		}
+		.jd_bannerImg > li {
+			width: 12.5%;
+			float: left;
+		}
+		.jd_bannerImg > li img {
+			width: 100%;
+			display: block;
+		}
+
+		.jd_bannerCircle {
+			/*这里由子元素去撑开盒子*/
+			position: absolute;
+			bottom: 5px;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		.jd_bannerCircle li {
+			width: 6px;
+			height: 6px;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			float: left;
+			margin-left: 10px;
+		}
+		.jd_bannerCircle li:first-child {
+			margin: 0;
+		}
+		.current {
+			background-color: #fff;
+		}
+		.transition {
+			transition: left 1s linear;
+		}
+		/*轮播图样式*/	
+
+		/*导航栏样式*/
+		.jd_nav {
+			width: 100%;
+			background-color: #fff;
+			padding: 10px 0;
+		}
+		.jd_nav li {
+			width: 25%;
+			float: left;
+			text-align: center;
+			margin-top: 5px;
+		}
+		.jd_nav li img {
+			width: 50px;
+			margin-bottom: 5px;
+		}
+
+		/*导航栏样式*/
+
+		/*产品信息*/
+		.jd_product {
+			width: 100%;
+		}
+		.jd_productBox {
+			margin-top: 10px;
+			background-color: #fff;
+		}
+		.jd_productTip {
+			width: 100%;
+		}
+		.jd_productTip h3 {
+			height: 30px;
+			line-height: 30px;
+			width: 100%;
+			padding-left: 30px;
+			border-bottom: 1px solid #ccc;
+			position: relative;
+		}
+		.jd_productTip h3::before {
+			content: "";
+			display: block;
+			width: 3px;
+			height: 12px;
+			border-right: 1px solid red;
+			position: absolute;
+			top: 9px;
+			left: 17px;
+		}
+		.jd_productInfo {
+
+		}
+		.jd_productInfo a {
+			width: 50%;
+			display: block;
+		}
+		.jd_productInfo a img {
+			width: 100%;
+			display: block;
+		}
+		.border_l {
+			border-left: 1px solid #ccc;
+		}
+		.border_r {
+			border-right: 1px solid #ccc;
+		}
+		.border_b {
+			border-bottom: 1px solid #ccc;
+		}
+
+		.sk .sk_icon {
+			width: 16px;
+			height: 20px;
+			display: inline-block;
+			background: url(images/seckill-icon.png);
+			background-size: 16px 20px;
+		}
+		.sk .time span {
+			width: 13px;
+			height: 18px;
+			line-height: 18px;
+			text-align: center;
+			display: inline-block;
+			background-color: black;
+			color: #fff;
+		}
+		.sk .time span:nth-child(3n) {
+			width: 8px;
+			background-color: transparent;
+			color: #000;
+		}
+		.sk .sk_text {
+			color: red;
+		}
+
+		.sk .jd_productInfo {
+			width: 100%;
+			padding: 20px 0;
+		}
+		.sk .jd_productInfo li {
+			width: 33.33%;
+			float: left;
+			text-align: center;
+		}
+		.sk .jd_productInfo li a {
+			width: 100%;
+			display: inline-block;
+		}
+		.sk .jd_productInfo li img {
+			width: 60%;
+			display: inline-block;
+		}
+ 		/*产品信息*/
+
+	</style>
+</head>
+<body>
+	<div class="jd_layout">
+		<!-- 顶部搜索框 -->
+		<div class="jd_search">
+			<a href="javascript:void(0);" class="jd_logo"></a>
+			<form action="" class="search_box">
+				<input type="text" placeholder="请输入商品名称" class="search_name">
+			</form>
+			<a href="javascript:void(0);" class="jd_login">登录</a>
+		</div>
+
+		<!-- 轮播图 -->
+		<div class="jd_banner clearfix">
+			<ul class="jd_bannerImg">
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l2.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l3.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l4.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l5.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l6.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l7.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/l8.jpg" />
+					</a>
+				</li>
+			</ul>
+			<ul class="jd_bannerCircle">
+				<!-- <li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li> -->
+			</ul>
+		</div>
+
+		<!-- 导航栏 -->
+		<div class="jd_nav">
+			<ul class="clearfix">
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav0.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav2.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav3.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav4.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav5.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav6.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav7.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="uploads/nav1.png" />
+						<p>商品分类</p>
+					</a>
+				</li>
+			</ul>	
+		</div>
+
+		<!-- 产品信息 -->
+		<div class="jd_product clearfix">
+			<div class="jd_productBox sk">
+				<div class="jd_productTip clearfix">
+					<!-- 标题左边 -->
+					<div class="tipLeft lf">
+					 	<span class="sk_icon m_right10 m_left10 lf"></span>
+					 	<span class="lf sk_text">掌上秒杀</span>
+					 	<div class="time lf m_left10">
+					 		<span>0</span>
+					 		<span>0</span>
+					 		<span>:</span>
+					 		<span>0</span>
+					 		<span>0</span>
+					 		<span>:</span>
+					 		<span>0</span>
+					 		<span>0</span>
+					 	</div>
+					</div>
+					<!-- 标题右边 -->					
+					<div class="tipRight rf">
+						<a href="javascript:void(0);">更多秒杀</a>
+					</div>
+				</div>
+				<div class="jd_productInfo clearfix">
+					<ul>
+						<li>
+							<a href="javascript:void(0);"><img src="uploads/detail01.jpg"></a>
+							<p>&yen;10.00</p>
+							<p>&yen;20.00</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);"><img src="uploads/detail01.jpg"></a>
+							<p>&yen;10.00</p>
+							<p>&yen;20.00</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);"><img src="uploads/detail01.jpg"></a>
+							<p>&yen;10.00</p>
+							<p>&yen;20.00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="jd_productBox">
+				<div class="jd_productTip">
+					<h3>京东超市</h3>
+				</div>
+				<div class="jd_productInfo clearfix">
+					<a href="javascript:void(0);" class="lf"><img src="uploads/cp1.jpg"></a>
+					<a href="javascript:void(0);" class="border_l border_b lf"><img src="uploads/cp2.jpg"></a>
+					<a href="javascript:void(0);" class="border_l lf"><img src="uploads/cp3.jpg"></a>
+				</div>
+			</div>
+			<div class="jd_productBox">
+				<div class="jd_productTip">
+					<h3>京东超市</h3>
+				</div>
+				<div class="jd_productInfo clearfix">
+					<a href="javascript:void(0);" class="rf"><img src="uploads/cp4.jpg"></a>
+					<a href="javascript:void(0);" class="border_r border_b lf"><img src="uploads/cp5.jpg"></a>
+					<a href="javascript:void(0);" class="border_r lf"><img src="uploads/cp6.jpg"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="zepto/zepto.min.js"></script>
+<script type="text/javascript" src="zepto/selector.js"></script>
+<script type="text/javascript" src="zepto/fx.js"></script>
+<script type="text/javascript">
+	$(function () {
+		// 1、动态生成小圆圈
+		var availImgTotal = $('.jd_bannerImg').children().length;
+		for (var i = 0; i < availImgTotal; i++) {
+			$('.jd_bannerCircle').append($('<li></li>'));
+		}
+		$('.jd_bannerCircle li:first-child').addClass('current');
+
+		// 2、克隆首尾两张图，分别放 尾首
+		$('.jd_bannerImg li:last-child').clone().insertBefore($('.jd_bannerImg li:first-child'));
+		$('.jd_bannerImg').append($('.jd_bannerImg li:eq(1)').clone());
+
+		// 重新设置 ul 盒子的，跟图片的大小
+		$('.jd_bannerImg').css('width', $('.jd_bannerImg').children().length * 100 + '%' );
+		$('.jd_bannerImg li').css('width', 100 / $('.jd_bannerImg').children().length + '%');
+
+		var bannerImgWidth = $('.jd_bannerImg li img').width();
+		window.onresize = function () {
+			bannerImgWidth =$('.jd_bannerImg li img').width();
+			console.log(bannerImgWidth);
+		}
+		// 显示第一张图
+		$('.jd_bannerImg').css('left', -bannerImgWidth + 'px');
+
+		// 最开始第一张图的索引是 1  
+		var index = 1; 
+		var timeId = setInterval(function () {
+			if (index === availImgTotal + 1) {
+				$('.jd_bannerImg').css('left', -bannerImgWidth + 'px');
+				index = 1;
+			}
+
+			index++;
+			$('.jd_bannerImg').animate({
+				left: -index * bannerImgWidth + 'px',
+			}, 1000, 'linear', function () {
+
+			});
+
+			if (index === availImgTotal + 1) {
+				$('.jd_bannerCircle li:nth-child(1)').addClass('current').siblings().removeClass();
+			}
+			$('.jd_bannerCircle li:nth-child('+ index +')').addClass('current').siblings().removeClass();
+		}, 1500);
+
+
+	});
+</script>
+</html>
