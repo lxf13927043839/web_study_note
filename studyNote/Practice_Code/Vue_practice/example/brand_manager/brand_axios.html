@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vue brand Axios</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
+</head>
+<body>
+	<div class="box">
+		<div class="panel panel-primary">
+			<div class="panel-heading">添加新品牌</div>
+			<div class="panel-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="name">品牌名称</label>
+						<input type="text" class="form-control" id="name" placeholder="请输入品牌名称" v-model="name">
+					</div>
+					<button type="button" class="btn btn-primary" @click="addList">添加</button>
+				</form>
+			</div>
+		</div>
+		<table class="table table-bordered .table-hover table-striped">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Ctime</th>
+					<th>Operation</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="item in brandList">
+					<td>{{ item.id }}</td>
+					<td>{{ item.name }}</td>
+					<td>{{ item.ctime }}</td>
+					<td>
+						<a href="javascript:void(0);" @click.prevent="delList(item.id)">删除</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript" src="lib/vue-2.4.0.js"></script>
+	<script type="text/javascript" src="lib/axios.js"></script>
+	<script type="text/javascript">
+		// 先挂载一下axios
+		// 以下四行代码能直接封装在一个js文件中去。
+		const instance = axios.create({
+			baseURL: 'http://www.liulongbin.top:3005',
+		});
+		Vue.prototype.$http = instance;
+
+		var vm = new Vue({
+			el: '.box',
+			data: {
+				brandList: [],
+				name: '',
+			},
+			created: function () {
+				this.updateList();
+			},
+
+			methods: {
+				async updateList() {
+					const {data} = await this.$http.get('/api/getprodlist');
+					// 根据后台回传的数据格式进行解析
+					this.brandList = data.message;
+				},
+				async addList() {
+					if (this.name.trim().length <= 0) {
+						alert('品牌名称不能为空');
+						return;
+					}
+					// 忘记加await，导致结果是promise的
+					this.name = this.name.trim();
+					// 先把结果打印出来看一下，在解析。
+					const {data} = await this.$http.post('/api/addproduct', {
+						name: this.name,
+					});
+					console.log(data.status);
+					if (data.status === 0) {
+						this.updateList();
+						this.name = '';
+					}
+				},
+				async delList(id) {
+					const {data} = await this.$http.get('/api/delproduct/' + id);
+					if (data.status === 0) {
+						this.updateList();
+					}
+				},
+			},
+		});
+	</script>
+</body>
+</html>

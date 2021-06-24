@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="box">
+		<com1></com1>
+		<com1></com1>
+	</div>
+	
+
+	<template id="template">
+		<div>
+			<h2 v-on:click="say">{{ msg }}</h2>
+		</div>
+	</template>
+	<script type="text/javascript" src="./lib/vue-2.4.0.js"></script>
+	<script type="text/javascript">
+		// 全局注册组件,采用模板字符串来写template
+		const com = Vue.extend({
+			template: '#template',
+			data: function () {
+				return {
+					msg: 'hello world',
+				}
+			},
+			methods: {
+				say: function () {
+					console.log('hello');
+				},
+			},
+		});
+		
+		console.dir(com);
+		// Vue.component('com1', {
+			
+		// });
+	
+		var vm = new Vue({
+			el: '.box',
+			data: {
+			},
+			methods: {
+			},
+		});
+		console.log(vm);
+	</script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>品牌管理小案例</title>
+	<!-- bootstrap的版本是3.4版本 -->
+	<link rel="stylesheet" type="text/css" href="./lib/bootstrap.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">添加品牌</h3>
+			</div>
+			<div class="panel-body">
+				<!-- 放置表单元素 -->
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="exampleInputName2" >id:</label>
+						<input type="text" class="form-control" id="exampleInputName2" v-model="id" v-focus>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">Name:</label>
+						<input type="text" class="form-control" id="exampleInputName2" v-model="name" @keyup.f2="add">
+					</div>
+					<button type="button" class="btn btn-primary" @click="add">添加</button>
+					<div class="form-group">
+						<label for="exampleInputName2" v-color="'green'">搜索名称关键字:</label>
+						<input type="text" class="form-control" id="exampleInputName2" v-model="keywords">
+					</div>
+
+				</form>
+			</div>
+		</div>
+		<table class="table table-bordered table-hover table-striped">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Time</th>
+					<th>Operation</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="car in search(carData)" :key="car.id">
+					<td>{{ car.id }}</td>
+					<td>{{ car.name }}</td>
+					<td>{{ car.time | dateFormate('yyyy-mm-dd hh:mm:ss') }}</td>
+					<td>
+						<a href="javascript:void(0);" @click.prevent="del(car.id)">删除</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript" src="./lib/vue-2.4.0.js"></script>
+	<script type="text/javascript">
+		// 定义一个全局的过滤器
+		Vue.filter('dateFormate', function (data, format = 'yyyy-mm-dd hh:mm:ss') {
+			var date = new Date(data);
+			var y = date.getFullYear();
+			var month = date.getMonth() + 1;
+			var d = date.getDate();
+
+			format = format.toLowerCase();
+			if (format === 'yyyy-mm-dd') {
+				// 使用模板字符串能直观看到结构
+				return `${y}-${month}-${d}`;
+			} else {
+				var h = date.getHours();
+				var m = date.getMinutes();
+				var s = date.getSeconds();
+				return `${y}-${month}-${d} ${h}:${m}:${s}`;
+			}
+		});
+		// 自定义按键修饰符
+		Vue.config.keyCodes.f2 = 113;
+
+		// 自定义全局指令
+		// 在每个函数中，第一个参数永远是 el ，表示被绑定了指令的那个元素，el 参数是一个原生的js对象，那我们就可以使用DOM对象的那些方法和属性了
+		Vue.directive('focus', {
+			// 每当指令绑定到元素上的时候，会立即执行这个bind函数，只执行一次。
+			// 在元素绑定指令的时候，还没有插入到DOM中，这时候，调用focus，方法没有作用，因为元素只有插入DOM之后，才能获取焦点
+			bind: function (el) {
+				// el.focus();
+			},
+			// inserted 表示元素插入到DOM中的时候，会执行 inserted 函数，只触发一次
+			inserted: function (el) {
+				el.focus();
+			},
+			// 当VNode(理解成节点值)更新的时候，会执行updated，可能会触发多次。
+			updated: function () {
+
+			}
+		});
+
+		// 定义一个自定义颜色指令
+		Vue.directive('color', {
+			bind: function (el, binding) {
+				el.style.color = binding.value;
+			},
+		});
+
+		var vm = new Vue({
+			el: '.box',
+			data: {
+				carData: [
+					// 采用过滤器来处理
+					// {id: 1, name: '西瓜', time: (new Date()).toLocaleString()},
+					{id: 1, name: '西瓜', time: new Date()},
+					{id: 2, name: '橙子', time: new Date()},
+				],
+				id: '',
+				name: '',
+				keywords: '',
+			},
+			methods: {
+				add: function () {
+					var car = {
+						id: this.id,
+						name: this.name,
+						time: new Date(),
+					};
+					this.carData.push(car);
+					this.id = '';
+					this.name = '';
+				},
+				del: function (id) {
+					this.carData.some((val, index) => {
+						if (val.id == id) {
+							this.carData.splice(id - 1, 1);
+							// 当找到时候就自动返回true。
+						}
+					});
+				},
+				search: function (carData) {
+					var resultArr = [];
+					carData.forEach((val, index) => {
+						// 找不到就返回-1，如果是空的话，它返回了 0 ,这样子在搜索框未空的时候，它就把所有的数据都添加上去显示
+						if (val.name.indexOf(this.keywords) !== -1) {
+							resultArr.push(val);
+						}
+					});
+
+					return resultArr;
+				}
+			},
+			// 私有过滤器
+			filters: {
+				dateFormate: function (data, format = 'yyyy-mm-dd hh:mm:ss') {
+					var date = new Date(data);
+					var y = date.getFullYear();
+					var month = (date.getMonth() + 1).toString().padStart(2, '0');
+					var d = date.getDate().toString().padStart(2, '0');
+
+					format = format.toLowerCase();
+					if (format === 'yyyy-mm-dd') {
+						// 使用模板字符串能直观看到结构
+						return `${y}-${month}-${d}`;
+					} else {
+						var h = date.getHours().toString().padStart(2, '0');
+						var m = date.getMinutes().toString().padStart(2, '0');
+						var s = date.getSeconds().toString().padStart(2, '0');
+						return `${y}-${month}-${d} ${h}:${m}:${s} private`;
+					}
+				},
+			},
+			// 私有自定义指令
+			directives: {
+				color : { 
+					bind: function (el, binding) {
+						el.style.color = binding.value;
+					},
+				},
+			},
+		});
+	</script>
+</body>
+</html>
