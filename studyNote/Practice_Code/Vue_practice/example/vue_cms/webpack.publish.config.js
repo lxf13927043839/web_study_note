@@ -4,7 +4,10 @@ const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// vue编译
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
+// 这个css压缩的被我卸载了
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
@@ -27,18 +30,13 @@ module.exports = {
                 removeAttributeQuotes: true, // 移除双引号
             }
         }),
-
+        
         new CleanWebpackPlugin(),
 
         new MiniCssExtractPlugin({
             filename: 'css/style.css',
         }),
-
-     
-  
-  
-  
-  
+        new VueLoaderPlugin(),
   
     ],
     /* devServer: {
@@ -49,7 +47,8 @@ module.exports = {
     } */
     module: { // 用来配置非js文件对应的loader
         rules: [ // 非js文件和loader之间的对应关系
-            // {test: /\.css$/, use: ['style-loader', 'css-loader']},
+            {test: /\.css$/, use: ['style-loader', 'css-loader']},
+            // 压缩css的被我误卸载了
                 {test: /\.css$/, use: [
                         {
                             loader: MiniCssExtractPlugin.loader,
@@ -72,9 +71,12 @@ module.exports = {
                     ],
                 },
             // {test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader']},
-            {test: /\.(png|gif|jpeg|jpg|webp)$/, use: ['url-loader?limit=2353&name=images/[hash:5][name].[ext]']},
+            {test: /\.(png|gif|jpeg|jpg|webp)$/, use: ['url-loader?limit=2353&esModule=false&name=images/[hash:5][name].[ext]']},
             // 对babel规则的配置
             // {test: /\.js$/, use: ['babel-loader'], exclude: /node_modules/},
+            {test: /\.vue$/, use: ['vue-loader']},
+            {test: /\.(eot|woff2|woff|ttf|svg)$/, use: ['url-loader']},
+        
         ],
     },
     // 这个是我自己的，不然老是有警告影响调试,好像设置了之后速度快了很多

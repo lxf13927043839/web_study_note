@@ -54,10 +54,4 @@ module.exports = {
     },
     // 这个是我自己的，不然老是有警告影响调试,好像设置了之后速度快了很多
     mode: 'development',
-
-    resolve: {
-        /* alias: {
-            'vue$': 'vue/dist/vue.js'
-        } */
-    }
 };

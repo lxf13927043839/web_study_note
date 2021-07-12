@@ -9,6 +9,9 @@ import newsDetail from './components/news/NewsDetail.vue';
 import photoShare from './components/photoShare/PhotoShow.vue';
 import photoDetail from './components/photoShare/PhotoDetail.vue';
 import goodsList from './components/goods/GoodsList.vue';
+import goodsDetail from './components/goods/GoodsDetail.vue'; 
+import goodsDesc from './components/goods/GoodDesc.vue';
+import goodsComment from './components/goods/GoodsComment.vue';
 
 const router = new VueRouter({
     routes: [
@@ -24,6 +27,9 @@ const router = new VueRouter({
         {path: '/home/photoshare', component: photoShare},
         {path: '/home/photoshare/photodetail/:id', component: photoDetail, props: true},
         {path: '/home/goodslist', component: goodsList},
+        {path: '/home/goodslist/goodsdetail/:id', component: goodsDetail, props: true},
+        {path: '/home/goodslist/goodsdetail/goodsdesc/:id', component: goodsDesc, props: true},
+        {path: '/home/goodslist/goodsdetail/goodscomment/:id', component: goodsComment, props: true, name: 'goodsComment'},
 
 
     ],

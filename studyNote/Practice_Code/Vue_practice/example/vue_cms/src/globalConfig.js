@@ -17,6 +17,10 @@ Vue.use(Lazyload, {
 import { Button } from 'mint-ui';
 Vue.component(Button.name, Button);
 
+
+import { Switch } from 'mint-ui';
+Vue.component(Switch.name, Switch);
+
 // mui底部导航栏
 import './lib/mui-3.7.1/dist/css/mui.css'
 import './lib/mui-3.7.1/dist/css/icons-extra.css'

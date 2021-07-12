@@ -1,10 +1,13 @@
 <template>
     <div>
-        <mt-swipe :auto="4000">
+        <!-- <mt-swipe :auto="4000">
             <mt-swipe-item v-for="item in imgSrc" :key="item.id">
                 <img :src="item.img" alt="">
             </mt-swipe-item>
-        </mt-swipe>
+        </mt-swipe> -->
+        <!-- 注意imgname在传递的时候要使用字符串 -->
+        <swiper :imgSrc="imgSrc" :imgname="'img'" :isfull="true"></swiper>
+
         <ul class="mui-table-view mui-grid-view mui-grid-9">
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/news">
                     <img src="../../images/menu1.png">
@@ -29,7 +32,8 @@
 </template>
 
 <script>
-
+// 1、导入轮播图组件
+import swiper from '../sub_components/Swiper.vue';
 
 // 一个组件就是一个vue实例
 export default {
@@ -47,20 +51,24 @@ export default {
             // console.log(data);
             this.imgSrc = data.message;
         }
-    } 
+    },
+    // 2、注册私有组件
+    components: {
+        swiper: swiper,
+    },
 }
 
 </script>
 
 <style lang="less" scoped>
-    .mint-swipe {
-        // 宽度会同比例缩放，180刚好是整个宽度
-        height: 180px;
-        img {
-            width: 100%;
-            height: 100%;   
-        }
-    }
+    // .mint-swipe {
+    //     // 宽度会同比例缩放，180刚好是整个宽度
+    //     height: 180px;
+    //     img {
+    //         width: 100%;
+    //         height: 100%;   
+    //     }
+    // }
     // 九宫格
     .mui-grid-view {
         img {

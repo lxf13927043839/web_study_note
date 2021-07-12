@@ -17,8 +17,12 @@ import './globalConfig.js'
 // 导入过滤器的配置
 import './fliters'
 
+// 导入Vuex
+import store from './vuex.js';
+
 var vm = new Vue({
     el: '.box',
     render: c => c(app),
     router: router,
+    store: store,
 });
