@@ -1,0 +1,7 @@
+<!--components/comSlot/comSlot.wxml-->
+<!-- <slot name="before"></slot>
+<view>我是组件的内部</view>
+<slot name="after"></slot> -->
+
+<view>父组件传递的值 {{ countFromFather }}</view>
+<button bindtap="addCount">+1</button>

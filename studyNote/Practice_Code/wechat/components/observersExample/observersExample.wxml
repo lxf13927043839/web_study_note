@@ -1,0 +1,7 @@
+<!--components/observersExample/observersExample.wxml-->
+<view class="colorBox" style="background-color: rgb({{ fullColor }});">{{ fullColor }}</view>
+<button type="primary" size="mini" plain bindtap="changeR">R</button>
+<button type="primary" size="mini" plain bindtap="changeG">G</button>
+<button type="primary" size="mini" plain bindtap="changeB">B</button>
+<view>调整步进值</view>
+<input bindinput="handleInput"></input>

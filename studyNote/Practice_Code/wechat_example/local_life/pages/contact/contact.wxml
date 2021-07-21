@@ -1,0 +1,4 @@
+<!--pages/contact/contact.wxml-->
+<view class="color-box" wx:for="{{ randomColorList }}" wx:key="index" style="background-color: rgba({{ item }});">
+    <text>{{ item }}</text>
+</view>

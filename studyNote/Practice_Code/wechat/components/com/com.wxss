@@ -1,0 +1,6 @@
+/* components/com/com.wxss */
+
+.g-view {
+    font-size: 25px;
+}
+

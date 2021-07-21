@@ -1,0 +1,6 @@
+<!--components/com/com.wxml-->
+<view>count值：{{ count }}</view>
+<button type="primary" plain bindtap="addCount">+1</button>
+<button bindtap="showDataAndProperties" type="warn" plain>用来打印data跟properties</button>
+
+<view>max的值：{{ max }}</view>

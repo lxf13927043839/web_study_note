@@ -1,0 +1,12 @@
+/* components/observersExample/observersExample.wxss */
+.colorBox {
+    height: 300rpx;
+    line-height: 300rpx;
+    text-align: center;
+    font-size: 40rpx;
+    color: white;
+    font-weight: bold;
+}
+input {
+    border: 2rpx solid gray;
+}

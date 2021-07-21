@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+<button bindtap="getInfo" type="primary" plain>发送GET请求</button>
+<button bindtap="postInfo" type="warn" plain>发送POST请求</button>
+
+<navigator url="/pages/message/message" open-type="switchTab">去往信息页面</navigator>
+
+<navigator url="/pages/index/index?name=Tom&password=Jerry" open-type="navigate">导航去往非tabbar页面</navigator>
+
+<button bindtap="goToMessage">点击去往message页面</button>
+<button bindtap="goToIndex">跳转去往非tabbar页面</button>
+
+<view class="g-view">用来作为对比</view>
+
+<!-- <my-com max="7"></my-com> -->
+<!-- <my-com-observers></my-com-observers> -->
+<!-- <my-com-color></my-com-color> -->
+<!-- <my-com-slot>
+    <view slot="before">前面的插槽</view>
+    <view slot="after">后面的插槽</view>
+</my-com-slot> -->
+<my-com-slot countFromFather="{{ count }}" bind:sync="syncCount" class="my-slot"></my-com-slot>
+
+<view>----------------------------------</view>
+<view>父组件的count的值 {{ count }}</view>
+<button bindtap="getChildCom">获取子组件实例对象</button>
+<button bindtap="getBehavior" type="primary">获取behavior</button>
+<view>{{ username }}</view>

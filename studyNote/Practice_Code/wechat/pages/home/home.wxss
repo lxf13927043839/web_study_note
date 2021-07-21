@@ -1,0 +1,9 @@
+/* pages/home/home.wxss */
+.extend {
+    height: 2000rpx;
+    background-color: aquamarine;
+}
+
+.g-view {
+    color: red;
+}

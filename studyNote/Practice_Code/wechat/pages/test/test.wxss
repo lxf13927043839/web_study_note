@@ -1,0 +1,21 @@
+image {
+    /* 通过边框线来证明确实有默认的宽高 */
+    border: 1px solid #000;
+}
+@import '/common/commonWXSS.wxss';
+
+.box {
+    height: 100px;
+    background-color: pink;
+}
+
+input {
+    border: 1px solid #000;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+view {
+    background-color: darkcyan;
+}

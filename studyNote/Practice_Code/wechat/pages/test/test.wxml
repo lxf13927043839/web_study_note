@@ -1,0 +1,31 @@
+<!--pages/test/test.wxml-->
+<view>{{ name }}</view>
+
+<image src="{{ imgSrc }}" mode="widthFix"></image>
+<view>{{ randomNum >= 5? '数字 >= 5':'数字 < 5' }}</view>
+
+<view>{{ randomNum1 * 100 }}</view>
+
+<view class="box">
+    <button type="primary" bindtap="changeDataHandle" data-step="{{ 3 }}" class="inbox">加 1 按钮</button>
+</view>
+<input bindinput="inputHandle" value="{{ text }}"></input>
+
+<view wx:if="{{ text === '1' }}">男</view>
+<view wx:elif="{{ text === '2' }}">女</view>
+<view wx:else>保密</view>
+
+<block wx:if="{{ text === '1' }}">
+    <view>我是block包裹的view</view>
+    <view>我是block包裹的view</view>
+</block>
+
+<view hidden="{{ !flag }}">测试hidden，true隐藏，false显示</view>
+<view wx:if="{{ flag }}">我是wx:if进行控制的</view>
+
+<view wx:for="{{ fruit }}" wx:key="index">索引：{{ index }} 名称：{{ item }}</view>
+
+<view wx:key="i" wx:for="{{ fruit }}" wx:for-index="i" wx:for-item="itemname">索引：{{ i }} 名称：{{ itemname }}</view>
+
+<view>--------------------------------------</view>
+<view wx:for="{{ userList }}" wx:key="id" class="userList">{{ item.name }}</view>

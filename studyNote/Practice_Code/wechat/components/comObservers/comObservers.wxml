@@ -1,0 +1,5 @@
+<!--components/comObservers/comObservers.wxml-->
+<view>{{ n1 }} + {{ n2 }} = {{ sum }}</view>
+<button type="primary" plain bindtap="addN1">n1自增</button>
+<button type="warn" plain bindtap="addN2">n2自增</button>
+
