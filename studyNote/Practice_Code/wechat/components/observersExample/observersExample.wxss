@@ -7,6 +7,6 @@
     color: white;
     font-weight: bold;
 }
-input {
+/* input {
     border: 2rpx solid gray;
-}
+} */

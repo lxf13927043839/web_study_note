@@ -18,10 +18,19 @@
     <view slot="before">前面的插槽</view>
     <view slot="after">后面的插槽</view>
 </my-com-slot> -->
-<my-com-slot countFromFather="{{ count }}" bind:sync="syncCount" class="my-slot"></my-com-slot>
+<!-- <my-com-slot countFromFather="{{ count }}" bind:sync="syncCount" class="my-slot"></my-com-slot>
 
 <view>----------------------------------</view>
 <view>父组件的count的值 {{ count }}</view>
 <button bindtap="getChildCom">获取子组件实例对象</button>
 <button bindtap="getBehavior" type="primary">获取behavior</button>
-<view>{{ username }}</view>
+<view>{{ username }}</view> -->
+<van-button type="primary">按钮</van-button>
+<van-button type="danger" bindtap="testPromise">按钮</van-button>
+
+
+<view> {{num1}} + {{num2}} = {{sum}} </view>
+<van-button bindtap="changeNum1" data-step="{{ 1 }}" type="primary">num1 + 1</van-button>
+<van-button bindtap="changeNum2" data-step="-1" type="danger">num2 - 1</van-button>
+
+<my-com-store></my-com-store>

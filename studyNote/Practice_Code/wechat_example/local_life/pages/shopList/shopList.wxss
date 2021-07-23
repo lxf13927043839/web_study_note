@@ -10,6 +10,7 @@
     height: 250rpx;
     display: block;
     margin-right: 20rpx;
+    /* flex-shrink: 0; */
 }
 
 .shop-info {

@@ -1,8 +1,21 @@
 // pages/home/home.js
 
 const behavior = require('../../myBehavior/myBehavior.js');
+import { createStoreBindings } from 'mobx-miniprogram-bindings';
+import { store } from '../../store/store.js';
 
 Page({
+    async testPromise() {
+      const {data: res} = await wx.p.request({
+        url: 'https://www.escook.cn/api/get',
+        data: {
+          name: 'Tom',
+          age: 23,
+        },
+        method: 'GET',
+      });
+      console.log(res);
+    },
 
     behaviors: [behavior],
     /**
@@ -78,8 +91,22 @@ Page({
     onLoad: function (options) {
         // this.getInfo();
         // this.postInfo();
+        
+        // 进行的是跟store方法进行绑定
+        this.stroeBindings = createStoreBindings(this, {
+          store,
+          fields: ['num1', 'num2', 'sum'],
+          actions: ['updateNum1','updateNum2'],
+        });
+        // console.log(this.stroeBindings);
     },
-
+    changeNum1(e) {
+      // console.log(e);
+      this.updateNum1(e.target.dataset.step - 0);
+    },
+    changeNum2(e) {
+      this.updateNum2(e.target.dataset.step - 0);
+    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
@@ -105,7 +132,7 @@ Page({
      * 生命周期函数--监听页面卸载
      */
     onUnload: function () {
-
+      this.stroeBindings.destroyStoreBindings();
     },
 
     /**

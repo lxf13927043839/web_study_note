@@ -3,7 +3,12 @@
     "my-com": "/components/com/com",
     "my-com-observers": "/components/comObservers/comObservers",
     "my-com-color": "/components/observersExample/observersExample",
-    "my-com-slot": "/components/comSlot/comSlot"
+    "my-com-slot": "/components/comSlot/comSlot",
+    "van-button": "@vant/weapp/button/index",
+    "my-com-store": "components/comStore/comStore",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+
   },
   "pages":[
     "pages/home/home",
@@ -12,8 +17,32 @@
     "pages/test/test",
     "pages/logs/logs",
     "pages/index/index"
-
   ],
+  "subpackages": [
+    {
+      "root": "pkgA",
+      "name": "A",
+      "pages": [
+        "pages/cat",
+        "pages/dog"
+      ]
+    },
+    {
+      "root": "pkgB",
+      "name": "B",
+      "pages": [
+        "pages/apple",
+        "pages/orange"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/concat/concat": {
+      "packages": ["pkgA"],
+      "network": "wifi"
+    }
+  },
+
   "window":{
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#2b4b6b",
@@ -22,10 +51,10 @@
     "enablePullDownRefresh": false,
     "backgroundColor": "#00ff00"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
 
   "tabBar": {
+    "custom": true,
     "list":[
       {
         "pagePath": "pages/home/home",

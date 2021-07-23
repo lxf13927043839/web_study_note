@@ -1,0 +1,4 @@
+<!--components/comStore/comStore.wxml-->
+<view> {{num1}} + {{num2}} = {{sum}} </view>
+<van-button bindtap="changeNum1" data-step="{{ 1 }}" type="primary">num1 + 1</van-button>
+<van-button bindtap="changeNum2" data-step="-1" type="danger">num2 - 1</van-button>

@@ -1,5 +1,10 @@
-App({
+// 导入promise化
+import { promisifyAll } from 'miniprogram-api-promise';
+ // 直接把promise化的API挂载到wx对象的一个属性上
+ const wxp = wx.p = {};
+ promisifyAll(wx, wxp);
 
+App({
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
